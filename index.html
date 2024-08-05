@@ -7,6 +7,8 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="template-styles.css">
+
+    <!-- После завершения этапа верстки заменить файлы темы "custom.css" и "custom.less" на мои! -->
     <link rel="stylesheet" href="css/custom.css">
 
 </head>
@@ -289,7 +291,7 @@
                                 "slideshow": true,
                                 "animation": "slide",
                                 "direction": "horizontal",
-                                "slideshowSpeed": 700000,
+                                "slideshowSpeed": 7000,
                                 "animationSpeed": 600,
                                 "animationLoop": true
                             }'>
@@ -431,6 +433,8 @@
 
                             </ul>
                         </div>
+                        <!-- Добавил полосу прогресса -->
+                        <div class="progress-hero-bar"></div>
                     </div>
                 </div>
             </div>
@@ -440,7 +444,7 @@
                 <div class="maxwidth-theme">
                     <div class="col-md-12">
                         <div>
-                            <div class="item-views catalog sections front" style="display:none;">
+                            <div class="item-views catalog sections front">
                                 <div class="items row">
                                     <div class="col-md-4 col-sm-4 col-xs-12 text-center">
                                         <div class="item" id="bx_651765591_17">
@@ -541,7 +545,15 @@
                         <div class="partners front">
                             <hr>
                             <div class="flexslider unstyled row"
-                                data-plugin-options='{"directionNav": false, "controlNav" :true, "animationLoop": true, "slideshow": true, "slideshowSpeed": 5000, "animationSpeed": 600, "counts": [4, 4, 2]}'>
+                                data-plugin-options='{
+                                    "directionNav": false,
+                                    "controlNav" :true,
+                                    "animationLoop": true,
+                                    "slideshow": true,
+                                    "slideshowSpeed": 5000,
+                                    "animationSpeed": 600,
+                                    "counts": [4, 4, 2]
+                                }'>
                                 <ul class="slides items">
                                     <li class="col-sm-3">
                                         <div class="item" id="bx_3485106786_712">
@@ -772,15 +784,14 @@
         </div>
     </footer>
 
-    <div class="bx_areas">
-    </div>
+    <div class="bx_areas"></div>
 
     <!-- Стандартные скрипты темы Аспро -->
     <script src="js/core.min.js"></script>
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="template-scripts.js"></script>
-    <script type='text/javascript'>
+    <script type="text/javascript">
         var arBasketItems = {};
         var arScorpOptions = ({
             'SITE_DIR': '/',
@@ -878,6 +889,9 @@
 
         });
     </script>
+
+    <!-- Мой код добавить в соответствующий custom.js темы Аспро! -->
+    <script src="js/custom.js"></script>
 
 </body>
 

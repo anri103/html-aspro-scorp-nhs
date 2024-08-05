@@ -64,14 +64,15 @@ h6 {
   box-shadow: 0 16px 0 16px rgba(255, 255, 255, 0.6);
 }
 .banners-big .slides .title {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1.25;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.375;
+  letter-spacing: 0.24px;
 }
 .banners-big .slides .text-block {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.25;
+  font-size: 16px;
+  line-height: 1.375;
 }
 .banners-big .slides .img + .text .inner {
   padding-left: 0;
@@ -857,7 +858,33 @@ header.fixed .logo-row .top-callback .email {
   box-shadow: 0 0 0 35px #fdf2e6;
 }
 .banners-big .slides .buttons-block .btn-default {
+  color: #0fa8ae !important;
+  border-color: transparent;
+  background-color: transparent;
+  text-transform: lowercase;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 0;
   margin-bottom: 20px;
+}
+.banners-big .slides .buttons-block .btn-default:hover {
+  color: #333 !important;
+}
+.banners-big .slides .buttons-block .btn-default::after {
+  font-family: FontAwesome;
+  content: "\f105";
+  display: inline-block;
+  padding-left: 8px;
+  vertical-align: middle;
+}
+.banners-big .progress-hero-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: #0FA8AE;
+  width: 0;
+  z-index: 10;
 }
 /* dgu-range */
 .dgu-range .clearfix {
