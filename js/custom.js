@@ -13,3 +13,35 @@
 //     var $progressBar = $(slider).find('.progress-hero-bar');
 //     $progressBar.stop(true, true).css('width', '0');
 // }
+
+
+$(document).ready(function () {
+    $('.item-category').each(function () {
+        var $itemList = $(this).find('.item-list');
+        var $items = $itemList.find('li');
+        var $btnDown = $(this).find('.item-btn-down');
+        var $itemBody = $(this).find('.item-body');
+
+        // Всегда показываем первые два элемента
+        $items.slice(0, 2).addClass('visible');
+
+        if ($items.length > 2) {
+            $btnDown.show();
+
+            $btnDown.on('click', function () {
+                var isExpanded = $items.slice(2).hasClass('visible');
+
+                if (isExpanded) {
+                    $items.slice(2).removeClass('visible');
+                    $itemBody.removeClass('expanded');
+                    $(this).removeClass('rotate');
+                } else {
+                    $items.slice(2).addClass('visible');
+                    $itemBody.addClass('expanded');
+                    $(this).addClass('rotate');
+                }
+            });
+        }
+    });
+});
+
