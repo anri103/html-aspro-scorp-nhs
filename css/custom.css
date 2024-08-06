@@ -1198,6 +1198,16 @@ header.fixed .logo-row .top-callback .email {
   line-height: 1;
   letter-spacing: 0.01em;
 }
+.frontpage-news-row .section-heading {
+  text-align: left;
+}
+.frontpage-seo-row .section-heading {
+  text-align: left;
+  max-width: 654px;
+}
+.frontpage-seo-row .section-body {
+  max-width: 654px;
+}
 .dgu-range .clearfix {
   width: 130px;
 }
