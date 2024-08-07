@@ -45,3 +45,10 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function() {
+	$('.frontpage-seo-row .show-text-link').on('click', function(e) {
+		e.preventDefault();
+		$('.frontpage-seo-row .section-text').toggleClass('expanded');
+		$('.frontpage-seo-row .show-text-link').toggleClass('rotated');
+	});
+});
