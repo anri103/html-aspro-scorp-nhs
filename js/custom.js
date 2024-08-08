@@ -16,7 +16,7 @@
 
 
 $(document).ready(function () {
-    $('.item-category').each(function () {
+    $('.item-cat-dgu').each(function () {
         var $itemList = $(this).find('.item-list');
         var $items = $itemList.find('li');
         var $btnDown = $(this).find('.item-btn-down');

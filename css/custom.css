@@ -83,36 +83,6 @@ h6 {
 label[for="processing_approval"] {
   white-space: nowrap;
 }
-footer img {
-  margin-top: 20px;
-}
-footer .bottom-menu {
-  text-align: center;
-  margin-top: 45px;
-}
-footer .info {
-  text-align: right;
-}
-footer .info .phone {
-  white-space: nowrap;
-  margin-bottom: 0;
-  line-height: 1.25;
-}
-footer .copy a:hover {
-  color: white;
-}
-footer .terms {
-  background-color: #000;
-  padding: 15px 0;
-  font-size: 14px;
-}
-footer .terms a {
-  margin: 0 8px;
-  color: #fff;
-}
-footer .terms a:hover {
-  color: #808080;
-}
 .news.item-views.list .item .title {
   font-size: 20px;
   line-height: 1.25;
@@ -363,9 +333,6 @@ footer .terms a:hover {
   }
 }
 @media (min-width: 768px) {
-  footer .info .phone {
-    float: right;
-  }
   .catalog .other-models .btn {
     width: 100%;
     white-space: normal;
@@ -995,37 +962,37 @@ header.fixed .logo-row .top-callback .email {
 .banners-big .slides .shown .text .inner {
   opacity: 0;
 }
-.frontpage-categories-row {
+.frontpage-cat-dgu-row {
   padding-top: 60px;
 }
-.item-category {
+.item-cat-dgu {
   margin-bottom: 20px;
 }
-.item-category .item-title {
+.item-cat-dgu .item-title {
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 22px;
 }
 @media (min-width: 768px) {
-  .item-category .item-title {
+  .item-cat-dgu .item-title {
     font-size: 24px;
   }
 }
-.item-category .item-title a {
+.item-cat-dgu .item-title a {
   font-weight: 700;
 }
-.item-category .item-title a:hover {
+.item-cat-dgu .item-title a:hover {
   color: #0FA8AE;
   text-decoration: underline !important;
 }
-.item-category .item-img {
+.item-cat-dgu .item-img {
   margin-bottom: 10px;
 }
-.item-category .item-img img {
+.item-cat-dgu .item-img img {
   width: 100%;
 }
-.item-category .item-body {
+.item-cat-dgu .item-body {
   text-align: center;
   font-size: 12px;
   padding: 12px 24px;
@@ -1033,34 +1000,34 @@ header.fixed .logo-row .top-callback .email {
   transition: background-color 0.3s ease;
 }
 @media (min-width: 768px) {
-  .item-category .item-body {
+  .item-cat-dgu .item-body {
     font-size: 16px;
   }
 }
-.item-category .item-body:hover,
-.item-category .item-body.expanded {
+.item-cat-dgu .item-body:hover,
+.item-cat-dgu .item-body.expanded {
   background-color: #F4BC8433;
 }
-.item-category .item-body .item-list {
+.item-cat-dgu .item-body .item-list {
   list-style: none;
   padding: 0;
   margin: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
-.item-category .item-body .item-list li {
+.item-cat-dgu .item-body .item-list li {
   display: none;
 }
-.item-category .item-body .item-list li.visible {
+.item-cat-dgu .item-body .item-list li.visible {
   display: list-item;
 }
-.item-category .item-body .item-list li a {
+.item-cat-dgu .item-body .item-list li a {
   color: #333;
 }
-.item-category .item-body .item-list li a:hover {
+.item-cat-dgu .item-body .item-list li a:hover {
   color: #0fa8ae;
 }
-.item-category .item-body .item-btn-down {
+.item-cat-dgu .item-body .item-btn-down {
   display: none;
   width: 100%;
   padding: 4px 0;
@@ -1070,10 +1037,10 @@ header.fixed .logo-row .top-callback .email {
   border: none;
   background-color: transparent;
 }
-.item-category .item-body .item-btn-down > * {
+.item-cat-dgu .item-body .item-btn-down > * {
   transition: transform 0.3s ease;
 }
-.item-category .item-body .item-btn-down.rotate > * {
+.item-cat-dgu .item-body .item-btn-down.rotate > * {
   transform: rotate(180deg);
 }
 .frontpage-features-row .section-heading {
@@ -1154,6 +1121,42 @@ header.fixed .logo-row .top-callback .email {
 }
 @media (min-width: 768px) {
   .item-feature .item-body .item-text {
+    font-size: 16px;
+  }
+}
+.frontpage-main-cats-row {
+  position: relative;
+}
+.item-main-cat {
+  margin-bottom: 20px;
+}
+.item-main-cat .item-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+@media (min-width: 768px) {
+  .item-main-cat .item-title {
+    font-size: 24px;
+  }
+}
+.item-main-cat .item-title a {
+  color: #333;
+}
+.item-main-cat .item-title a:hover {
+  color: #0FA8AE;
+}
+.item-main-cat .item-img img {
+  width: 100%;
+}
+.item-main-cat .item-body {
+  text-align: center;
+  font-size: 12px;
+  padding: 17px;
+}
+@media (min-width: 768px) {
+  .item-main-cat .item-body {
     font-size: 16px;
   }
 }
@@ -1270,6 +1273,9 @@ header.fixed .logo-row .top-callback .email {
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.01em;
+}
+.frontpage-partners-row {
+  padding-bottom: 60px;
 }
 .frontpage-partners-row .partners .flexslider {
   margin-bottom: 0;
@@ -1521,16 +1527,81 @@ header.fixed .logo-row .top-callback .email {
 .dgu-range .col:hover a {
   color: #fff;
 }
+footer {
+  background: #F6F3F299;
+  box-shadow: none;
+  color: #555;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 30px 0 0;
+}
+@media (max-width: 767px) {
+  footer {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  footer {
+    font-size: 16px;
+  }
+}
+footer > .container {
+  padding: 0 !important;
+}
+footer .info {
+  padding: 0;
+  text-align: right;
+}
+footer .info .phone {
+  white-space: nowrap;
+  margin-bottom: 0;
+  line-height: 1.25;
+}
+footer .info .phone a {
+  color: #0fa8ae;
+}
+footer .info .phone a:hover {
+  color: #333;
+}
+footer .info .email a {
+  color: #0fa8ae;
+}
+footer .info .email a:hover {
+  color: #333;
+}
+footer .copy {
+  padding: 0;
+}
+footer .footer-bottom {
+  padding: 15px 0;
+  font-size: 14px;
+  background-color: #fff;
+}
+footer .footer-bottom a {
+  margin: 0 8px;
+}
+footer .footer-bottom a:hover {
+  color: #808080;
+}
 .menu-children {
   padding: 0.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.bottom-menu .items.row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+.bottom-menu {
+  color: #555;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: none;
+  margin-top: 20px;
+}
+.bottom-menu .item a {
+  color: #555;
+  text-decoration: none;
+}
+.bottom-menu .item a:hover {
+  color: #0fa8ae;
 }
 .bottom-menu-subitem {
   font-size: 10px;

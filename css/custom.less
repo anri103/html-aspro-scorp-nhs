@@ -109,39 +109,6 @@ label[for="processing_approval"] {
     white-space: nowrap;
 }
 
-footer {
-    img {
-        margin-top: 20px;
-    }
-    .bottom-menu {
-        text-align: center;
-        margin-top: 45px;
-    }
-    .info {
-        text-align: right;
-        .phone {
-            white-space:   nowrap;
-            margin-bottom: 0;
-            line-height:   1.25;
-        }
-    }
-    .copy a:hover {
-        color: white;
-    }
-    .terms {
-        background-color: #000;
-        padding:          15px 0;
-        font-size:        14px;
-        a {
-            margin: 0 8px;
-            color:  #fff;
-            &:hover {
-                color: #808080;
-            }
-        }
-    }
-}
-
 .news.item-views.list {
     .item .title {
         font-size:   20px;
@@ -420,9 +387,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-    footer .info .phone {
-        float: right;
-    }
     .catalog .other-models {
         .btn {
             width:       100%;
@@ -1120,13 +1084,13 @@ header {
     // }
 }
 
-// frontpage-categories-row ==========
+// frontpage-cat-dgu-row ==========
 
-.frontpage-categories-row {
+.frontpage-cat-dgu-row {
     padding-top: 60px;
 }
 
-.item-category {
+.item-cat-dgu {
     margin-bottom: 20px;
     .item-title {
         text-align:    center;
@@ -1281,6 +1245,44 @@ header {
     }
 }
 
+// frontpage-main-cats-row ==========
+
+.frontpage-main-cats-row {
+    position: relative;
+}
+
+.item-main-cat {
+    margin-bottom: 20px;
+    .item-title {
+        text-align:    center;
+        font-size:     16px;
+        font-weight:   400;
+        margin-bottom: 17px;
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+        a {
+            color: #333;
+            &:hover {
+                color: #0FA8AE;
+            }
+        }
+    }
+    .item-img {
+        img {
+            width: 100%;
+        }
+    }
+    .item-body {
+        text-align: center;
+        font-size:  12px;
+        padding:    17px;
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+    }
+}
+
 // frontpage-projects-row ==========
 
 .frontpage-projects-row {
@@ -1395,6 +1397,7 @@ header {
 // frontpage-partners-row ==========
 
 .frontpage-partners-row {
+    padding-bottom: 60px;
     .partners {
         .flexslider {
             margin-bottom: 0;
@@ -1658,7 +1661,65 @@ header {
 	}
 }
 
-// bottom-menu ==========
+// footer ==========
+
+footer {
+    background: #F6F3F299;
+    box-shadow: none;
+    color: #555;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 30px 0 0;
+    @media (max-width: 767px) {
+        text-align: left;
+    }
+    @media (min-width: 768px) {
+        font-size: 16px;
+    }
+    & > .container {
+        padding: 0 !important;
+    }
+    .footer-logo {}
+    .bottom-menu {}
+    .info {
+        padding: 0;
+        text-align: right;
+        .phone {
+            white-space:   nowrap;
+            margin-bottom: 0;
+            line-height:   1.25;
+            a {
+                color: #0fa8ae;
+                &:hover {
+                    color: #333;
+                }
+            }
+        }
+        .email {
+            a {
+                color: #0fa8ae;
+                &:hover {
+                    color: #333;
+                }
+            }
+        }
+    }
+    .copy {
+        padding: 0;
+    }
+    .footer-bottom {
+        padding:          15px 0;
+        font-size:        14px;
+        background-color: #fff;
+        a {
+            // color:  #fff;
+            margin: 0 8px;
+            &:hover {
+                color: #808080;
+            }
+        }
+    }
+}
 
 .menu-children {
     padding:        0.5em;
@@ -1668,13 +1729,21 @@ header {
 }
 
 .bottom-menu {
-	.items {
-		&.row {
-			display:     flex;
-			flex-wrap:   wrap;
-			align-items: flex-start;
-		}
-	}
+    color: #555;
+    font-size: inherit;
+    font-weight: inherit;
+    text-transform: none;
+    margin-top: 20px;
+	.items {}
+    .item {
+        a {
+            color: #555;
+            text-decoration: none;
+            &:hover {
+                color: #0fa8ae;
+            }
+        }
+    }
 }
 
 .bottom-menu-subitem {
