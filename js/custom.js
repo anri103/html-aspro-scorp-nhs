@@ -15,40 +15,37 @@
 // }
 
 
-$(document).ready(function () {
-    $('.item-cat-dgu').each(function () {
-        var $itemList = $(this).find('.item-list');
-        var $items = $itemList.find('li');
-        var $btnDown = $(this).find('.item-btn-down');
-        var $itemBody = $(this).find('.item-body');
 
-        // Всегда показываем первые два элемента
-        $items.slice(0, 2).addClass('visible');
+$('.item-cat-dgu').each(function () {
+    var $itemList = $(this).find('.item-list');
+    var $items = $itemList.find('li');
+    var $btnDown = $(this).find('.item-btn-down');
+    var $itemBody = $(this).find('.item-body');
 
-        if ($items.length > 2) {
-            $btnDown.show();
+    // Всегда показываем первые два элемента
+    $items.slice(0, 2).addClass('visible');
 
-            $btnDown.on('click', function () {
-                var isExpanded = $items.slice(2).hasClass('visible');
+    if ($items.length > 2) {
+        $btnDown.show();
 
-                if (isExpanded) {
-                    $items.slice(2).removeClass('visible');
-                    $itemBody.removeClass('expanded');
-                    $(this).removeClass('rotate');
-                } else {
-                    $items.slice(2).addClass('visible');
-                    $itemBody.addClass('expanded');
-                    $(this).addClass('rotate');
-                }
-            });
-        }
-    });
+        $btnDown.on('click', function () {
+            var isExpanded = $items.slice(2).hasClass('visible');
+
+            if (isExpanded) {
+                $items.slice(2).removeClass('visible');
+                $itemBody.removeClass('expanded');
+                $(this).removeClass('rotate');
+            } else {
+                $items.slice(2).addClass('visible');
+                $itemBody.addClass('expanded');
+                $(this).addClass('rotate');
+            }
+        });
+    }
 });
 
-$(document).ready(function() {
-	$('.frontpage-seo-row .show-text-link').on('click', function(e) {
-		e.preventDefault();
-		$('.frontpage-seo-row .section-text').toggleClass('expanded');
-		$('.frontpage-seo-row .show-text-link').toggleClass('rotated');
-	});
+$('.frontpage-seo-row .show-text-link').on('click', function (e) {
+    e.preventDefault();
+    $('.frontpage-seo-row .section-text').toggleClass('expanded');
+    $('.frontpage-seo-row .show-text-link').toggleClass('rotated');
 });
