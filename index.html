@@ -22,89 +22,95 @@
 
         <header class="topmenu-COLOR canfixed">
             <div class="logo_and_menu-row">
-                <div class="logo-row row">
+                <div class="logo-row">
                     <div class="maxwidth-theme">
-                        <div class="col-md-2 col-sm-3 col-xs-12">
-                            <div class="position-relative">
+                        <div class="flex-row align-items-center justify-content-between">
+                            <!-- logo -->
+                            <div class="top-logo col-md-auto col-sm-auto col-xs-auto">
                                 <div class="logo">
                                     <a href="#">
                                         <img src="img/logo.png" class="header-logo" alt="Neuhaus" title="Neuhaus" />
                                     </a>
                                 </div>
-                                <button type="button" class="btn btn-responsive-nav visible-xs" data-toggle="collapse"
-                                    data-target=".nav-main-collapse">
-                                    <i class="fa fa-bars"></i>
-                                </button>
                             </div>
-                        </div>
-                        <div class="col-md-10 col-sm-9 col-xs-12">
-                            <div class="row">
-                                <div class="top-description col-md-4 hidden-sm hidden-xs">
-                                    Решения в области бесперебойного<br>
-                                    и гарантийного электроснабжения
-                                </div>
-                                <div class="top-city-switcher col-md-2 col-sm-4 col-xs-12">
-                                    <div class="city-switcher" title="Выбрать другой город">
-                                        <div>Выбранный город:</div>
-                                        <span class="cityname">Москва</span>
-                                    </div>
-                                    <div class="modal" id="switch-city" role="dialog">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <i data-dismiss="modal" class="jqmClose top-close fa fa-close"></i>
-                                                    <div class="h3 modal-title">Выберите город</div>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <span data-href="https://kazan.nhs.ru/">Казань</span>
-                                                    <span>Москва <i class="fa fa-check text-muted"></i></span>
-                                                    <span data-href="https://rostov-na-donu.nhs.ru/">Ростов на
-                                                        Дону</span>
-                                                    <span data-href="https://spb.nhs.ru/">Санкт-Петербург</span>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default"
-                                                        data-dismiss="modal">Отмена</button>
-                                                </div>
+                            <!-- callback -->
+                            <div class="top-callback col-md col-sm col-xs">
+                                <div class="d-flex align-items-center justify-content-end gap-5">
+                                    <div class="d-flex flex-column">
+                                        <div class="phone">
+                                            <div class="phone-number">
+                                                <i class="fa fa-phone"></i>
+                                                <div><a href="tel:+74959560111" rel="nofollow"><span>+7 (495)</span>
+                                                        956-01-11</a></div>
+                                            </div>
+                                            <div class="phone-desc">
+                                                ПН-ПТ: 9:00 - 19:00
+                                            </div>
+                                        </div>
+                                        <div class="email hidden">
+                                            <i class="fa fa-envelope"></i>
+                                            <div>
+                                                <a href="mailto:info@nhs.ru">info@nhs.ru</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="modal" id="ask-city" role="dialog" data-ask="">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-body">
-                                                    <div class="h3">Ваш город</div>
-                                                    <div class="h2 user-city" data-href="nhs.ru">Москва?</div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default btn-lg">Да</button>
-                                                    <button type="button" class="btn btn-default btn-lg white">Нет
-                                                        (выбрать другой город)</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="top-callback col-md-6 col-sm-8 hidden-xs">
-                                    <div class="callback pull-right hidden-xs" data-event="jqm" data-param-id="24"
+                                    <div class="callback hidden-xs" data-event="jqm" data-param-id="24"
                                         data-name="callback">
                                         <a href="javascript:;" rel="nofollow"
                                             class="btn btn-default white btn-xs">Обратный звонок</a>
                                     </div>
-                                    <div class="phone pull-right hidden-xs">
-                                        <div class="phone-number">
-                                            <i class="fa fa-phone"></i>
-                                            <div><a href="tel:+74959560111" rel="nofollow"><span>+7 (495)</span>
-                                                    956-01-11</a></div>
-                                        </div>
-                                        <div class="phone-desc pull-right">
-                                            ПН-ПТ: 9:00 - 19:00
+                                </div>
+                            </div>
+                            <!-- mobile menu toggler -->
+                            <div class="top-menu-toggler visible-xs col-xs-auto">
+                                <button type="button" class="btn btn-responsive-nav" data-toggle="collapse" data-target=".nav-main-collapse">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                            </div>
+                            <!-- description -->
+                            <div class="top-description col-md-3 hidden-sm hidden-xs">
+                                Решения в области бесперебойного<br>
+                                и гарантийного электроснабжения
+                            </div>
+                            <!-- city-switcher -->
+                            <div class="top-city-switcher col-md-2 col-sm-3 col-xs-12">
+                                <div class="city-switcher" title="Выбрать другой город">
+                                    <div>Выбранный город:</div>
+                                    <span class="cityname">Москва</span>
+                                </div>
+                                <div class="modal" id="switch-city" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <i data-dismiss="modal" class="jqmClose top-close fa fa-close"></i>
+                                                <div class="h3 modal-title">Выберите город</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <span data-href="https://kazan.nhs.ru/">Казань</span>
+                                                <span>Москва <i class="fa fa-check text-muted"></i></span>
+                                                <span data-href="https://rostov-na-donu.nhs.ru/">Ростов на
+                                                    Дону</span>
+                                                <span data-href="https://spb.nhs.ru/">Санкт-Петербург</span>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">Отмена</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="email pull-right">
-                                        <i class="fa fa-envelope"></i>
-                                        <div>
-                                            <a href="mailto:info@nhs.ru">info@nhs.ru</a>
+                                </div>
+                                <div class="modal" id="ask-city" role="dialog" data-ask="">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div class="h3">Ваш город</div>
+                                                <div class="h2 user-city" data-href="nhs.ru">Москва?</div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default btn-lg">Да</button>
+                                                <button type="button" class="btn btn-default btn-lg white">Нет
+                                                    (выбрать другой город)</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -415,139 +421,135 @@
                                 </li>
                             </ul>
                         </div>
-                        <!-- Добавил полосу прогресса -->
-                        <!-- <div class="progress-hero-bar"></div> -->
                     </div>
                 </div>
             </div>
 
             <!-- Секция: Категории ДГУ, ДЭС -->
-            <div class="frontpage-cat-dgu-row frontpage-row row">
+            <div class="frontpage-cat-dgu-row frontpage-row">
                 <div class="maxwidth-theme">
-                    <div class="col-md-12">
-                        <div class="section-heading">
-                            <div class="section-title">
-                                <h2 class="heading-title-name">Дизельные электростанции (ДГУ, ДЭС)</h2>
-                            </div>
+                    <div class="section-heading">
+                        <div class="section-title">
+                            <h2 class="heading-title-name">Дизельные электростанции (ДГУ, ДЭС)</h2>
                         </div>
-                        <div class="section-body">
-                            <div class="flex-row" style="--bs-gutter-y: 24px;">
-                                <!-- item -->
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="item-cat-dgu">
-                                        <div class="item-title">
-                                            Малая мощность <a href="#">14-200 кВт</a>
-                                        </div>
-                                        <div class="item-img">
-                                            <a href="#">
-                                                <img src="img/category-item-01.jpg" class="img-responsive"
-                                                    alt="Малая мощность 14-200 кВт" title="Малая мощность 14-200 кВт" />
-                                            </a>
-                                        </div>
-                                        <div class="item-body">
-                                            <div class="item-text">
-                                                <ul class="item-list">
-                                                    <li>
-                                                        <a href="#">Для транспортной инфраструктуры</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Для агропромышленного комплекса</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Для транспортной инфраструктуры</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Для агропромышленного комплекса</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Для транспортной инфраструктуры</a>
-                                                    </li>
-                                                </ul>
-                                                <button type="button" class="item-btn-down">
-                                                    <svg class="svg-icon icon-arrow-down">
-                                                        <use xlink:href="css/sprite.svg#icon-arrow-down"></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
+                    </div>
+                    <div class="section-body">
+                        <div class="flex-row" style="--bs-gutter-y: 24px;">
+                            <!-- item -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="item-cat-dgu">
+                                    <div class="item-title">
+                                        Малая мощность <a href="#">14-200 кВт</a>
+                                    </div>
+                                    <div class="item-img">
+                                        <a href="#">
+                                            <img src="img/category-item-01.jpg" class="img-responsive"
+                                                alt="Малая мощность 14-200 кВт" title="Малая мощность 14-200 кВт" />
+                                        </a>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-text">
+                                            <ul class="item-list">
+                                                <li>
+                                                    <a href="#">Для транспортной инфраструктуры</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Для агропромышленного комплекса</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Для транспортной инфраструктуры</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Для агропромышленного комплекса</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Для транспортной инфраструктуры</a>
+                                                </li>
+                                            </ul>
+                                            <button type="button" class="item-btn-down">
+                                                <svg class="svg-icon icon-arrow-down">
+                                                    <use xlink:href="css/sprite.svg#icon-arrow-down"></use>
+                                                </svg>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- item -->
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="item-cat-dgu">
-                                        <div class="item-title">
-                                            Средняя мощность <a href="#">200-799 кВт</a>
-                                        </div>
-                                        <div class="item-img">
-                                            <a href="#">
-                                                <img src="img/category-item-02.jpg" class="img-responsive"
-                                                    alt="Средняя мощность 200-799 кВт"
-                                                    title="Средняя мощность 200-799 кВт" />
-                                            </a>
-                                        </div>
-                                        <div class="item-body">
-                                            <div class="item-text">
-                                                <ul class="item-list">
-                                                    <li>
-                                                        <a href="#">Для транспортной инфраструктуры</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Для агропромышленного комплекса</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Для транспортной инфраструктуры</a>
-                                                    </li>
-                                                </ul>
-                                                <button type="button" class="item-btn-down">
-                                                    <svg class="svg-icon icon-arrow-down">
-                                                        <use xlink:href="css/sprite.svg#icon-arrow-down"></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
+                            </div>
+                            <!-- item -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="item-cat-dgu">
+                                    <div class="item-title">
+                                        Средняя мощность <a href="#">200-799 кВт</a>
+                                    </div>
+                                    <div class="item-img">
+                                        <a href="#">
+                                            <img src="img/category-item-02.jpg" class="img-responsive"
+                                                alt="Средняя мощность 200-799 кВт"
+                                                title="Средняя мощность 200-799 кВт" />
+                                        </a>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-text">
+                                            <ul class="item-list">
+                                                <li>
+                                                    <a href="#">Для транспортной инфраструктуры</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Для агропромышленного комплекса</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Для транспортной инфраструктуры</a>
+                                                </li>
+                                            </ul>
+                                            <button type="button" class="item-btn-down">
+                                                <svg class="svg-icon icon-arrow-down">
+                                                    <use xlink:href="css/sprite.svg#icon-arrow-down"></use>
+                                                </svg>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- item -->
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="item-cat-dgu">
-                                        <div class="item-title">
-                                            Высокая мощность от <a href="#">800 кВт</a>
-                                        </div>
-                                        <div class="item-img">
-                                            <a href="#">
-                                                <img src="img/category-item-03.jpg" class="img-responsive"
-                                                    alt="Высокая мощность от 800 кВт"
-                                                    title="Высокая мощность от 800 кВт" />
-                                            </a>
-                                        </div>
-                                        <div class="item-body">
-                                            <div class="item-text">
-                                                <ul class="item-list">
-                                                    <li>
-                                                        <a href="#">Для транспортной инфраструктуры</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Для агропромышленного комплекса</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Для транспортной инфраструктуры</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Для агропромышленного комплекса</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Для транспортной инфраструктуры</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Для агропромышленного комплекса</a>
-                                                    </li>
-                                                </ul>
-                                                <button type="button" class="item-btn-down">
-                                                    <svg class="svg-icon icon-arrow-down">
-                                                        <use xlink:href="css/sprite.svg#icon-arrow-down"></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
+                            </div>
+                            <!-- item -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="item-cat-dgu">
+                                    <div class="item-title">
+                                        Высокая мощность от <a href="#">800 кВт</a>
+                                    </div>
+                                    <div class="item-img">
+                                        <a href="#">
+                                            <img src="img/category-item-03.jpg" class="img-responsive"
+                                                alt="Высокая мощность от 800 кВт"
+                                                title="Высокая мощность от 800 кВт" />
+                                        </a>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-text">
+                                            <ul class="item-list">
+                                                <li>
+                                                    <a href="#">Для транспортной инфраструктуры</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Для агропромышленного комплекса</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Для транспортной инфраструктуры</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Для агропромышленного комплекса</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Для транспортной инфраструктуры</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Для агропромышленного комплекса</a>
+                                                </li>
+                                            </ul>
+                                            <button type="button" class="item-btn-down">
+                                                <svg class="svg-icon icon-arrow-down">
+                                                    <use xlink:href="css/sprite.svg#icon-arrow-down"></use>
+                                                </svg>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -558,27 +560,27 @@
             </div>
 
             <!-- Секция: Подход к работе -->
-            <div class="frontpage-features-row frontpage-row row">
+            <div class="frontpage-features-row frontpage-row">
                 <div class="maxwidth-theme">
-                    <div class="col-md-12">
-                        <div class="section-heading">
-                            <div class="section-title">
-                                <h2 class="heading-title-name">Подход к работе</h2>
-                                <a href="#" class="heading-title-link">Подробнее
-                                    <svg class="svg-icon icon-arrow-right">
-                                        <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="section-subtitle">
-                                <p>Наше ключевое преимущество — это нестандартные решения при построении систем
-                                    резервного или автономного электропитания.</p>
-                                <p>Мы стремимся к созданию комплексных, надежных и инновационных систем, которые
-                                    соответствуют индивидуальным потребностям наших клиентов.</p>
-                            </div>
+                    <div class="section-heading">
+                        <div class="section-title">
+                            <h2 class="heading-title-name">Подход к работе</h2>
+                            <a href="#" class="heading-title-link">Подробнее
+                                <svg class="svg-icon icon-arrow-right">
+                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </a>
                         </div>
-                        <div class="section-body">
-                            <div class="features-wrapper">
+                        <div class="section-subtitle">
+                            <p>Наше ключевое преимущество — это нестандартные решения при построении систем
+                                резервного или автономного электропитания.</p>
+                            <p>Мы стремимся к созданию комплексных, надежных и инновационных систем, которые
+                                соответствуют индивидуальным потребностям наших клиентов.</p>
+                        </div>
+                    </div>
+                    <div class="section-body">
+                        <div class="features-wrapper">
+                            <div class="position-relative">
                                 <div class="flex-row">
                                     <div class="col-md-4 col-sm-6 col-xs-12">
                                         <!-- item -->
@@ -630,6 +632,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- big image -->
                                     <div class="col-md-4 hidden-sm hidden-xs">
                                         <div class="section-img">
                                             <img src="img/features-bg-01.jpg" class="img-responsive"
@@ -696,76 +699,74 @@
             </div>
 
             <!-- Секция: Категории товаров -->
-            <div class="frontpage-main-cats-row frontpage-row row">
+            <div class="frontpage-main-cats-row frontpage-row">
                 <div class="maxwidth-theme">
-                    <div class="col-md-12">
-                        <div class="section-heading">
-                            <div class="section-title">
-                                <h2 class="heading-title-name">Каталог</h2>
-                            </div>
+                    <div class="section-heading">
+                        <div class="section-title">
+                            <h2 class="heading-title-name">Каталог</h2>
                         </div>
-                        <div class="section-body">
-                            <div class="flex-row" style="--bs-gutter-y: 24px;">
-                                <!-- item -->
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="item-main-cat" id="bx_651765591_17">
-                                        <div class="item-title">
-                                            <a href="#">Дизельные электростанции<br> (ДГУ, ДЭС)</a>
-                                        </div>
-                                        <div class="item-img">
-                                            <a href="#">
-                                                <img src="img/category-item-02.jpg" class="img-responsive"
-                                                    alt="Дизельные электростанции, ДГУ, ДЭС"
-                                                    title="Дизельные электростанции, ДГУ, ДЭС" />
-                                            </a>
-                                        </div>
-                                        <div class="item-body">
-                                            <div class="item-text">
-                                                <p>Стационарная или мобильная электростанция на вашем объекте. Аварийный
-                                                    источник электроэнергии</p>
-                                            </div>
+                    </div>
+                    <div class="section-body">
+                        <div class="flex-row" style="--bs-gutter-y: 24px;">
+                            <!-- item -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="item-main-cat" id="bx_651765591_17">
+                                    <div class="item-title">
+                                        <a href="#">Дизельные электростанции<br> (ДГУ, ДЭС)</a>
+                                    </div>
+                                    <div class="item-img">
+                                        <a href="#">
+                                            <img src="img/category-item-02.jpg" class="img-responsive"
+                                                alt="Дизельные электростанции, ДГУ, ДЭС"
+                                                title="Дизельные электростанции, ДГУ, ДЭС" />
+                                        </a>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-text">
+                                            <p>Стационарная или мобильная электростанция на вашем объекте. Аварийный
+                                                источник электроэнергии</p>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- item -->
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="item-main-cat" id="bx_651765591_19">
-                                        <div class="item-title">
-                                            <a href="#">Источники бесперебойного<br> питания (ИБП)</a>
-                                        </div>
-                                        <div class="item-img">
-                                            <a href="#">
-                                                <img src="img/category-item-04.jpg" class="img-responsive"
-                                                    alt="Источники бесперебойного питания (ИБП)"
-                                                    title="Источники бесперебойного питания (ИБП)" />
-                                            </a>
-                                        </div>
-                                        <div class="item-body">
-                                            <div class="item-text">
-                                                <p>Защита основного оборудования вашей компании от некачественной
-                                                    электроэнергии или полного пропадания напряжения</p>
-                                            </div>
+                            </div>
+                            <!-- item -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="item-main-cat" id="bx_651765591_19">
+                                    <div class="item-title">
+                                        <a href="#">Источники бесперебойного<br> питания (ИБП)</a>
+                                    </div>
+                                    <div class="item-img">
+                                        <a href="#">
+                                            <img src="img/category-item-04.jpg" class="img-responsive"
+                                                alt="Источники бесперебойного питания (ИБП)"
+                                                title="Источники бесперебойного питания (ИБП)" />
+                                        </a>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-text">
+                                            <p>Защита основного оборудования вашей компании от некачественной
+                                                электроэнергии или полного пропадания напряжения</p>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- item -->
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="item-main-cat" id="bx_651765591_20">
-                                        <div class="item-title">
-                                            <a href="#">Газопоршневые установки<br> (ГПУ)</a>
-                                        </div>
-                                        <div class="item-img">
-                                            <a href="#">
-                                                <img src="img/category-item-05.jpg" class="img-responsive"
-                                                    alt="Газопоршневые установки (ГПУ)"
-                                                    title="Газопоршневые установки (ГПУ)" />
-                                            </a>
-                                        </div>
-                                        <div class="item-body">
-                                            <div class="item-text">
-                                                <p>Обеспечение потребности вашего предприятия в электроэнергии от
-                                                    собственной мини-ТЭЦ, низкая стоимость электроэнергии</p>
-                                            </div>
+                            </div>
+                            <!-- item -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="item-main-cat" id="bx_651765591_20">
+                                    <div class="item-title">
+                                        <a href="#">Газопоршневые установки<br> (ГПУ)</a>
+                                    </div>
+                                    <div class="item-img">
+                                        <a href="#">
+                                            <img src="img/category-item-05.jpg" class="img-responsive"
+                                                alt="Газопоршневые установки (ГПУ)"
+                                                title="Газопоршневые установки (ГПУ)" />
+                                        </a>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-text">
+                                            <p>Обеспечение потребности вашего предприятия в электроэнергии от
+                                                собственной мини-ТЭЦ, низкая стоимость электроэнергии</p>
                                         </div>
                                     </div>
                                 </div>
@@ -776,29 +777,27 @@
             </div>
 
             <!-- Секция: Выполненные проекты -->
-            <div class="frontpage-projects-row frontpage-row row">
+            <div class="frontpage-projects-row frontpage-row">
                 <div class="maxwidth-theme">
-                    <div class="col-md-12">
-                        <div class="section-heading">
-                            <div class="section-title">
-                                <h2 class="heading-title-name">Выполненные проекты</h2>
-                            </div>
-                            <div class="section-subtitle">
-                                <p>Специалисты нашей компании выполняют проекты по энергообеспечению и теплоснабжению
-                                    объектов для ведущих компаний России, ближнего и дальнего зарубежья. Мы сотрудничаем
-                                    с представителями малого и среднего бизнеса.</p>
-                            </div>
-                            <div class="section-button">
-                                <a href="#" class="btn btn-outline">Смотреть все проекты</a>
-                            </div>
+                    <div class="section-heading">
+                        <div class="section-title">
+                            <h2 class="heading-title-name">Выполненные проекты</h2>
+                        </div>
+                        <div class="section-subtitle">
+                            <p>Специалисты нашей компании выполняют проекты по энергообеспечению и теплоснабжению
+                                объектов для ведущих компаний России, ближнего и дальнего зарубежья. Мы сотрудничаем
+                                с представителями малого и среднего бизнеса.</p>
+                        </div>
+                        <div class="section-button">
+                            <a href="#" class="btn btn-outline">Смотреть все проекты</a>
                         </div>
                     </div>
                 </div>
                 <div class="section-body">
                     <div class="projects-wrapper">
-                        <div class="row">
+                        <div class="flex-row">
                             <!-- item -->
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="item-project">
                                     <div class="item-img">
                                         <a href="#">
@@ -826,7 +825,7 @@
                                 </div>
                             </div>
                             <!-- item -->
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="item-project">
                                     <div class="item-img">
                                         <a href="#">
@@ -854,7 +853,7 @@
                                 </div>
                             </div>
                             <!-- item -->
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="item-project">
                                     <div class="item-img">
                                         <a href="#">
@@ -882,7 +881,7 @@
                                 </div>
                             </div>
                             <!-- item -->
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="item-project">
                                     <div class="item-img">
                                         <a href="#">
@@ -915,153 +914,149 @@
             </div>
 
             <!-- Секция: Услуги -->
-            <div class="frontpage-service-row frontpage-row row">
-
+            <div class="frontpage-service-row frontpage-row">
                 <div class="service-top">
                     <div class="maxwidth-theme">
-                        <div class="col-md-12">
-                            <div class="section-heading">
-                                <div class="section-title">
-                                    <h2 class="heading-title-name">Подход к работе</h2>
-                                    <a href="#" class="heading-title-link">Подробнее
-                                        <svg class="svg-icon icon-arrow-right">
-                                            <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="section-subtitle">
-                                    <p>Компания NeuHaus предоставляет полный комплекс услуг в области резервного и автономного электропитания.</p>
-                                    <p>Наши решения охватывают все этапы создания и эксплуатации систем, начиная с предпроектного обследования и заканчивая регламентным техническим обслуживанием.</p>
-                                </div>
+                        <div class="section-heading">
+                            <div class="section-title">
+                                <h2 class="heading-title-name">Подход к работе</h2>
+                                <a href="#" class="heading-title-link">Подробнее
+                                    <svg class="svg-icon icon-arrow-right">
+                                        <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </a>
                             </div>
-                            <div class="section-body">
-                                <div class="service-wrapper">
-                                    <div class="flex-row">
-                                        <!-- item -->
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div class="item-service">
-                                                <div class="item-img">
-                                                    <svg class="svg-icon icon-electric-energy">
-                                                        <use xlink:href="css/sprite.svg#icon-electric-energy"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="item-body">
-                                                    <div class="item-title">01. Предпроектное обследование</div>
-                                                    <div class="item-text">
-                                                        <p>Мы проводим детальный анализ объекта и его особенностей, что включает в себя:</p>
-                                                        <ul>
-                                                            <li>Оценку текущего состояния систем электроснабжения;</li>
-                                                            <li>Определение потребностей и требований клиента;</li>
-                                                            <li>Сбор и анализ исходных данных для последующего проектирования.</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="item-link">
-                                                    <a href="#" class="link-more">
-                                                        <svg class="svg-icon icon-bordered-arrow-down">
-                                                            <use xlink:href="css/sprite.svg#icon-bordered-arrow-down"></use>
-                                                        </svg>
-                                                        Подробнее
-                                                    </a>
+                            <div class="section-subtitle">
+                                <p>Компания NeuHaus предоставляет полный комплекс услуг в области резервного и автономного электропитания.</p>
+                                <p>Наши решения охватывают все этапы создания и эксплуатации систем, начиная с предпроектного обследования и заканчивая регламентным техническим обслуживанием.</p>
+                            </div>
+                        </div>
+                        <div class="section-body">
+                            <div class="service-wrapper">
+                                <div class="flex-row">
+                                    <!-- item -->
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="item-service">
+                                            <div class="item-img">
+                                                <svg class="svg-icon icon-electric-energy">
+                                                    <use xlink:href="css/sprite.svg#icon-electric-energy"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item-body">
+                                                <div class="item-title">01. Предпроектное обследование</div>
+                                                <div class="item-text">
+                                                    <p>Мы проводим детальный анализ объекта и его особенностей, что включает в себя:</p>
+                                                    <ul>
+                                                        <li>Оценку текущего состояния систем электроснабжения;</li>
+                                                        <li>Определение потребностей и требований клиента;</li>
+                                                        <li>Сбор и анализ исходных данных для последующего проектирования.</li>
+                                                    </ul>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- item -->
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div class="item-service">
-                                                <div class="item-img">
-                                                    <svg class="svg-icon icon-electric-energy">
-                                                        <use xlink:href="css/sprite.svg#icon-electric-energy"></use>
+                                            <div class="item-link">
+                                                <a href="#" class="link-more">
+                                                    <svg class="svg-icon icon-bordered-arrow-down">
+                                                        <use xlink:href="css/sprite.svg#icon-bordered-arrow-down"></use>
                                                     </svg>
-                                                </div>
-                                                <div class="item-body">
-                                                    <div class="item-title">02. Разработка общих проектных решений (ОПР)</div>
-                                                    <div class="item-text">
-                                                        <p>На этом этапе разрабатываются основные концепции и подходы к реализации проекта:</p>
-                                                        <ul>
-                                                            <li>Определение общей структуры системы;</li>
-                                                            <li>Разработка схем и планов расположения оборудования;</li>
-                                                            <li>Предварительная оценка стоимости и сроков реализации.</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="item-link">
-                                                    <a href="#" class="link-more">
-                                                        <svg class="svg-icon icon-bordered-arrow-down">
-                                                            <use xlink:href="css/sprite.svg#icon-bordered-arrow-down"></use>
-                                                        </svg>
-                                                        Подробнее
-                                                    </a>
-                                                </div>
+                                                    Подробнее
+                                                </a>
                                             </div>
                                         </div>
-                                        <!-- item -->
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div class="item-service">
-                                                <div class="item-img">
-                                                    <svg class="svg-icon icon-electric-energy">
-                                                        <use xlink:href="css/sprite.svg#icon-electric-energy"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="item-body">
-                                                    <div class="item-title">03. Разработка общих проектных решений (ОПР)</div>
-                                                    <div class="item-text">
-                                                        <p>На этом этапе разрабатываются основные концепции и подходы к реализации проекта:</p>
-                                                        <ul>
-                                                            <li>Определение общей структуры системы;</li>
-                                                            <li>Предварительная оценка стоимости и сроков реализации.</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="item-link">
-                                                    <a href="#" class="link-more">
-                                                        <svg class="svg-icon icon-bordered-arrow-down">
-                                                            <use xlink:href="css/sprite.svg#icon-bordered-arrow-down"></use>
-                                                        </svg>
-                                                        Подробнее
-                                                    </a>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="item-service">
+                                            <div class="item-img">
+                                                <svg class="svg-icon icon-electric-energy">
+                                                    <use xlink:href="css/sprite.svg#icon-electric-energy"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item-body">
+                                                <div class="item-title">02. Разработка общих проектных решений (ОПР)</div>
+                                                <div class="item-text">
+                                                    <p>На этом этапе разрабатываются основные концепции и подходы к реализации проекта:</p>
+                                                    <ul>
+                                                        <li>Определение общей структуры системы;</li>
+                                                        <li>Разработка схем и планов расположения оборудования;</li>
+                                                        <li>Предварительная оценка стоимости и сроков реализации.</li>
+                                                    </ul>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- item -->
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div class="item-service">
-                                                <div class="item-img">
-                                                    <svg class="svg-icon icon-electric-energy">
-                                                        <use xlink:href="css/sprite.svg#icon-electric-energy"></use>
+                                            <div class="item-link">
+                                                <a href="#" class="link-more">
+                                                    <svg class="svg-icon icon-bordered-arrow-down">
+                                                        <use xlink:href="css/sprite.svg#icon-bordered-arrow-down"></use>
                                                     </svg>
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="item-service">
+                                            <div class="item-img">
+                                                <svg class="svg-icon icon-electric-energy">
+                                                    <use xlink:href="css/sprite.svg#icon-electric-energy"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item-body">
+                                                <div class="item-title">03. Разработка общих проектных решений (ОПР)</div>
+                                                <div class="item-text">
+                                                    <p>На этом этапе разрабатываются основные концепции и подходы к реализации проекта:</p>
+                                                    <ul>
+                                                        <li>Определение общей структуры системы;</li>
+                                                        <li>Предварительная оценка стоимости и сроков реализации.</li>
+                                                    </ul>
                                                 </div>
-                                                <div class="item-body">
-                                                    <div class="item-title">04. Разработка общих проектных решений (ОПР)</div>
-                                                    <div class="item-text">
-                                                        <p>На этом этапе разрабатываются основные концепции и подходы к реализации проекта:</p>
-                                                        <ul>
-                                                            <li>Определение общей структуры системы;</li>
-                                                            <li>Разработка схем и планов расположения оборудования;</li>
-                                                        </ul>
-                                                    </div>
+                                            </div>
+                                            <div class="item-link">
+                                                <a href="#" class="link-more">
+                                                    <svg class="svg-icon icon-bordered-arrow-down">
+                                                        <use xlink:href="css/sprite.svg#icon-bordered-arrow-down"></use>
+                                                    </svg>
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="item-service">
+                                            <div class="item-img">
+                                                <svg class="svg-icon icon-electric-energy">
+                                                    <use xlink:href="css/sprite.svg#icon-electric-energy"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item-body">
+                                                <div class="item-title">04. Разработка общих проектных решений (ОПР)</div>
+                                                <div class="item-text">
+                                                    <p>На этом этапе разрабатываются основные концепции и подходы к реализации проекта:</p>
+                                                    <ul>
+                                                        <li>Определение общей структуры системы;</li>
+                                                        <li>Разработка схем и планов расположения оборудования;</li>
+                                                    </ul>
                                                 </div>
-                                                <div class="item-link">
-                                                    <a href="#" class="link-more">
-                                                        <svg class="svg-icon icon-bordered-arrow-down">
-                                                            <use xlink:href="css/sprite.svg#icon-bordered-arrow-down"></use>
-                                                        </svg>
-                                                        Подробнее
-                                                    </a>
-                                                </div>
+                                            </div>
+                                            <div class="item-link">
+                                                <a href="#" class="link-more">
+                                                    <svg class="svg-icon icon-bordered-arrow-down">
+                                                        <use xlink:href="css/sprite.svg#icon-bordered-arrow-down"></use>
+                                                    </svg>
+                                                    Подробнее
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="service-buttons order-md-first">
-                                    <a href="#" class="btn btn-outline">Смотреть все услуги</a>
-                                    <a href="#" class="btn btn-default">Заказать услугу</a>
-                                </div>
+                            </div>
+                            <div class="service-buttons order-md-first">
+                                <a href="#" class="btn btn-outline">Смотреть все услуги</a>
+                                <a href="#" class="btn btn-default">Заказать услугу</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="service-bottom">
                     <div class="maxwidth-theme">
                         <div class="flex-row">
@@ -1077,14 +1072,29 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <!-- Секция: Табы основные категории -->
+            <div class="frontpage-row">
+                <div class="maxwidth-theme">
+                    <div class="section-heading">
+                        <div class="section-title">
+                            <h2 class="heading-title-name">Основные категории оборудования</h2>
+                        </div>
+                    </div>
+                    <div class="section-body">
+                        ТАБЫ
+                    </div>
+                </div>
             </div>
 
             <!-- Секция: Наши партнеры -->
-            <div class="frontpage-partners-row frontpage-row row">
-                <div class="section-heading">
-                    <div class="section-title">
-                        <h2 class="heading-title-name">Партнеры</h2>
+            <div class="frontpage-partners-row frontpage-row">
+                <div class="maxwidth-theme">
+                    <div class="section-heading">
+                        <div class="section-title">
+                            <h2 class="heading-title-name">Партнеры</h2>
+                        </div>
                     </div>
                 </div>
                 <div class="partners front">
@@ -1095,7 +1105,7 @@
                             "slideshow": true,
                             "slideshowSpeed": 5000,
                             "animationSpeed": 600,
-                            "counts": [7, 4, 3]
+                            "counts": [6, 4, 2]
                         }'>
                         <ul class="slides items">
                             <li>
@@ -1179,92 +1189,90 @@
             </div>
 
             <!-- Секция: Сертификаты и Новости -->
-            <div class="frontpage-news-row frontpage-row row">
+            <div class="frontpage-news-row frontpage-row">
                 <div class="maxwidth-theme">
-                    <div class="col-md-12">
-                        <div class="section-heading">
-                            <div class="section-title">
-                                <h2 class="heading-title-name">СМИ</h2>
-                                <a href="#" class="heading-title-link">Подробнее
-                                    <svg class="svg-icon icon-arrow-right">
-                                        <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                    <div class="section-heading">
+                        <div class="section-title">
+                            <h2 class="heading-title-name">СМИ</h2>
+                            <a href="#" class="heading-title-link">Подробнее
+                                <svg class="svg-icon icon-arrow-right">
+                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </a>
                         </div>
-                        <div class="section-body">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="item-big-news" id="bx_3099439860_118">
+                    </div>
+                    <div class="section-body">
+                        <div class="flex-row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="item-big-news" id="bx_3099439860_118">
+                                    <div class="item-img">
+                                        <a href="#" class="blink">
+                                            <img src="img/blog-item-hero-01.jpg" class="img-responsive"
+                                                alt="Высоковольтная дизельная электростанция для межтерминального перехода в Международном Аэропорту «Шереметьево»"
+                                                title="Высоковольтная дизельная электростанция для межтерминального перехода в Международном Аэропорту «Шереметьево»" />
+                                        </a>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-title">
+                                            <a href="#">Высоковольтная дизельная электростанция для межтерминального
+                                                перехода в Международном Аэропорту «Шереметьево»</a>
+                                        </div>
+                                        <div class="item-date">9 октября 2017</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="sert-wrapper">
+                                    <div class="sert-items">
+                                        <div class="item-sert">
+                                            <img src="images/NeuHaus_DISTRIBUTOR_4_years_letter.jpg"
+                                                class="img-responsive" alt="Сертификат 2" />
+                                        </div>
+                                        <div class="item-sert">
+                                            <img src="images/20wilson.jpg" class="img-responsive"
+                                                alt="Сертификат 1" />
+                                        </div>
+                                    </div>
+                                    <div class="sert-link">
+                                        <a href="#">Сертификаты
+                                            <svg class="svg-icon icon-arrow-right">
+                                                <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news-wrapper">
+                                    <div class="item-news" id="bx_3099439860_119">
                                         <div class="item-img">
                                             <a href="#" class="blink">
-                                                <img src="img/blog-item-hero-01.jpg" class="img-responsive"
-                                                    alt="Высоковольтная дизельная электростанция для межтерминального перехода в Международном Аэропорту «Шереметьево»"
-                                                    title="Высоковольтная дизельная электростанция для межтерминального перехода в Международном Аэропорту «Шереметьево»" />
+                                                <img src="img/blog-item-01.jpg" class="img-responsive"
+                                                    alt="Компания НойХаус приняла участие в международном саммите дистрибуторов MWM, который прошел в сентябре 2017 года в г. Крайлхайм в Германии."
+                                                    title="Компания НойХаус приняла участие в международном саммите дистрибуторов MWM, который прошел в сентябре 2017 года в г. Крайлхайм в Германии." />
                                             </a>
                                         </div>
                                         <div class="item-body">
                                             <div class="item-title">
-                                                <a href="#">Высоковольтная дизельная электростанция для межтерминального
-                                                    перехода в Международном Аэропорту «Шереметьево»</a>
+                                                <a href="#">Компания НойХаус приняла участие в международном саммите
+                                                    дистрибуторов MWM, который прошел в сентябре 2017 года в г.
+                                                    Крайлхайм в Германии.</a>
                                             </div>
                                             <div class="item-date">9 октября 2017</div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="sert-wrapper">
-                                        <div class="sert-items">
-                                            <div class="item-sert">
-                                                <img src="images/NeuHaus_DISTRIBUTOR_4_years_letter.jpg"
-                                                    class="img-responsive" alt="Сертификат 2" />
-                                            </div>
-                                            <div class="item-sert">
-                                                <img src="images/20wilson.jpg" class="img-responsive"
-                                                    alt="Сертификат 1" />
-                                            </div>
-                                        </div>
-                                        <div class="sert-link">
-                                            <a href="#">Сертификаты
-                                                <svg class="svg-icon icon-arrow-right">
-                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
-                                                </svg>
+                                    <div class="item-news" id="bx_3099439860_631">
+                                        <div class="item-img">
+                                            <a href="#" class="blink">
+                                                <img src="img/blog-item-02.jpg" class="img-responsive"
+                                                    alt="4,5 МВА резервной мощности для IQ квартала Москвы-Сити"
+                                                    title="4,5 МВА резервной мощности для IQ квартала Москвы-Сити" />
                                             </a>
                                         </div>
-                                    </div>
-                                    <div class="news-wrapper">
-                                        <div class="item-news" id="bx_3099439860_119">
-                                            <div class="item-img">
-                                                <a href="#" class="blink">
-                                                    <img src="img/blog-item-01.jpg" class="img-responsive"
-                                                        alt="Компания НойХаус приняла участие в международном саммите дистрибуторов MWM, который прошел в сентябре 2017 года в г. Крайлхайм в Германии."
-                                                        title="Компания НойХаус приняла участие в международном саммите дистрибуторов MWM, который прошел в сентябре 2017 года в г. Крайлхайм в Германии." />
-                                                </a>
+                                        <div class="item-body">
+                                            <div class="item-title">
+                                                <a href="#">4,5 МВА резервной мощности для IQ квартала
+                                                    Москвы-Сити</a>
                                             </div>
-                                            <div class="item-body">
-                                                <div class="item-title">
-                                                    <a href="#">Компания НойХаус приняла участие в международном саммите
-                                                        дистрибуторов MWM, который прошел в сентябре 2017 года в г.
-                                                        Крайлхайм в Германии.</a>
-                                                </div>
-                                                <div class="item-date">9 октября 2017</div>
-                                            </div>
-                                        </div>
-                                        <div class="item-news" id="bx_3099439860_631">
-                                            <div class="item-img">
-                                                <a href="#" class="blink">
-                                                    <img src="img/blog-item-02.jpg" class="img-responsive"
-                                                        alt="4,5 МВА резервной мощности для IQ квартала Москвы-Сити"
-                                                        title="4,5 МВА резервной мощности для IQ квартала Москвы-Сити" />
-                                                </a>
-                                            </div>
-                                            <div class="item-body">
-                                                <div class="item-title">
-                                                    <a href="#">4,5 МВА резервной мощности для IQ квартала
-                                                        Москвы-Сити</a>
-                                                </div>
-                                                <div class="item-date">16 мая 2017</div>
-                                            </div>
+                                            <div class="item-date">16 мая 2017</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1275,279 +1283,277 @@
             </div>
 
             <!-- Секция: СЕО текст -->
-            <div class="frontpage-seo-row frontpage-row row">
+            <div class="frontpage-seo-row frontpage-row">
                 <div class="maxwidth-theme">
-                    <div class="col-md-12">
-                        <div class="section-body">
-                            <div class="section-heading">
-                                <div class="section-title">
-                                    <h1 class="heading-title-name">Электроснабжение ДЭС, ДГУ от NeuHaus</h1>
-                                </div>
-                                <div class="section-subtitle">
-                                    <p>Компания NeuHaus существует на рынке более 20 лет, за это время клиентами
-                                        холдинга стали крупные государственные учреждения и многочисленные коммерческие
-                                        организации.</p>
-                                </div>
+                    <div class="section-body">
+                        <div class="section-heading">
+                            <div class="section-title">
+                                <h1 class="heading-title-name">Электроснабжение ДЭС, ДГУ от NeuHaus</h1>
                             </div>
-                            <div class="section-text">
-                                <p>
-                                    В арсенале холдинга есть все необходимое для проектирования, создания, установки и
-                                    обслуживания таких устройств,
-                                    как <a href="/products/dgu/">дизельные электростанции</a>, ДЭС, ДГУ, ГПУ, источники
-                                    бесперебойного питания, а
-                                    также газопоршневые установки. Наши инженеры постоянно разрабатывают новые
-                                    креативные решения, консультанты
-                                    всегда смогут подобрать решение для любого проекта.
-                                </p>
-                                <p>
-                                    В портфолио холдинга Neuhaus имеется уже множество выполненных проектов. Среди наших
-                                    работ электроснабжение
-                                    таких видных брендов, как торговые сети МосМарт, Metro, Рамстор. Также можно
-                                    отметить Центральное Таможенное
-                                    управление и крупные промышленные предприятия, офисные и деловые центры.
-                                    Кроме того, мы предлагаем продукцию от следующих ведущих брендов:
-                                </p>
-                                <ul>
-                                    <li>&nbsp;<b>дизельные генераторы, </b>ДЭС от Cummins (компания предоставляет
-                                        длительное гарантийное
-                                        обслуживание, основная часть ассортимента — тяжелые промышленные установки);
-                                    </li>
-                                    <li>&nbsp;<b>ДГУ от Aksa</b> (очень просты в эксплуатации, хорошо адаптированы для
-                                        нашего климата, отлично
-                                        синхронизируются с системами других брендов);</li>
-                                    <li>&nbsp;<b>дизельные электростанции, </b>ДГУ FG Wilson (работают почти без шума, в
-                                        каталоге много моделей
-                                        небольшой мощности).</li>
-                                </ul>
-                                <p>
-                                    Для наших клиентов мы постоянно проводим различные акции. Учитывая скидки, на многие
-                                    электрогенераторы мы можем
-                                    предложить одну из лучших на рынке цен.
-                                </p>
-                                <h2>ДГУ, ДЭС для постоянного и аварийного электроснабжения</h2>
-                                <p>
-                                    <b>Дизельные генераторы</b> (ДГУ) Neuhaus представляют собой автономные
-                                    электрогенераторы постоянного тока,
-                                    которые работают на солярке — недорогом и надежном топливе.
-                                    Разновидности поставки дизельных генераторов:
-                                </p>
-                                <ul>
-                                    <li>&nbsp;открытые ДЭС, ДГУ (такие модели подходят для монтажа в хорошо защищенных
-                                        помещениях, ощутимый плюс —
-                                        свободный доступ к аппаратуре, поскольку дизельную электростанцию устанавливают
-                                        на монолитную металлическую
-                                        раму);</li>
-                                    <li>&nbsp;закрытые ДГУ, ДЭС (поставляются в специальном контейнере, который
-                                        обеспечит сохранность дизельных
-                                        электростанций в экстремальных условиях, вроде холодного севера или, напротив,
-                                        жарких южных пустынь);</li>
-                                    <li>&nbsp;мобильные (такие ДЭС, ДГУ устанавливаются на шасси, следовательно, их
-                                        можно отвезти куда угодно).</li>
-                                </ul>
-                                <p>
-                                    При желании есть возможность существенно расширить возможности прибора, для этого
-                                    аппарат может быть
-                                    укомплектован защитным кожухом, несколькими баками для топлива, а также пультом для
-                                    управления на расстоянии.
-                                    Если возникнет необходимость, можно заказать осмотр и ремонт в сервисном центре, все
-                                    нужные запчасти всегда есть
-                                    в наличии на складе.
-                                </p>
-                                <p>
-                                </p>
-                                <h2>
-                                    Мобильные дизельные электростанции </h2>
-                                <p>
-                                    Иногда возникает экстренная необходимость в источнике электрической энергии, а взять
-                                    его негде, в такой ситуации
-                                    помогут мобильные дизельные электростанции — портативные генераторы, которые
-                                    монтируются на специальном прицепе.
-                                    Аппарат можно очень быстро доставить в нужное место с помощью автомобиля.
-                                </p>
-                                <p>
-                                    Поскольку такими ДГУ обычно используются в областях, где надежность — обязательное
-                                    условие, стоит очень
-                                    тщательно выбирать производителя. Сотрудники силовых ведомств и МЧС, медики и
-                                    строители предпочитают аппараты
-                                    для генерации электричества от известных брендов, это:
-                                </p>
-                                <p>
-                                </p>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            &nbsp; Aksa (данная турецкая компания предлагает достаточно дешевые
-                                            дизельные электростанции на шасси,
-                                            качество не уступает американским и европейским аналогам);
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            &nbsp; NeuHaus (на территории РФ оборудование от этой фирмы пользуется
-                                            заслуженной популярностью,
-                                            благодаря тому, что производство расположено в нашей стране, цена более чем
-                                            приемлемая);
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            &nbsp; FG Wilson (характерная черта — максимально широкий модельный ряд, вы
-                                            сможете легко выбрать
-                                            устройство подходящей мощности);
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            &nbsp; Cummins (преимущество этих дизельных электростанций на шасси —
-                                            хороший выбор модулей, добавляющих
-                                            дополнительные функции).
-                                        </p>
-                                    </li>
-                                </ul>
-                                <p></p>
-                                <p>
-                                    Мы оказываем полный спектр услуг по разработке и реализации проектов электросетей
-                                    для любых объектов — от
-                                    крупных производственных комплексов до маленьких заводов, для которых большие
-                                    мощности просто не нужны.
-                                </p>
-                                <p>
-                                    После монтажа наше сотрудничество будет продолжаться в формате сервисной поддержки,
-                                    в случае возникновения
-                                    необходимости мастера в кратчайшие сроки починят вашу мобильную дизельную
-                                    электростанцию.
-                                </p>
-                                <p></p>
-                                <h2>
-                                    Контейнерные дизель электростанции</h2>
-                                <p>
-                                    Для обеспечения электрической энергией промышленных объектов, удаленных от местных
-                                    электросетей, отлично
-                                    подходят контейнерные дизельные электростанции. Такое решение позволит сэкономить за
-                                    счет высокой
-                                    производительности и невысокой стоимости топлива, подключение к местной электросети,
-                                    скорее всего, потребует
-                                    вложения значительных денежных средств.
-                                </p>
-                                <p>
-                                    Защитный корпус позволит установить генератор в местности со сложными природными
-                                    условиями, длина и ширина
-                                    конструкции в значительной степени зависят от мощности прибора, а также
-                                    дополнительных модулей, таких как
-                                    система пожаротушения, сигнализация, также на этот параметр влияет наличие слоев
-                                    утеплителя.
-                                </p>
-                                <p>
-                                    Перечислим главные преимущества дизельных электростанций контейнерного исполнения,
-                                    это:
-                                </p>
-                                <p></p>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            &nbsp; оперативность (использовать устройство можно сразу после установки и
-                                            подключения);
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            &nbsp; простота транспортировки (для перевозки аппарата отлично подходит
-                                            любой автомобиль);
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            &nbsp; универсальность (ДГУ может функционировать в любых условиях, корпус
-                                            обеспечит защиту от
-                                            воздействия негативных факторов окружающей среды).
-                                        </p>
-                                    </li>
-                                </ul>
-                                <p></p>
-                                <p>
-                                    Главный критерий выбора — мощность, одна производительная дизельная электростанция
-                                    контейнерного исполнения
-                                    сможет обеспечить электроэнергией крупный промышленный объект или большой поселок.
-                                </p>
-                                <p>
-                                    Современные генераторы прекрасно работают на топливе, которое продается на любых
-                                    бензиновых заправках во всех
-                                    областях РФ, а также в странах СНГ.
-                                </p>
-                                <p></p>
-                                <p></p>
-                                <h2>Газопоршневые установки альтернатива для электроснабжения</h2>
-                                <p>
-                                    В ином случае можно присмотреться к газопоршневым установкам (ГПУ) — это
-                                    электрогенераторы, которые работают на
-                                    природном или синтетическом газу. Для продвинутых моделей подходит даже мусорном
-                                    газу.
-                                    Современные <b>газопоршневые электростанции</b> обязательно имеют интеллектуальную
-                                    систему управления, что
-                                    позволяет добиться следующих преимуществ:
-                                </p>
-                                <ul>
-                                    <li>&nbsp;производительность (можно легко подобрать вариант для любого объекта);
-                                    </li>
-                                    <li>&nbsp;экономия топлива (система выбирает режим в зависимости от нагрузки,
-                                        конструкция двигателей значительно
-                                        уменьшает конечную стоимость электричества);</li>
-                                    <li>&nbsp;экологичность (вредные выбросу в атмосферу сведены к минимуму, поскольку
-                                        газ перерабатывается почти
-                                        полностью).</li>
-                                </ul>
-                                <p>
-                                    Тем не менее, особенность газопоршневых установок в том, что их необходимо
-                                    устанавливать на очень устойчивые
-                                    бетонные опоры, что связано с тем, что аппараты достаточно сильно вибрируют.
-                                    <a href="/products/gpu/">Газопоршневые установки</a> (ГПУ) отлично переносят
-                                    многочисленные частые запуски, они
-                                    имеют отличную устойчивость к высоким и низким температурам. Управлять всеми
-                                    функциями газопоршневых установок с
-                                    удобством можно из диспетчерского пункта, где имеется пульт.
-                                    Если требуется очень высокая мощность, при необходимости можно подключить несколько
-                                    электрогенерирующих
-                                    установок одновременно.
-                                </p>
-                                <h2>Источники бесперебойного питания — спасет от всех проблем с электроэнергией</h2>
-                                <p>
-                                    Источники бесперебойного питания (ИБП) применяется для компенсации скачков
-                                    электрической энергии в сети,
-                                    импульсные скачки тока могут привести к резкому выключению и поломке дорогого
-                                    оборудования.
-                                    Для компенсации резкой нехватки электроэнергии и нужны источники бесперебойного
-                                    питания, основной их элемент —
-                                    аккумулятор, главный же параметр ИБП — емкость батареи. В зависимости от
-                                    потребностей можно выбрать из следующих
-                                    разновидностей источников бесперебойного питаний:
-                                </p>
-                                <ul>
-                                    <li>&nbsp;резервные (активируются в случае необходимости, если в сети исчезает
-                                        напряжение, как правило, стоят
-                                        недорого);</li>
-                                    <li>&nbsp;линейные (нужны для компенсации внезапной сильной нагрузки на входе,
-                                        способны удерживать показатель
-                                        напряжения на необходимом уровне);</li>
-                                    <li>&nbsp;стабилизирующие (имеют фильтры и аккумуляторы, следовательно, могут
-                                        понижать и повышать напряжение на
-                                        входе с зависимости от необходимости).</li>
-                                </ul>
-                                <p>
-                                    В случае нужды стоит задуматься об установке дополнительных комплектующих, таких как
-                                    защита от грозы или
-                                    «холодный» старт (источник бесперебойного питания может активироваться даже в
-                                    случае, если в сети внезапно
-                                    полностью исчезнет напряжение).
-                                </p>
+                            <div class="section-subtitle">
+                                <p>Компания NeuHaus существует на рынке более 20 лет, за это время клиентами
+                                    холдинга стали крупные государственные учреждения и многочисленные коммерческие
+                                    организации.</p>
                             </div>
-                            <div class="section-link">
-                                <a href="#" class="show-text-link">
-                                    <svg class="svg-icon icon-bordered-arrow-down">
-                                        <use xlink:href="css/sprite.svg#icon-bordered-arrow-down"></use>
-                                    </svg>
-                                    Подробнее
-                                </a>
-                            </div>
+                        </div>
+                        <div class="section-text">
+                            <p>
+                                В арсенале холдинга есть все необходимое для проектирования, создания, установки и
+                                обслуживания таких устройств,
+                                как <a href="/products/dgu/">дизельные электростанции</a>, ДЭС, ДГУ, ГПУ, источники
+                                бесперебойного питания, а
+                                также газопоршневые установки. Наши инженеры постоянно разрабатывают новые
+                                креативные решения, консультанты
+                                всегда смогут подобрать решение для любого проекта.
+                            </p>
+                            <p>
+                                В портфолио холдинга Neuhaus имеется уже множество выполненных проектов. Среди наших
+                                работ электроснабжение
+                                таких видных брендов, как торговые сети МосМарт, Metro, Рамстор. Также можно
+                                отметить Центральное Таможенное
+                                управление и крупные промышленные предприятия, офисные и деловые центры.
+                                Кроме того, мы предлагаем продукцию от следующих ведущих брендов:
+                            </p>
+                            <ul>
+                                <li>&nbsp;<b>дизельные генераторы, </b>ДЭС от Cummins (компания предоставляет
+                                    длительное гарантийное
+                                    обслуживание, основная часть ассортимента — тяжелые промышленные установки);
+                                </li>
+                                <li>&nbsp;<b>ДГУ от Aksa</b> (очень просты в эксплуатации, хорошо адаптированы для
+                                    нашего климата, отлично
+                                    синхронизируются с системами других брендов);</li>
+                                <li>&nbsp;<b>дизельные электростанции, </b>ДГУ FG Wilson (работают почти без шума, в
+                                    каталоге много моделей
+                                    небольшой мощности).</li>
+                            </ul>
+                            <p>
+                                Для наших клиентов мы постоянно проводим различные акции. Учитывая скидки, на многие
+                                электрогенераторы мы можем
+                                предложить одну из лучших на рынке цен.
+                            </p>
+                            <h2>ДГУ, ДЭС для постоянного и аварийного электроснабжения</h2>
+                            <p>
+                                <b>Дизельные генераторы</b> (ДГУ) Neuhaus представляют собой автономные
+                                электрогенераторы постоянного тока,
+                                которые работают на солярке — недорогом и надежном топливе.
+                                Разновидности поставки дизельных генераторов:
+                            </p>
+                            <ul>
+                                <li>&nbsp;открытые ДЭС, ДГУ (такие модели подходят для монтажа в хорошо защищенных
+                                    помещениях, ощутимый плюс —
+                                    свободный доступ к аппаратуре, поскольку дизельную электростанцию устанавливают
+                                    на монолитную металлическую
+                                    раму);</li>
+                                <li>&nbsp;закрытые ДГУ, ДЭС (поставляются в специальном контейнере, который
+                                    обеспечит сохранность дизельных
+                                    электростанций в экстремальных условиях, вроде холодного севера или, напротив,
+                                    жарких южных пустынь);</li>
+                                <li>&nbsp;мобильные (такие ДЭС, ДГУ устанавливаются на шасси, следовательно, их
+                                    можно отвезти куда угодно).</li>
+                            </ul>
+                            <p>
+                                При желании есть возможность существенно расширить возможности прибора, для этого
+                                аппарат может быть
+                                укомплектован защитным кожухом, несколькими баками для топлива, а также пультом для
+                                управления на расстоянии.
+                                Если возникнет необходимость, можно заказать осмотр и ремонт в сервисном центре, все
+                                нужные запчасти всегда есть
+                                в наличии на складе.
+                            </p>
+                            <p>
+                            </p>
+                            <h2>
+                                Мобильные дизельные электростанции </h2>
+                            <p>
+                                Иногда возникает экстренная необходимость в источнике электрической энергии, а взять
+                                его негде, в такой ситуации
+                                помогут мобильные дизельные электростанции — портативные генераторы, которые
+                                монтируются на специальном прицепе.
+                                Аппарат можно очень быстро доставить в нужное место с помощью автомобиля.
+                            </p>
+                            <p>
+                                Поскольку такими ДГУ обычно используются в областях, где надежность — обязательное
+                                условие, стоит очень
+                                тщательно выбирать производителя. Сотрудники силовых ведомств и МЧС, медики и
+                                строители предпочитают аппараты
+                                для генерации электричества от известных брендов, это:
+                            </p>
+                            <p>
+                            </p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        &nbsp; Aksa (данная турецкая компания предлагает достаточно дешевые
+                                        дизельные электростанции на шасси,
+                                        качество не уступает американским и европейским аналогам);
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        &nbsp; NeuHaus (на территории РФ оборудование от этой фирмы пользуется
+                                        заслуженной популярностью,
+                                        благодаря тому, что производство расположено в нашей стране, цена более чем
+                                        приемлемая);
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        &nbsp; FG Wilson (характерная черта — максимально широкий модельный ряд, вы
+                                        сможете легко выбрать
+                                        устройство подходящей мощности);
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        &nbsp; Cummins (преимущество этих дизельных электростанций на шасси —
+                                        хороший выбор модулей, добавляющих
+                                        дополнительные функции).
+                                    </p>
+                                </li>
+                            </ul>
+                            <p></p>
+                            <p>
+                                Мы оказываем полный спектр услуг по разработке и реализации проектов электросетей
+                                для любых объектов — от
+                                крупных производственных комплексов до маленьких заводов, для которых большие
+                                мощности просто не нужны.
+                            </p>
+                            <p>
+                                После монтажа наше сотрудничество будет продолжаться в формате сервисной поддержки,
+                                в случае возникновения
+                                необходимости мастера в кратчайшие сроки починят вашу мобильную дизельную
+                                электростанцию.
+                            </p>
+                            <p></p>
+                            <h2>
+                                Контейнерные дизель электростанции</h2>
+                            <p>
+                                Для обеспечения электрической энергией промышленных объектов, удаленных от местных
+                                электросетей, отлично
+                                подходят контейнерные дизельные электростанции. Такое решение позволит сэкономить за
+                                счет высокой
+                                производительности и невысокой стоимости топлива, подключение к местной электросети,
+                                скорее всего, потребует
+                                вложения значительных денежных средств.
+                            </p>
+                            <p>
+                                Защитный корпус позволит установить генератор в местности со сложными природными
+                                условиями, длина и ширина
+                                конструкции в значительной степени зависят от мощности прибора, а также
+                                дополнительных модулей, таких как
+                                система пожаротушения, сигнализация, также на этот параметр влияет наличие слоев
+                                утеплителя.
+                            </p>
+                            <p>
+                                Перечислим главные преимущества дизельных электростанций контейнерного исполнения,
+                                это:
+                            </p>
+                            <p></p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        &nbsp; оперативность (использовать устройство можно сразу после установки и
+                                        подключения);
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        &nbsp; простота транспортировки (для перевозки аппарата отлично подходит
+                                        любой автомобиль);
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        &nbsp; универсальность (ДГУ может функционировать в любых условиях, корпус
+                                        обеспечит защиту от
+                                        воздействия негативных факторов окружающей среды).
+                                    </p>
+                                </li>
+                            </ul>
+                            <p></p>
+                            <p>
+                                Главный критерий выбора — мощность, одна производительная дизельная электростанция
+                                контейнерного исполнения
+                                сможет обеспечить электроэнергией крупный промышленный объект или большой поселок.
+                            </p>
+                            <p>
+                                Современные генераторы прекрасно работают на топливе, которое продается на любых
+                                бензиновых заправках во всех
+                                областях РФ, а также в странах СНГ.
+                            </p>
+                            <p></p>
+                            <p></p>
+                            <h2>Газопоршневые установки альтернатива для электроснабжения</h2>
+                            <p>
+                                В ином случае можно присмотреться к газопоршневым установкам (ГПУ) — это
+                                электрогенераторы, которые работают на
+                                природном или синтетическом газу. Для продвинутых моделей подходит даже мусорном
+                                газу.
+                                Современные <b>газопоршневые электростанции</b> обязательно имеют интеллектуальную
+                                систему управления, что
+                                позволяет добиться следующих преимуществ:
+                            </p>
+                            <ul>
+                                <li>&nbsp;производительность (можно легко подобрать вариант для любого объекта);
+                                </li>
+                                <li>&nbsp;экономия топлива (система выбирает режим в зависимости от нагрузки,
+                                    конструкция двигателей значительно
+                                    уменьшает конечную стоимость электричества);</li>
+                                <li>&nbsp;экологичность (вредные выбросу в атмосферу сведены к минимуму, поскольку
+                                    газ перерабатывается почти
+                                    полностью).</li>
+                            </ul>
+                            <p>
+                                Тем не менее, особенность газопоршневых установок в том, что их необходимо
+                                устанавливать на очень устойчивые
+                                бетонные опоры, что связано с тем, что аппараты достаточно сильно вибрируют.
+                                <a href="/products/gpu/">Газопоршневые установки</a> (ГПУ) отлично переносят
+                                многочисленные частые запуски, они
+                                имеют отличную устойчивость к высоким и низким температурам. Управлять всеми
+                                функциями газопоршневых установок с
+                                удобством можно из диспетчерского пункта, где имеется пульт.
+                                Если требуется очень высокая мощность, при необходимости можно подключить несколько
+                                электрогенерирующих
+                                установок одновременно.
+                            </p>
+                            <h2>Источники бесперебойного питания — спасет от всех проблем с электроэнергией</h2>
+                            <p>
+                                Источники бесперебойного питания (ИБП) применяется для компенсации скачков
+                                электрической энергии в сети,
+                                импульсные скачки тока могут привести к резкому выключению и поломке дорогого
+                                оборудования.
+                                Для компенсации резкой нехватки электроэнергии и нужны источники бесперебойного
+                                питания, основной их элемент —
+                                аккумулятор, главный же параметр ИБП — емкость батареи. В зависимости от
+                                потребностей можно выбрать из следующих
+                                разновидностей источников бесперебойного питаний:
+                            </p>
+                            <ul>
+                                <li>&nbsp;резервные (активируются в случае необходимости, если в сети исчезает
+                                    напряжение, как правило, стоят
+                                    недорого);</li>
+                                <li>&nbsp;линейные (нужны для компенсации внезапной сильной нагрузки на входе,
+                                    способны удерживать показатель
+                                    напряжения на необходимом уровне);</li>
+                                <li>&nbsp;стабилизирующие (имеют фильтры и аккумуляторы, следовательно, могут
+                                    понижать и повышать напряжение на
+                                    входе с зависимости от необходимости).</li>
+                            </ul>
+                            <p>
+                                В случае нужды стоит задуматься об установке дополнительных комплектующих, таких как
+                                защита от грозы или
+                                «холодный» старт (источник бесперебойного питания может активироваться даже в
+                                случае, если в сети внезапно
+                                полностью исчезнет напряжение).
+                            </p>
+                        </div>
+                        <div class="section-link">
+                            <a href="#" class="show-text-link">
+                                <svg class="svg-icon icon-bordered-arrow-down">
+                                    <use xlink:href="css/sprite.svg#icon-bordered-arrow-down"></use>
+                                </svg>
+                                Подробнее
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1560,14 +1566,11 @@
     <!-- end div body -->
 
     <footer id="footer">
-
         <div id="bxdynamic_footer-subscribe_start" style="display:none"></div>
         <div id="bxdynamic_footer-subscribe_end" style="display:none"></div>
-
         <div class="footer-main">
             <div class="maxwidth-theme">
                 <div class="flex-row">
-
                     <!-- logo -->
                     <div class="col-md-2 col-sm-6 col-xs-5">
                         <div class="footer-logo">
@@ -1579,7 +1582,6 @@
                             107045 Москва,<br> Даев переулок дом 20
                         </div>
                     </div>
-
                     <!-- contacts -->
                     <div class="col-md-3 col-sm-6 col-xs-7 order-md-last">
                         <div class="info">
@@ -1591,7 +1593,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- menu -->
                     <div class="col-md-7 col-sm-12 col-xs-12">
                         <div class="footer-navs-wrapper">
@@ -1629,11 +1630,9 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-
         <div class="footer-bottom">
             <div class="maxwidth-theme">
                 <div class="flex-row">
@@ -1649,7 +1648,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
 
     <div class="bx_areas"></div>
