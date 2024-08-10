@@ -547,14 +547,9 @@ label[for="processing_approval"] {
   font-weight: 400;
   color: #0d969b;
 }
-@media (max-width: 430px) {
-  .city-switcher {
-    text-align: right;
-  }
-}
 @media (max-width: 767px) {
   .city-switcher {
-    margin-top: 8px;
+    text-align: right;
   }
   .city-switcher > div {
     display: inline-block;
@@ -1272,6 +1267,7 @@ header.fixed .logo-row .top-callback .callback .btn-default.white {
 }
 .banners-big .slides li {
   height: 400px;
+  background-size: cover !important;
 }
 @media (max-width: 767px) {
   .banners-big .slides li {

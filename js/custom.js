@@ -31,3 +31,8 @@ $('.frontpage-seo-row .show-text-link').on('click', function (e) {
     $('.frontpage-seo-row .section-text').toggleClass('expanded');
     $('.frontpage-seo-row .show-text-link').toggleClass('rotated');
 });
+
+$('#tabs-example a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+});

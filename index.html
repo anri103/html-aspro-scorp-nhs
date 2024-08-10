@@ -196,6 +196,25 @@
                                                             <a class="" href="#" title="Контакты">Контакты</a>
                                                         </div>
                                                     </td>
+                                                    <!-- ================== -->
+                                                    <!-- Удаленные элементы -->
+                                                    <!-- ================== -->
+                                                    <td class="dropdown js-dropdown nosave" style="display:none;">
+                                                        <div class="wrap">
+                                                            <a class="dropdown-toggle more-items" href="#">
+                                                                <span>...</span>
+                                                            </a>
+                                                            <span class="tail"></span>
+                                                            <ul class="dropdown-menu"></ul>
+                                                        </div>
+                                                    </td>
+                                                    <td class="search-item nosave">
+                                                        <div class="wrap">
+                                                            <a href="#" class="search-icon pull-left" title="Поиск по сайту">
+                                                                <i class="fa fa-search"></i>
+                                                            </a>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                             </table>
                                         </div>
@@ -265,6 +284,25 @@
                             </div>
                         </div>
                     </div>
+                    <!-- ================== -->
+                    <!-- Удаленные элементы -->
+                    <!-- ================== -->
+                    <div class="search hide" id="title-search">
+                        <div class="maxwidth-theme">
+                            <div class="col-md-12">
+                                <form action="/search/">
+                                    <div class="search-input-div">
+                                        <input class="search-input" id="title-search-input" type="text" name="q" value="" placeholder="Найти" size="40" maxlength="50" autocomplete="off" />
+                                    </div>
+                                    <div class="search-button-div">
+                                        <button class="btn btn-search btn-default" type="submit" name="s" value="Найти">Найти</button>
+                                        <span class="fa fa-close" title="Закрыть"></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="line-row visible-xs"></div>
@@ -292,7 +330,7 @@
                             }'>
                             <ul class="slides items">
                                 <li class="item" id="bx_3218110189_5"
-                                    style="background:url(img/hero-bg-01.jpg) center center/cover no-repeat;"
+                                    style="background:url(img/hero-bg-01.jpg) center center no-repeat;"
                                     data-slide_index="0">
                                     <div class="maxwidth-theme">
                                         <div class="row light">
@@ -314,7 +352,7 @@
                                     </div>
                                 </li>
                                 <li class="item" id="bx_3218110189_3"
-                                    style="background:url(img/hero-bg-02.jpg) center center/cover no-repeat;"
+                                    style="background:url(img/hero-bg-02.jpg) center center no-repeat;"
                                     data-slide_index="1">
                                     <div class="maxwidth-theme">
                                         <div class="row light">
@@ -336,7 +374,7 @@
                                     </div>
                                 </li>
                                 <li class="item" id="bx_3218110189_2"
-                                    style="background:url(img/hero-bg-01.jpg) center center/cover no-repeat;"
+                                    style="background:url(img/hero-bg-03.jpg) center center no-repeat;"
                                     data-slide_index="2">
                                     <div class="maxwidth-theme">
                                         <div class="row light">
@@ -357,7 +395,7 @@
                                     </div>
                                 </li>
                                 <li class="item" id="bx_3218110189_702"
-                                    style="background:url(img/hero-bg-01.jpg) center center/cover no-repeat;"
+                                    style="background:url(img/hero-bg-04.jpg) center center no-repeat;"
                                     data-slide_index="3">
                                     <div class="maxwidth-theme">
                                         <div class="row light">
@@ -378,7 +416,7 @@
                                     </div>
                                 </li>
                                 <li class="item" id="bx_3218110189_703"
-                                    style="background:url(img/hero-bg-01.jpg) center center/cover no-repeat;"
+                                    style="background:url(img/hero-bg-05.jpg) center center no-repeat;"
                                     data-slide_index="4">
                                     <div class="maxwidth-theme">
                                         <div class="row light">
@@ -399,7 +437,7 @@
                                     </div>
                                 </li>
                                 <li class="item" id="bx_3218110189_704"
-                                    style="background:url(img/hero-bg-01.jpg) center center/cover no-repeat;"
+                                    style="background:url(img/hero-bg-06.jpg) center center no-repeat;"
                                     data-slide_index="5">
                                     <div class="maxwidth-theme">
                                         <div class="row light">
@@ -1083,7 +1121,65 @@
                         </div>
                     </div>
                     <div class="section-body">
-                        ТАБЫ
+                        <ul class="nav nav-tabs nav-justified" id="tabs-example">
+                            <li class="active"><a href="#first-tab-content">По мощности</a></li>
+                            <li><a href="#second-tab-content">По бренду</a></li>
+                            <li><a href="#third-tab-content">По исполнению</a></li>
+                        </ul>
+                        <div class="tab-content" style="border: 1px solid #ddd; border-top: none;">
+                            <div id="first-tab-content" class="tab-pane fade in active">
+                                <div class="content-wrapper">
+                                    <div class="flex-row">
+                                        <div class="col-md-4">
+                                            <div>Малая мощность <a href="#">14-200 кВт</a></div>
+                                            <div>
+                                                <a href="#">50 кВт</a>
+                                                <a href="#">100 кВт</a>
+                                                <a href="#">200 кВт</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>Средняя мощность <a href="#">200-799 кВт</a></div>
+                                            <div>
+                                                <a href="#">250 кВт</a>
+                                                <a href="#">300 кВт</a>
+                                                <a href="#">350 кВт</a>
+                                                <a href="#">400 кВт</a>
+                                                <a href="#">450 кВт</a>
+                                                <a href="#">500 кВт</a>
+                                                <a href="#">550 кВт</a>
+                                                <a href="#">600 кВт</a>
+                                                <a href="#">650 кВт</a>
+                                                <a href="#">700 кВт</a>
+                                                <a href="#">750 кВт</a>
+                                                <a href="#">770 кВт</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>Высокая мощность <a href="#">800 кВт</a></div>
+                                            <div>
+                                                <a href="#">800 кВт</a>
+                                                <a href="#">900 кВт</a>
+                                                <a href="#">1000 кВт</a>
+                                                <a href="#">1100 кВт</a>
+                                                <a href="#">1200 кВт</a>
+                                                <a href="#">1400 кВт</a>
+                                                <a href="#">1500 кВт</a>
+                                                <a href="#">1600 кВт</a>
+                                                <a href="#">1800 кВт</a>
+                                                <a href="#">2000 кВт</a>
+                                                <a href="#">2200 кВт</a>
+                                                <a href="#">2500 кВт</a>
+                                                <a href="#">2800 кВт</a>
+                                                <a href="#">3000 кВт</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="second-tab-content" class="tab-pane fade">Содержимое второй вкладки</div>
+                            <div id="third-tab-content" class="tab-pane fade">Содержимое третьей вкладки</div>
+                        </div>
                     </div>
                 </div>
             </div>
