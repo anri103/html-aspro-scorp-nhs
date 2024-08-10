@@ -1855,6 +1855,52 @@ header.fixed .logo-row .top-callback .callback .btn-default.white {
     font-size: 24px;
   }
 }
+.frontpage-cat-tabs .nav-tabs li a {
+  color: #555;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.frontpage-cat-tabs .nav-tabs li a:hover {
+  color: #0fa8ae;
+}
+@media (min-width: 768px) {
+  .frontpage-cat-tabs .nav-tabs li a {
+    font-size: 24px;
+  }
+}
+.frontpage-cat-tabs .nav-tabs li.active a {
+  border-top-color: #0fa8ae;
+}
+.frontpage-cat-tabs .tab-content {
+  border: 2px solid #ddd;
+  border-top: none;
+  padding: 27px;
+}
+.frontpage-cat-tabs .tab-content-title {
+  color: #555;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.frontpage-cat-tabs .tab-content-title a {
+  font-weight: 700;
+}
+.frontpage-cat-tabs .tab-content-title a:hover {
+  text-decoration: underline !important;
+}
+.frontpage-cat-tabs .tab-content-list a {
+  display: inline-block;
+  color: #555;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin: 0 30px 20px 0;
+}
+.frontpage-cat-tabs .tab-content-list a:hover {
+  color: #0fa8ae;
+}
 .frontpage-partners-row {
   padding-bottom: 60px;
 }
