@@ -1550,12 +1550,16 @@ header {
 }
 
 .item-main-cat {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     .item-title {
         text-align:    center;
         font-size:     16px;
         font-weight:   400;
         margin-bottom: 17px;
         @media (min-width: 768px) {
+            height: 72px;
             font-size: 24px;
         }
         a {
@@ -1744,7 +1748,11 @@ header {
 
 .flexsliderService {
     margin-bottom: 0;
+    .slides {
+        display: flex;
+    }
     .slides > li {
+        height: auto;
         border-right: 2px solid #eaeaea;
     }
     .flex-control-nav {
@@ -1940,32 +1948,59 @@ header {
             border-top: none;
         }
     }
-    .tab-content-title {
-        color: #555;
-        font-size: 16px;
-        font-weight: 400;
-        text-transform: uppercase;
-        margin-bottom: 24px;
-        a {
-            font-weight: 700;
-            &:hover {
-                text-decoration: underline !important;
-            }
-            @media (max-width: 430px) {
-                display: block;
-            }
+    .tab-body {
+        & > .flex-row {
+            --bs-gutter-y: 20px;
         }
-    }
-    .tab-content-list {
-        a {
-            display: inline-block;
+        .tab-title {
             color: #555;
             font-size: 16px;
-            font-weight: 700;
-            letter-spacing: 0.01em;
-            margin: 0 30px 20px 0;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+        &.tab-cat-power .tab-title {
+            a {
+                font-weight: 700;
+                &:hover {
+                    text-decoration: underline !important;
+                }
+                @media (max-width: 370px) {
+                    display: block;
+                }
+            }
+        }
+        .tab-list {
+            a {
+                display: inline-block;
+                color: #555;
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: 0.01em;
+                margin: 0 30px 20px 0;
+                &:hover {
+                    color: #0fa8ae;
+                }
+            }
+        }
+        .item-tab-cat {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            color: #555;
             &:hover {
                 color: #0fa8ae;
+            }
+            .tab-title {
+                flex: 1 1 auto;
+                text-align: left;
+                color: inherit;
+                @media (min-width: 768px) {
+                    text-align: center;
+                }
+            }
+            .tab-img img {
+                width: 100%;
             }
         }
     }

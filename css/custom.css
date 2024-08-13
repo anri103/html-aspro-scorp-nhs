@@ -1594,6 +1594,11 @@ header.fixed .logo-row .top-callback .phone .phone-number {
 .frontpage-main-cats-row {
   position: relative;
 }
+.item-main-cat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .item-main-cat .item-title {
   text-align: center;
   font-size: 16px;
@@ -1602,6 +1607,7 @@ header.fixed .logo-row .top-callback .phone .phone-number {
 }
 @media (min-width: 768px) {
   .item-main-cat .item-title {
+    height: 72px;
     font-size: 24px;
   }
 }
@@ -1792,7 +1798,11 @@ header.fixed .logo-row .top-callback .phone .phone-number {
 .flexsliderService {
   margin-bottom: 0;
 }
+.flexsliderService .slides {
+  display: flex;
+}
 .flexsliderService .slides > li {
+  height: auto;
   border-right: 2px solid #eaeaea;
 }
 .flexsliderService .flex-control-nav {
@@ -1989,25 +1999,28 @@ header.fixed .logo-row .top-callback .phone .phone-number {
     border-top: none;
   }
 }
-.frontpage-cat-tabs .tab-content-title {
+.frontpage-cat-tabs .tab-body > .flex-row {
+  --bs-gutter-y: 20px;
+}
+.frontpage-cat-tabs .tab-body .tab-title {
   color: #555;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-.frontpage-cat-tabs .tab-content-title a {
+.frontpage-cat-tabs .tab-body.tab-cat-power .tab-title a {
   font-weight: 700;
 }
-.frontpage-cat-tabs .tab-content-title a:hover {
+.frontpage-cat-tabs .tab-body.tab-cat-power .tab-title a:hover {
   text-decoration: underline !important;
 }
-@media (max-width: 430px) {
-  .frontpage-cat-tabs .tab-content-title a {
+@media (max-width: 370px) {
+  .frontpage-cat-tabs .tab-body.tab-cat-power .tab-title a {
     display: block;
   }
 }
-.frontpage-cat-tabs .tab-content-list a {
+.frontpage-cat-tabs .tab-body .tab-list a {
   display: inline-block;
   color: #555;
   font-size: 16px;
@@ -2015,8 +2028,30 @@ header.fixed .logo-row .top-callback .phone .phone-number {
   letter-spacing: 0.01em;
   margin: 0 30px 20px 0;
 }
-.frontpage-cat-tabs .tab-content-list a:hover {
+.frontpage-cat-tabs .tab-body .tab-list a:hover {
   color: #0fa8ae;
+}
+.frontpage-cat-tabs .tab-body .item-tab-cat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: #555;
+}
+.frontpage-cat-tabs .tab-body .item-tab-cat:hover {
+  color: #0fa8ae;
+}
+.frontpage-cat-tabs .tab-body .item-tab-cat .tab-title {
+  flex: 1 1 auto;
+  text-align: left;
+  color: inherit;
+}
+@media (min-width: 768px) {
+  .frontpage-cat-tabs .tab-body .item-tab-cat .tab-title {
+    text-align: center;
+  }
+}
+.frontpage-cat-tabs .tab-body .item-tab-cat .tab-img img {
+  width: 100%;
 }
 .frontpage-partners-row {
   padding-bottom: 60px;

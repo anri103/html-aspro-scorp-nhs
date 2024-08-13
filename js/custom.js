@@ -36,16 +36,3 @@ $('#tabs-frontpage a').click(function (e) {
     e.preventDefault();
     $(this).tab('show');
 });
-
-$(window).on('load resize', function () {
-    var maxHeight = 0;
-
-    $('.flexsliderService .slides > li').each(function () {
-        var thisHeight = $(this).outerHeight();
-        if (thisHeight > maxHeight) {
-            maxHeight = thisHeight;
-        }
-    });
-
-    $('.flexsliderService .slides > li').height(maxHeight);
-});
