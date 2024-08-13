@@ -1752,7 +1752,12 @@ header.fixed .logo-row .top-callback .phone .phone-number {
 .service-top .section-body {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 48px;
+}
+@media (min-width: 768px) {
+  .service-top .section-body {
+    gap: 24px;
+  }
 }
 .service-buttons {
   display: flex;
@@ -1780,18 +1785,38 @@ header.fixed .logo-row .top-callback .phone .phone-number {
   }
 }
 .service-wrapper {
-  border: 2px solid #eaeaea;
-  border-top: 0;
-  border-right: 0;
   background: #fff;
   box-shadow: 0px 4px 27px 0px rgba(102, 102, 102, 0.25);
   z-index: 3;
 }
-.service-wrapper > .flex-row {
-  --bs-gutter-x: 0;
+.flexsliderService {
+  margin-bottom: 0;
 }
-.service-wrapper > .flex-row > [class*="col-"] {
+.flexsliderService .slides > li {
   border-right: 2px solid #eaeaea;
+}
+.flexsliderService .flex-control-nav {
+  bottom: -30px;
+}
+.flexsliderService .flex-control-nav li {
+  margin: 0;
+}
+.flexsliderService .flex-control-nav li a {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  box-shadow: none;
+  border: medium none;
+  margin: 0 5px;
+  background: #0fa8ae;
+}
+.flexsliderService .flex-control-nav li a.flex-active,
+.flexsliderService .flex-control-nav li a:hover {
+  width: 12px;
+  height: 12px;
+  margin: 0 2px;
+  border: 2px solid #0fa8ae;
+  background: #0fa8ae !important;
 }
 .item-service {
   position: relative;
@@ -2042,25 +2067,24 @@ header.fixed .logo-row .top-callback .phone .phone-number {
   }
 }
 .sert-wrapper .sert-items {
-  display: flex;
-  align-items: center;
-  margin-right: 8px;
+  margin-right: 24px;
 }
 @media (min-width: 768px) {
   .sert-wrapper .sert-items {
-    margin-right: 0;
+    margin-right: 12px;
   }
 }
 .sert-wrapper .sert-items .item-sert {
   position: relative;
+  display: inline-block;
   width: 75px;
   height: 75px;
   overflow: hidden;
   border-radius: 50%;
-  outline: 8px solid #fff;
+  border: 8px solid #fff;
 }
-.sert-wrapper .sert-items .item-sert:nth-child(n + 2) {
-  transform: translateX(-20px);
+.sert-wrapper .sert-items .item-sert + .item-sert {
+  margin-left: -20px;
 }
 .sert-wrapper .sert-items .item-sert img {
   object-fit: cover;
