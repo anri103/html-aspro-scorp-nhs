@@ -1828,6 +1828,26 @@ header.fixed .logo-row .top-callback .phone .phone-number {
   border: 2px solid #0fa8ae;
   background: transparent !important;
 }
+.flexsliderService ~ .flexslider-custom-nav {
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: -50px;
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+.flexsliderService ~ .flexslider-custom-nav > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #0FA8AE;
+  background: #ccc;
+}
 .item-service {
   position: relative;
   display: flex;
@@ -2051,6 +2071,11 @@ header.fixed .logo-row .top-callback .phone .phone-number {
 }
 .frontpage-cat-tabs .tab-body .item-tab-cat .tab-text {
   font-size: 14px;
+}
+@media (min-width: 768px) {
+  .frontpage-cat-tabs .tab-body .item-tab-cat .tab-text {
+    padding: 0 20px;
+  }
 }
 .frontpage-cat-tabs .tab-body .item-tab-cat .tab-text > p,
 .frontpage-cat-tabs .tab-body .item-tab-cat .tab-text > ul,

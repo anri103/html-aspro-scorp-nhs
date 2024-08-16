@@ -36,3 +36,21 @@ $('#tabs-frontpage a').click(function (e) {
     e.preventDefault();
     $(this).tab('show');
 });
+
+
+// $('.flexsliderService').flexslider({
+//     directionNav: false,
+//     controlNav: true,
+//     animationLoop: true,
+//     slideshow: true,
+//     slideshowSpeed: 5000,
+//     animationSpeed: 600,
+// });
+
+// $('.flexsliderService-prev').click(function() {
+//     $('.flexsliderService').flexslider('prev');
+// });
+
+// $('.flexsliderService-next').click(function() {
+//     $('.flexsliderService').flexslider('next');
+// });
