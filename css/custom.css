@@ -1234,6 +1234,9 @@ a .svg-icon.icon-arrow-right {
 .topmenu-COLOR .menu-row .mega-menu table td .wrap > a:hover {
   background-color: #F4BC8433;
 }
+.topmenu-COLOR .menu-row .mega-menu table td.active .wrap > a {
+  background-color: #F4BC8433;
+}
 .topmenu-COLOR .menu-row .mega-menu table .dropdown-menu li:hover > a,
 .topmenu-COLOR .menu-row .mega-menu table .dropdown-menu li.active > a,
 .topmenu-COLOR .menu-row .mega-menu table .dropdown-menu li > a:hover,
