@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>NEUHAUS DEV</title>
+
+    <link rel="stylesheet" href="template-styles.css">
+    <!-- После завершения этапа верстки заменить файлы темы "custom.css" и "custom.less" на мои! -->
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body>
+
+    <div class="body index">
+
+        <div class="body_media"></div>
+
+        <header class="topmenu-COLOR canfixed">
+            <div class="logo_and_menu-row">
+                <div class="logo-row">
+                    <div class="maxwidth-theme">
+                        <div class="flex-row align-items-center justify-content-between">
+                            <!-- logo -->
+                            <div class="top-logo col-md-auto col-sm-auto col-xs-auto">
+                                <div class="logo">
+                                    <a href="#">
+                                        <img src="img/logo.png" class="header-logo" alt="Neuhaus" title="Neuhaus" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- callback -->
+                            <div class="top-callback col-md col-sm col-xs">
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <div class="d-flex flex-column">
+                                        <div class="phone">
+                                            <div class="phone-number">
+                                                <i class="fa fa-phone"></i>
+                                                <div><a href="tel:+74959560111" rel="nofollow"><span>+7 (495)</span>
+                                                        956-01-11</a></div>
+                                            </div>
+                                            <div class="phone-desc">
+                                                ПН-ПТ: 9:00 - 19:00
+                                            </div>
+                                        </div>
+                                        <div class="email hidden">
+                                            <i class="fa fa-envelope"></i>
+                                            <div>
+                                                <a href="mailto:info@nhs.ru">info@nhs.ru</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="callback hidden-xs" data-event="jqm" data-param-id="24"
+                                        data-name="callback">
+                                        <a href="javascript:;" rel="nofollow"
+                                            class="btn btn-default white btn-xs">Обратный звонок</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- mobile menu toggler -->
+                            <div class="top-menu-toggler visible-xs col-xs-auto">
+                                <button type="button" class="btn btn-responsive-nav" data-toggle="collapse"
+                                    data-target=".nav-main-collapse">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                            </div>
+                            <!-- description -->
+                            <div class="top-description col-md-3 hidden-sm hidden-xs">
+                                Решения в области бесперебойного<br>
+                                и гарантийного электроснабжения
+                            </div>
+                            <!-- city-switcher -->
+                            <div class="top-city-switcher col-md-2 col-sm-3 col-xs-12">
+                                <div class="city-switcher" title="Выбрать другой город">
+                                    <div>Выбранный город:</div>
+                                    <span class="cityname">Москва</span>
+                                </div>
+                                <div class="modal" id="switch-city" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <i data-dismiss="modal" class="jqmClose top-close fa fa-close"></i>
+                                                <div class="h3 modal-title">Выберите город</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <span data-href="https://kazan.nhs.ru/">Казань</span>
+                                                <span>Москва <i class="fa fa-check text-muted"></i></span>
+                                                <span data-href="https://rostov-na-donu.nhs.ru/">Ростов на
+                                                    Дону</span>
+                                                <span data-href="https://spb.nhs.ru/">Санкт-Петербург</span>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">Отмена</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal" id="ask-city" role="dialog" data-ask="">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div class="h3">Ваш город</div>
+                                                <div class="h2 user-city" data-href="nhs.ru">Москва?</div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default btn-lg">Да</button>
+                                                <button type="button" class="btn btn-default btn-lg white">Нет
+                                                    (выбрать другой город)</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row row">
+                    <div class="maxwidth-theme">
+                        <div class="col-md-12">
+                            <div class="nav-main-collapse collapse">
+                                <div class="menu-only">
+                                    <nav class="mega-menu">
+                                        <div class="table-menu hidden-xs">
+                                            <table>
+                                                <tr>
+                                                    <td class="dropdown">
+                                                        <div class="wrap">
+                                                            <a class="dropdown-toggle" href="/products/"
+                                                                title="Каталог оборудования">
+                                                                Каталог оборудования &nbsp;<i
+                                                                    class="fa fa-angle-down"></i>
+                                                            </a>
+                                                            <span class="tail"></span>
+                                                            <ul class="dropdown-menu">
+                                                                <li class="">
+                                                                    <a href="#"
+                                                                        title="Дизельные электростанции, ДГУ, ДЭС">Дизельные
+                                                                        электростанции, ДГУ, ДЭС</a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="#"
+                                                                        title="Источники бесперебойного питания (ИБП)">Источники
+                                                                        бесперебойного питания (ИБП)</a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="#"
+                                                                        title="Газопоршневые установки (ГПУ)">Газопоршневые
+                                                                        установки (ГПУ)</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                    <td class="">
+                                                        <div class="wrap">
+                                                            <a class="" href="#" title="Сервисный центр">Сервисный
+                                                                центр</a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="">
+                                                        <div class="wrap">
+                                                            <a class="" href="#" title="Решения под ключ">Решения под
+                                                                ключ</a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="">
+                                                        <div class="wrap">
+                                                            <a class="" href="#" title="Выполненные проекты">Выполненные
+                                                                проекты</a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="dropdown">
+                                                        <div class="wrap">
+                                                            <a class="dropdown-toggle" href="#" title="О NeuHaus">
+                                                                О NeuHaus &nbsp;<i class="fa fa-angle-down"></i>
+                                                            </a>
+                                                            <span class="tail"></span>
+                                                            <ul class="dropdown-menu">
+                                                                <li class="">
+                                                                    <a href="#" title="Новости">Новости</a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="#" title="Статьи">Статьи</a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="#" title="FAQ">FAQ</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                    <td class="">
+                                                        <div class="wrap">
+                                                            <a class="" href="#" title="Контакты">Контакты</a>
+                                                        </div>
+                                                    </td>
+                                                    <!-- ================== -->
+                                                    <!-- Удаленные элементы -->
+                                                    <!-- ================== -->
+                                                    <td class="dropdown js-dropdown nosave" style="display:none;">
+                                                        <div class="wrap">
+                                                            <a class="dropdown-toggle more-items" href="#">
+                                                                <span>...</span>
+                                                            </a>
+                                                            <span class="tail"></span>
+                                                            <ul class="dropdown-menu"></ul>
+                                                        </div>
+                                                    </td>
+                                                    <td class="search-item nosave">
+                                                        <div class="wrap">
+                                                            <a href="#" class="search-icon pull-left"
+                                                                title="Поиск по сайту">
+                                                                <i class="fa fa-search"></i>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <ul class="nav nav-pills responsive-menu visible-xs" id="mainMenu">
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle1" href="#" title="Каталог оборудования">
+                                                    Каталог оборудования <i
+                                                        class="fa fa-angle-down dropdown-toggle"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="">
+                                                        <a href="#" title="Дизельные электростанции, ДГУ, ДЭС">Дизельные
+                                                            электростанции, ДГУ, ДЭС</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#"
+                                                            title="Источники бесперебойного питания (ИБП)">Источники
+                                                            бесперебойного питания (ИБП)</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#" title="Газопоршневые установки (ГПУ)">Газопоршневые
+                                                            установки (ГПУ)</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="">
+                                                <a class="" href="#" title="Сервисный центр">Сервисный центр</a>
+                                            </li>
+                                            <li class="">
+                                                <a class="" href="#" title="Решения под ключ">Решения под ключ</a>
+                                            </li>
+                                            <li class="">
+                                                <a class="" href="#" title="Выполненные проекты">Выполненные проекты</a>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle1" href="#" title="О NeuHaus">
+                                                    О NeuHaus <i class="fa fa-angle-down dropdown-toggle"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="">
+                                                        <a href="#" title="Новости">Новости</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#" title="Статьи">Статьи</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#" title="FAQ">FAQ</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="">
+                                                <a class="" href="#" title="Контакты">Контакты</a>
+                                            </li>
+                                            <li class="search">
+                                                <div class="search-input-div">
+                                                    <input class="search-input" type="text" autocomplete="off"
+                                                        maxlength="50" size="40" placeholder="Найти" value="" name="q">
+                                                </div>
+                                                <div class="search-button-div">
+                                                    <button class="btn btn-search btn-default" value="Найти" name="s"
+                                                        type="submit">Найти</button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ================== -->
+                    <!-- Удаленные элементы -->
+                    <!-- ================== -->
+                    <div class="search hide" id="title-search">
+                        <div class="maxwidth-theme">
+                            <div class="col-md-12">
+                                <form action="/search/">
+                                    <div class="search-input-div">
+                                        <input class="search-input" id="title-search-input" type="text" name="q"
+                                            value="" placeholder="Найти" size="40" maxlength="50" autocomplete="off" />
+                                    </div>
+                                    <div class="search-button-div">
+                                        <button class="btn btn-search btn-default" type="submit" name="s"
+                                            value="Найти">Найти</button>
+                                        <span class="fa fa-close" title="Закрыть"></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="line-row visible-xs"></div>
+        </header>
+
+        <div role="main" class="main">
+
+            <!-- Секция: Хлебные крошки (изменения не вносил) -->
+            <section class="page-top">
+                <div class="row">
+                    <div class="maxwidth-theme">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 id="pagetitle">Выполненные проекты</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="breadcrumb" id="navigation">
+                                        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                            <a href="#" title="Главная" itemprop="url">
+                                                <span itemprop="title">Главная</span>
+                                            </a>
+                                        </li>
+                                        <li class="active" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                            <a href="/projects/" title="Проекты" itemprop="url" style="display:none;"></a>
+                                            <span itemprop="title">Проекты</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Стандартные контейнеры -->
+            <div class="container">
+                <div class="row">
+                    <!-- =============================== -->
+                    <!-- ====== ПРОГРАММИСТУ !!! ======= -->
+                    <!-- =============================== -->
+                    <!-- Есть какой-либо способ для этой страницы указать стили для двух контейнеров ниже? -->
+                    <div class="maxwidth-theme" style="max-width: 100%;">
+                        <div class="col-md-12 col-sm-12 col-xs-12 content-md" style="padding: 0;">
+
+                            <!-- =============================== -->
+                            <!-- ВЕСЬ КОД СЕКЦИЙ БРАТЬ ОТСЮДА!!! -->
+                            <!-- =============================== -->
+
+                            <!-- Секция: Выполненные проекты -->
+                            <div class="frontpage-projects-row frontpage-row">
+                                <div class="maxwidth-theme">
+                                    <div class="section-heading">
+                                        <div class="section-title">
+                                            <h2 class="heading-title-name">Выполненные проекты</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section-body">
+                                    <div class="scrollable-container categories-list mb-4">
+                                        <div class="scrollable-wrapper">
+                                            <div class="scrollable-item">
+                                                <a class="categories-link active" href="#">Все проекты</a>
+                                            </div>
+                                            <div class="scrollable-item">
+                                                <a class="categories-link" href="#">Отрасли</a>
+                                            </div>
+                                            <div class="scrollable-item">
+                                                <a class="categories-link" href="#">Дизельные электростанции, ДГУ, ДЭС</a>
+                                            </div>
+                                            <div class="scrollable-item">
+                                                <a class="categories-link" href="#">Дизельные электростанции, ДГУ, ДЭС</a>
+                                            </div>
+                                            <div class="scrollable-item">
+                                                <a class="categories-link" href="#">Источники бесперебойного питания (ИБП)</a>
+                                            </div>
+                                            <div class="scrollable-item">
+                                                <a class="categories-link" href="#">Источники бесперебойного питания (ИБП)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projects-wrapper">
+                                        <div class="flex-row">
+                                            <!-- item -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                                <div class="item-project">
+                                                    <div class="item-img">
+                                                        <a href="#">
+                                                            <img src="img/project-item-01.jpg" class="img-responsive"
+                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-title">
+                                                            АО «Пивоварня Москва-ЭФЕС»
+                                                        </div>
+                                                        <div class="item-text">
+                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
+                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
+                                                                восстановили.</p>
+                                                        </div>
+                                                        <div class="item-button">
+                                                            <a href="#" class="btn btn-text">Подробнее
+                                                                <svg class="svg-icon icon-arrow-right">
+                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                                <div class="item-project">
+                                                    <div class="item-img">
+                                                        <a href="#">
+                                                            <img src="img/project-item-02.jpg" class="img-responsive"
+                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-title">
+                                                            АО «Пивоварня Москва-ЭФЕС»
+                                                        </div>
+                                                        <div class="item-text">
+                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
+                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
+                                                                восстановили.</p>
+                                                        </div>
+                                                        <div class="item-button">
+                                                            <a href="#" class="btn btn-text">Подробнее
+                                                                <svg class="svg-icon icon-arrow-right">
+                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                                <div class="item-project">
+                                                    <div class="item-img">
+                                                        <a href="#">
+                                                            <img src="img/project-item-03.jpg" class="img-responsive"
+                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-title">
+                                                            АО «Пивоварня Москва-ЭФЕС»
+                                                        </div>
+                                                        <div class="item-text">
+                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
+                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
+                                                                восстановили.</p>
+                                                        </div>
+                                                        <div class="item-button">
+                                                            <a href="#" class="btn btn-text">Подробнее
+                                                                <svg class="svg-icon icon-arrow-right">
+                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                                <div class="item-project">
+                                                    <div class="item-img">
+                                                        <a href="#">
+                                                            <img src="img/project-item-04.jpg" class="img-responsive"
+                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-title">
+                                                            АО «Пивоварня Москва-ЭФЕС»
+                                                        </div>
+                                                        <div class="item-text">
+                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
+                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
+                                                                восстановили.</p>
+                                                        </div>
+                                                        <div class="item-button">
+                                                            <a href="#" class="btn btn-text">Подробнее
+                                                                <svg class="svg-icon icon-arrow-right">
+                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                                <div class="item-project">
+                                                    <div class="item-img">
+                                                        <a href="#">
+                                                            <img src="img/project-item-05.jpg" class="img-responsive"
+                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-title">
+                                                            АО «Пивоварня Москва-ЭФЕС»
+                                                        </div>
+                                                        <div class="item-text">
+                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
+                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
+                                                                восстановили.</p>
+                                                        </div>
+                                                        <div class="item-button">
+                                                            <a href="#" class="btn btn-text">Подробнее
+                                                                <svg class="svg-icon icon-arrow-right">
+                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                                <div class="item-project">
+                                                    <div class="item-img">
+                                                        <a href="#">
+                                                            <img src="img/project-item-06.jpg" class="img-responsive"
+                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-title">
+                                                            АО «Пивоварня Москва-ЭФЕС»
+                                                        </div>
+                                                        <div class="item-text">
+                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
+                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
+                                                                восстановили.</p>
+                                                        </div>
+                                                        <div class="item-button">
+                                                            <a href="#" class="btn btn-text">Подробнее
+                                                                <svg class="svg-icon icon-arrow-right">
+                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                                <div class="item-project">
+                                                    <div class="item-img">
+                                                        <a href="#">
+                                                            <img src="img/project-item-07.jpg" class="img-responsive"
+                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-title">
+                                                            АО «Пивоварня Москва-ЭФЕС»
+                                                        </div>
+                                                        <div class="item-text">
+                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
+                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
+                                                                восстановили.</p>
+                                                        </div>
+                                                        <div class="item-button">
+                                                            <a href="#" class="btn btn-text">Подробнее
+                                                                <svg class="svg-icon icon-arrow-right">
+                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                                <div class="item-project">
+                                                    <div class="item-img">
+                                                        <a href="#">
+                                                            <img src="img/project-item-08.jpg" class="img-responsive"
+                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-title">
+                                                            АО «Пивоварня Москва-ЭФЕС»
+                                                        </div>
+                                                        <div class="item-text">
+                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
+                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
+                                                                восстановили.</p>
+                                                        </div>
+                                                        <div class="item-button">
+                                                            <a href="#" class="btn btn-text">Подробнее
+                                                                <svg class="svg-icon icon-arrow-right">
+                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Секция: Наши партнеры -->
+                            <div class="frontpage-partners-row frontpage-row">
+                                <div class="maxwidth-theme">
+                                    <div class="section-heading">
+                                        <div class="section-title">
+                                            <h2 class="heading-title-name">Наши заказчики</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="partners front">
+                                    <div class="flexslider unstyled row" data-plugin-options='{
+                                            "directionNav": false,
+                                            "controlNav" :true,
+                                            "animationLoop": true,
+                                            "slideshow": true,
+                                            "slideshowSpeed": 5000,
+                                            "animationSpeed": 600,
+                                            "counts": [6, 4, 2]
+                                        }'>
+                                        <ul class="slides items">
+                                            <li>
+                                                <div class="item" id="bx_3485106786_712">
+                                                    <img src="img/partner-01.jpg" class="img-responsive" alt="Lenta" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item" id="bx_3485106786_713">
+                                                    <img src="img/partner-02.jpg" class="img-responsive" alt="GazpromNeft" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item" id="bx_3485106786_715">
+                                                    <img src="img/partner-03.jpg" class="img-responsive" alt="sberb" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item" id="bx_3485106786_716">
+                                                    <img src="img/partner-04.jpg" class="img-responsive" alt="Lerua" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item" id="bx_3485106786_717">
+                                                    <img src="img/partner-05.jpg" class="img-responsive" alt="райфайзен" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item" id="bx_3485106786_718">
+                                                    <img src="img/partner-06.jpg" class="img-responsive" alt="alrosa" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item" id="bx_3485106786_719">
+                                                    <img src="img/partner-07.jpg" class="img-responsive" alt="rosneft" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item" id="bx_3485106786_720">
+                                                    <img src="img/partner-08.jpg" class="img-responsive" alt="mtsbank" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item" id="bx_3485106786_721">
+                                                    <img src="img/partner-09.jpg" class="img-responsive" alt="renisans" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item" id="bx_3485106786_722">
+                                                    <img src="img/partner-01.jpg" class="img-responsive" alt="tinikof" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item" id="bx_3485106786_723">
+                                                    <img src="img/partner-01.jpg" class="img-responsive" alt="Lenta" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item" id="bx_3485106786_724">
+                                                    <img src="img/partner-02.jpg" class="img-responsive" alt="GazpromNeft" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item" id="bx_3485106786_725">
+                                                    <img src="img/partner-03.jpg" class="img-responsive" alt="sberb" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item" id="bx_3485106786_726">
+                                                    <img src="img/partner-04.jpg" class="img-responsive" alt="Lerua" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item" id="bx_3485106786_727">
+                                                    <img src="img/partner-05.jpg" class="img-responsive" alt="райфайзен" />
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end div main -->
+
+    </div>
+    <!-- end div body -->
+
+    <footer id="footer">
+        <div id="bxdynamic_footer-subscribe_start" style="display:none"></div>
+        <div id="bxdynamic_footer-subscribe_end" style="display:none"></div>
+        <div class="footer-main">
+            <div class="maxwidth-theme">
+                <div class="flex-row">
+                    <!-- logo -->
+                    <div class="col-md-2 col-sm-6 col-xs-5">
+                        <div class="footer-logo">
+                            <a href="#" title="Neuhaus">
+                                <img src="img/logo.png" class="img-responsive" alt="" />
+                            </a>
+                        </div>
+                        <div class="address">
+                            107045 Москва,<br> Даев переулок дом 20
+                        </div>
+                    </div>
+                    <!-- contacts -->
+                    <div class="col-md-3 col-sm-6 col-xs-7 order-md-last">
+                        <div class="info">
+                            <div class="phone">
+                                <a href="tel:+74959560111" rel="nofollow"><span>+7 (495)</span> 956-01-11</a>
+                            </div>
+                            <div class="email">
+                                <a href="mailto:info@nhs.ru">info@nhs.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- menu -->
+                    <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="footer-navs-wrapper">
+                            <div class="flex-row">
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <div class="footer-widget">
+                                        <ul class="footer-nav uppercase-nav">
+                                            <li><a href="#">О NeuHaus</a></li>
+                                            <li><a href="#">Новости</a></li>
+                                            <li><a href="#">Статьи</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <div class="footer-widget">
+                                        <a href="#" class="widget-title">Каталог</a>
+                                        <ul class="footer-nav">
+                                            <li><a href="#">Дизельные электростанции (ДГУ, ДЭС)</a></li>
+                                            <li><a href="#">Источники бесперебойного питания (ИБП)</a></li>
+                                            <li><a href="#">Газопоршневые установки (ГПУ)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <div class="footer-widget">
+                                        <a href="#" class="widget-title">Услуги</a>
+                                        <ul class="footer-nav">
+                                            <li><a href="#">Предпроектное обследование</a></li>
+                                            <li><a href="#">Разработка общих проектных решений (ОПР)</a></li>
+                                            <li><a href="#">О NeuHaus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="maxwidth-theme">
+                <div class="flex-row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="terms">
+                            <a href="#">Политика конфиденциальности</a>
+                            <a href="#">Пользовательское соглашение</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="copy">2024 &copy; NeuHaus.ru | Все права защищены</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bx_areas"></div>
+
+    <!-- Стандартные скрипты темы Аспро -->
+    <script src="js/core.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="template-scripts.js"></script>
+    <script type="text/javascript">
+        var arBasketItems = {};
+        var arScorpOptions = ({
+            'SITE_DIR': '/',
+            'SITE_ID': 's1',
+            'SITE_TEMPLATE_PATH': '/local/templates/aspro-scorp',
+            'THEME': ({
+                'THEME_SWITCHER': 'N',
+                'BASE_COLOR': '10',
+                'BASE_COLOR_CUSTOM': 'e65100',
+                'TOP_MENU': 'COLOR',
+                'TOP_MENU_FIXED': 'Y',
+                'COLORED_LOGO': 'N',
+                'SIDE_MENU': 'LEFT',
+                'SCROLLTOTOP_TYPE': 'RECT_COLOR',
+                'SCROLLTOTOP_POSITION': 'PADDING',
+                'ADD_SITE_NAME_IN_TITLE': 'N',
+                'USE_CAPTCHA_FORM': 'RECAPTCHA',
+                'DISPLAY_PROCESSING_NOTE': 'Y',
+                'PROCESSING_NOTE_CHECKED': 'N',
+                'PHONE_MASK': '+9 (999) 999-99-99',
+                'VALIDATE_PHONE_MASK': '^[+][0-9] [(][0-9]{3}[)] [0-9]{3}[-][0-9]{2}[-][0-9]{2}$',
+                'DATE_MASK': 'd.m.y',
+                'DATE_PLACEHOLDER': 'дд.мм.гггг',
+                'VALIDATE_DATE_MASK': '^[0-9]{1,2}\.[0-9]{1,2}\.[0-9]{4}$',
+                'DATETIME_MASK': 'd.m.y h:s',
+                'DATETIME_PLACEHOLDER': 'дд.мм.гггг чч:мм',
+                'VALIDATE_DATETIME_MASK': '^[0-9]{1,2}\.[0-9]{1,2}\.[0-9]{4} [0-9]{1,2}\:[0-9]{1,2}$',
+                'VALIDATE_FILE_EXT': 'png|jpg|jpeg|gif|doc|docx|xls|xlsx|txt|pdf|odt|rtf',
+                'SOCIAL_VK': '',
+                'SOCIAL_FACEBOOK': '',
+                'SOCIAL_TWITTER': '',
+                'SOCIAL_YOUTUBE': '',
+                'SOCIAL_ODNOKLASSNIKI': '',
+                'SOCIAL_GOOGLEPLUS': '',
+                'BANNER_WIDTH': 'AUTO',
+                'TEASERS_INDEX': 'ICONS',
+                'CATALOG_INDEX': 'Y',
+                'CATALOG_FAVORITES_INDEX': 'N',
+                'BIGBANNER_ANIMATIONTYPE': 'SLIDE_HORIZONTAL',
+                'BIGBANNER_SLIDESSHOWSPEED': '7000',
+                'BIGBANNER_ANIMATIONSPEED': '600',
+                'PARTNERSBANNER_SLIDESSHOWSPEED': '5000',
+                'PARTNERSBANNER_ANIMATIONSPEED': '600',
+                'ORDER_VIEW': 'N',
+                'ORDER_BASKET_VIEW': 'HEADER',
+                'URL_BASKET_SECTION': '/cart/',
+                'URL_ORDER_SECTION': '/cart/order/',
+                'USE_YA_COUNTER': 'N',
+                'YA_COUNTER_ID': '',
+                'USE_FORMS_GOALS': 'COMMON',
+                'USE_SALE_GOALS': 'Y',
+                'USE_DEBUG_GOALS': 'N',
+            })
+        });
+
+        $(document).ready(function () {
+            if ($.trim(arScorpOptions['THEME']['ORDER_VIEW']) === 'Y' && ($.trim(window.location.pathname) != $.trim(arScorpOptions['THEME']['URL_BASKET_SECTION'])) && ($.trim(window.location.pathname) != $.trim(arScorpOptions['THEME']['URL_ORDER_SECTION']))) {
+                if (arScorpOptions['THEME']['ORDER_BASKET_VIEW'] === 'FLY') {
+                    $.ajax({
+                        url: arScorpOptions['SITE_DIR'] + 'ajax/basket_items.php',
+                        type: 'POST',
+                        success: function (html) {
+                            $('body').prepend('<div class="ajax_basket">' + html + '</div>');
+                            setTimeout(function () {
+                                $('.ajax_basket').addClass('ready');
+                                $('.basket.fly>.wrap').addClass(arScorpOptions['THEME']['TOP_MENU']);
+                                $('.basket_top.basketFlyTrue').removeClass('hidden').find('.count').text($('.basket .count').text());
+                            }, 50);
+                        }
+                    });
+
+                    /*if($('header .top-callback').length){
+                        var htmlMedia = '<div class="basket_top basketFlyTrue pull-right hidden-lg hidden-md hidden-sm">'
+                                            +'<div class="b_wrap">'
+                                                +'<a href="'+$.trim(arScorpOptions['THEME']['URL_BASKET_SECTION'])+'" class="icon"><span class="count"></span></a>'
+                                            +'</div>'
+                                        +'</div>';
+                        $('header .top-callback').prepend(htmlMedia);
+                    }*/
+                }
+                else if (arScorpOptions['THEME']['ORDER_BASKET_VIEW'] === 'HEADER') {
+                    $.ajax({
+                        url: arScorpOptions['SITE_DIR'] + 'ajax/basket_items.php ',
+                        type: 'POST',
+                        success: function (html) {
+                            $('.mega-menu .table-menu.basketTrue table td.search-item>.wrap').append('<div class="ajax_basket">' + html + '</div>');
+                            $('header .logo-row .top-callback').prepend('<div class="ajax_basket">' + html + '</div>');
+                            setTimeout(function () {
+                                $('.ajax_basket').addClass('ready');
+                            }, 50);
+                        }
+                    });
+                }
+            }
+
+        });
+    </script>
+
+    <!-- Мой код добавить в соответствующий custom.js темы Аспро! -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
