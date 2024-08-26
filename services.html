@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>NEUHAUS DEV</title>
+
+    <link rel="stylesheet" href="template-styles.css">
+    <!-- После завершения этапа верстки заменить файлы темы "custom.css" и "custom.less" на мои! -->
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body>
+
+    <div class="body index">
+
+        <div class="body_media"></div>
+
+        <header class="topmenu-COLOR canfixed">
+            <div class="logo_and_menu-row">
+                <div class="logo-row">
+                    <div class="maxwidth-theme">
+                        <div class="flex-row align-items-center justify-content-between">
+                            <!-- logo -->
+                            <div class="top-logo col-md-auto col-sm-auto col-xs-auto">
+                                <div class="logo">
+                                    <a href="#">
+                                        <img src="img/logo.png" class="header-logo" alt="Neuhaus" title="Neuhaus" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- callback -->
+                            <div class="top-callback col-md col-sm col-xs">
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <div class="d-flex flex-column">
+                                        <div class="phone">
+                                            <div class="phone-number">
+                                                <i class="fa fa-phone"></i>
+                                                <div><a href="tel:+74959560111" rel="nofollow"><span>+7 (495)</span>
+                                                        956-01-11</a></div>
+                                            </div>
+                                            <div class="phone-desc">
+                                                ПН-ПТ: 9:00 - 19:00
+                                            </div>
+                                        </div>
+                                        <div class="email hidden">
+                                            <i class="fa fa-envelope"></i>
+                                            <div>
+                                                <a href="mailto:info@nhs.ru">info@nhs.ru</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="callback hidden-xs" data-event="jqm" data-param-id="24"
+                                        data-name="callback">
+                                        <a href="javascript:;" rel="nofollow"
+                                            class="btn btn-default white btn-xs">Обратный звонок</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- mobile menu toggler -->
+                            <div class="top-menu-toggler visible-xs col-xs-auto">
+                                <button type="button" class="btn btn-responsive-nav" data-toggle="collapse"
+                                    data-target=".nav-main-collapse">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                            </div>
+                            <!-- description -->
+                            <div class="top-description col-md-3 hidden-sm hidden-xs">
+                                Решения в области бесперебойного<br>
+                                и гарантийного электроснабжения
+                            </div>
+                            <!-- city-switcher -->
+                            <div class="top-city-switcher col-md-2 col-sm-3 col-xs-12">
+                                <div class="city-switcher" title="Выбрать другой город">
+                                    <div>Выбранный город:</div>
+                                    <span class="cityname">Москва</span>
+                                </div>
+                                <div class="modal" id="switch-city" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <i data-dismiss="modal" class="jqmClose top-close fa fa-close"></i>
+                                                <div class="h3 modal-title">Выберите город</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <span data-href="https://kazan.nhs.ru/">Казань</span>
+                                                <span>Москва <i class="fa fa-check text-muted"></i></span>
+                                                <span data-href="https://rostov-na-donu.nhs.ru/">Ростов на
+                                                    Дону</span>
+                                                <span data-href="https://spb.nhs.ru/">Санкт-Петербург</span>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">Отмена</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal" id="ask-city" role="dialog" data-ask="">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div class="h3">Ваш город</div>
+                                                <div class="h2 user-city" data-href="nhs.ru">Москва?</div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default btn-lg">Да</button>
+                                                <button type="button" class="btn btn-default btn-lg white">Нет
+                                                    (выбрать другой город)</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row row">
+                    <div class="maxwidth-theme">
+                        <div class="col-md-12">
+                            <div class="nav-main-collapse collapse">
+                                <div class="menu-only">
+                                    <nav class="mega-menu">
+                                        <div class="table-menu hidden-xs">
+                                            <table>
+                                                <tr>
+                                                    <td class="dropdown">
+                                                        <div class="wrap">
+                                                            <a class="dropdown-toggle" href="/products/"
+                                                                title="Каталог оборудования">
+                                                                Каталог оборудования &nbsp;<i
+                                                                    class="fa fa-angle-down"></i>
+                                                            </a>
+                                                            <span class="tail"></span>
+                                                            <ul class="dropdown-menu">
+                                                                <li class="">
+                                                                    <a href="#"
+                                                                        title="Дизельные электростанции, ДГУ, ДЭС">Дизельные
+                                                                        электростанции, ДГУ, ДЭС</a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="#"
+                                                                        title="Источники бесперебойного питания (ИБП)">Источники
+                                                                        бесперебойного питания (ИБП)</a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="#"
+                                                                        title="Газопоршневые установки (ГПУ)">Газопоршневые
+                                                                        установки (ГПУ)</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                    <td class="">
+                                                        <div class="wrap">
+                                                            <a class="" href="#" title="Сервисный центр">Сервисный
+                                                                центр</a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="">
+                                                        <div class="wrap">
+                                                            <a class="" href="#" title="Решения под ключ">Решения под
+                                                                ключ</a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="">
+                                                        <div class="wrap">
+                                                            <a class="" href="#" title="Выполненные проекты">Выполненные
+                                                                проекты</a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="dropdown">
+                                                        <div class="wrap">
+                                                            <a class="dropdown-toggle" href="#" title="О NeuHaus">
+                                                                О NeuHaus &nbsp;<i class="fa fa-angle-down"></i>
+                                                            </a>
+                                                            <span class="tail"></span>
+                                                            <ul class="dropdown-menu">
+                                                                <li class="">
+                                                                    <a href="#" title="Новости">Новости</a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="#" title="Статьи">Статьи</a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="#" title="FAQ">FAQ</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                    <td class="">
+                                                        <div class="wrap">
+                                                            <a class="" href="#" title="Контакты">Контакты</a>
+                                                        </div>
+                                                    </td>
+                                                    <!-- ================== -->
+                                                    <!-- Удаленные элементы -->
+                                                    <!-- ================== -->
+                                                    <td class="dropdown js-dropdown nosave" style="display:none;">
+                                                        <div class="wrap">
+                                                            <a class="dropdown-toggle more-items" href="#">
+                                                                <span>...</span>
+                                                            </a>
+                                                            <span class="tail"></span>
+                                                            <ul class="dropdown-menu"></ul>
+                                                        </div>
+                                                    </td>
+                                                    <td class="search-item nosave">
+                                                        <div class="wrap">
+                                                            <a href="#" class="search-icon pull-left"
+                                                                title="Поиск по сайту">
+                                                                <i class="fa fa-search"></i>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <ul class="nav nav-pills responsive-menu visible-xs" id="mainMenu">
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle1" href="#" title="Каталог оборудования">
+                                                    Каталог оборудования <i
+                                                        class="fa fa-angle-down dropdown-toggle"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="">
+                                                        <a href="#" title="Дизельные электростанции, ДГУ, ДЭС">Дизельные
+                                                            электростанции, ДГУ, ДЭС</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#"
+                                                            title="Источники бесперебойного питания (ИБП)">Источники
+                                                            бесперебойного питания (ИБП)</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#" title="Газопоршневые установки (ГПУ)">Газопоршневые
+                                                            установки (ГПУ)</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="">
+                                                <a class="" href="#" title="Сервисный центр">Сервисный центр</a>
+                                            </li>
+                                            <li class="">
+                                                <a class="" href="#" title="Решения под ключ">Решения под ключ</a>
+                                            </li>
+                                            <li class="">
+                                                <a class="" href="#" title="Выполненные проекты">Выполненные проекты</a>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle1" href="#" title="О NeuHaus">
+                                                    О NeuHaus <i class="fa fa-angle-down dropdown-toggle"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="">
+                                                        <a href="#" title="Новости">Новости</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#" title="Статьи">Статьи</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#" title="FAQ">FAQ</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="">
+                                                <a class="" href="#" title="Контакты">Контакты</a>
+                                            </li>
+                                            <li class="search">
+                                                <div class="search-input-div">
+                                                    <input class="search-input" type="text" autocomplete="off"
+                                                        maxlength="50" size="40" placeholder="Найти" value="" name="q">
+                                                </div>
+                                                <div class="search-button-div">
+                                                    <button class="btn btn-search btn-default" value="Найти" name="s"
+                                                        type="submit">Найти</button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ================== -->
+                    <!-- Удаленные элементы -->
+                    <!-- ================== -->
+                    <div class="search hide" id="title-search">
+                        <div class="maxwidth-theme">
+                            <div class="col-md-12">
+                                <form action="/search/">
+                                    <div class="search-input-div">
+                                        <input class="search-input" id="title-search-input" type="text" name="q"
+                                            value="" placeholder="Найти" size="40" maxlength="50" autocomplete="off" />
+                                    </div>
+                                    <div class="search-button-div">
+                                        <button class="btn btn-search btn-default" type="submit" name="s"
+                                            value="Найти">Найти</button>
+                                        <span class="fa fa-close" title="Закрыть"></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="line-row visible-xs"></div>
+        </header>
+
+        <div role="main" class="main">
+
+            <!-- Секция: Хлебные крошки (изменения не вносил) -->
+            <section class="page-top">
+                <div class="row">
+                    <div class="maxwidth-theme">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 id="pagetitle">Комплексные решения</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="breadcrumb" id="navigation">
+                                        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                            <a href="#" title="Главная" itemprop="url">
+                                                <span itemprop="title">Главная</span>
+                                            </a>
+                                        </li>
+                                        <li class="active" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                            <a href="/solutions/" title="Решения под ключ" itemprop="url" style="display:none;"></a>
+                                            <span itemprop="title">Решения под ключ</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Стандартные контейнеры -->
+            <div class="container">
+                <div class="row">
+                    <!-- =============================== -->
+                    <!-- ====== ПРОГРАММИСТУ !!! ======= -->
+                    <!-- =============================== -->
+                    <!-- Есть какой-либо способ для этой страницы указать стили для двух контейнеров ниже? -->
+                    <div class="maxwidth-theme" style="max-width: 100%;">
+                        <div class="col-md-12 col-sm-12 col-xs-12 content-md" style="padding: 0;">
+
+                            <!-- =============================== -->
+                            <!-- ВЕСЬ КОД СЕКЦИЙ БРАТЬ ОТСЮДА!!! -->
+                            <!-- =============================== -->
+
+                            <!-- Секция: Картинка вверху -->
+                            <div class="heading-image">
+                                <picture>
+                                    <source srcset="img/bg-services-01.jpg" media="(min-width: 768px)" />
+                                    <img src="img/bg-services-01.jpg" alt="" />
+                                </picture>
+                            </div>
+
+                            <!-- Секция: Текст -->
+                            <div>
+                                <h2>Основная специализация группы компаний «НойХаус»</h2>
+                                <p>Комплексный инжиниринг промышленных объектов
+                                    «под ключ». Мы осуществляем проектирование, согласование, строительство, монтаж и обслуживание как всего объекта, так и отдельных инженерных систем.</p>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="66" viewBox="0 0 63 66" fill="none">
+                                                <rect width="44" height="44" rx="12" fill="#CFEEEF"/>
+                                                <path d="M47.7258 20.775C47.5232 20.0017 46.5409 19.7382 45.9678 20.3026L41.7644 24.4403C32.1161 21.4473 22 28.532 22 38.7402C22.0012 41.4963 22.7804 44.184 24.2538 46.513C24.56 46.9972 25.2072 47.1453 25.699 46.8438C26.1909 46.5423 26.3414 45.9052 26.035 45.421C23.9092 42.0608 24.0967 38.7206 24.0982 38.731C24.1002 30.3637 32.044 24.3522 40.0548 26.1231L36.6417 29.4829C36.068 30.0477 36.3366 31.0141 37.1216 31.2133L49.6878 34.4029C50.4614 34.5996 51.1648 33.9048 50.9659 33.1449L47.7258 20.775ZM39.4249 29.6646L46.1524 23.0422L48.4898 31.9655L39.4249 29.6646Z" fill="#333333"/>
+                                                <path d="M36.5 13C21.8522 13 10 24.8543 10 39.5C10 54.1477 21.8543 66 36.5 66C51.1479 66 63 54.1457 63 39.5C63 24.8523 51.1457 13 36.5 13ZM36.5 63.9216C23.0339 63.9216 12.0784 52.9662 12.0784 39.5C12.0784 26.0338 23.0339 15.0784 36.5 15.0784C49.9661 15.0784 60.9216 26.0338 60.9216 39.5C60.9216 52.9662 49.9661 63.9216 36.5 63.9216Z" fill="#333333"/>
+                                                <path d="M43.9322 43.3H38.6818L40.6565 38.44C40.9364 37.7505 40.4194 37 39.6661 37H34.3335C33.8974 37 33.5051 37.2613 33.3432 37.66L29.0772 48.16C28.7971 48.8494 29.3141 49.6 30.0674 49.6H34.034L32.2323 56.6953C32.1115 57.1703 32.3406 57.6644 32.7841 57.8862C33.227 58.1074 33.7672 57.9991 34.0863 57.6221L44.7515 45.0222C45.3298 44.3388 44.8339 43.3 43.9322 43.3Z" fill="#333333"/>
+                                            </svg>
+                                        </div>
+                                        <div>Многолетний опыт в промышленном проектировании и инжиниринге</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <div>Этапы реализации задач</div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Предпроектное обследование</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/solutions-01.jpg" alt="">
+                                    <div>Предпроектное обследование</div>
+                                    <div>
+                                        <p>В предпроектные работы входят следующие этапы:</p>
+                                        <p><b>1. Предпроектное обследование.</b></p>
+                                        <p>Предпроектное обследование это комплекс работ, осуществляющийся с целью мониторинга, анализа специфики и состояния объекта. На этапе обследования производится сбор исходный данных для проектирования, а также необходимых материальных, людских и технических ресурсов для производства проектных работ. Предпроектное обследование является наиболее ответственным и важным шагом в подготовке к разработке проектной документации.</p>
+                                        <p><b>2. Выработка общих проектных решений. Стадия</b></p>
+                                        <p>Этапы ОПР:</p>
+                                        <p>а. Технологический расчет основного оборудования с указанием его спецификации.</p>
+                                        <p>б. Создание электрической схемы</p>
+                                        <p>в. Создание тепловой схемы (В случае использования системы утилизации тепла).</p>
+                                        <p>г. Компоновка и размещение подобранного оборудования на плане объекта.</p>
+                                        <p>На основании всей собранной информации создается документ, который содержит пояснительную записку с алгоритмами работы, план размещения основного оборудования, электрическую и тепловую схемы. В рамках общих проектных решений разрабатываются основные параметры по инженерным сетям и коммуникациям: электроснабжению, водоснабжению, теплоснабжению, топливоснабжению, канализации, сигнализации, автоматизации и прочим направлениям.</p>
+                                        <p><b>3. Технико-экономическое обоснование (ТЭО).</b></p>
+                                        <p>Для принятия решения о реализации любого инвестиционного проекта необходима тщательная проработка всех исходных данных, анализ затрат и результатов, позволяющий оценить экономическую целесообразность и техническую возможность проекта. С этой целью составляется ТЭО. В ТЭО предполагается отображение следующих пунктов:</p>
+                                        <p>- Технологический процесс,</p>
+                                        <p>- Основное оборудование, приспособления и оснастка,</p>
+                                        <p>- Персонал и трудозатраты,</p>
+                                        <p>- Сводная себестоимость продукции,</p>
+                                        <p>- Экономическая эффективность,</p>
+                                        <p><b>4. Составление ТЗ на проектирование</b></p>
+                                        <p>Техническое задание (сокращенно – ТЗ или техзадание) представляет собой документ, детально описывающий цели и задачи, которые поставлены заказчиком перед исполнителем. Его оформление позволяет упростить как производство проектных работ, так и контроль над их выполнением. Грамотно составленное ТЗ – это первый и очень важный шаг на пути к взаимовыгодному сотрудничеству между заказчиком и исполнителем, позволяющий исключить или минимизировать спорные ситуации в ходе дальнейшей работы. По логике обязанность составления ТЗ лежит на стороне заказчика, но на практике если проект лежит не в области основной деятельности компании, то у заказчика может не быть в штате проектировщиков должной квалификации. Поэтому как правила помощь в составлении ТЗ осуществляет привлеченная компания. Чаще всего это компания, которая и осуществляет проектные работы.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Секция: Услуги -->
+                            <div class="frontpage-service-row frontpage-row">
+                                <div class="service-top">
+                                    <div class="maxwidth-theme">
+                                        <div class="section-heading">
+                                            <div class="section-title">
+                                                <h2 class="heading-title-name">Дополнительные услуги</h2>
+                                            </div>
+                                        </div>
+                                        <div class="section-body">
+                                            <div class="service-wrapper">
+                                                <div class="flexslider flexsliderService" data-plugin-options='{
+                                                    "directionNav": true,
+                                                    "controlNav": true,
+                                                    "animationLoop": true,
+                                                    "slideshow": true,
+                                                    "slideshowSpeed": 5000,
+                                                    "animationSpeed": 600,
+                                                    "counts": [4, 2, 1]
+                                                }'>
+                                                    <ul class="slides">
+                                                        <!-- item -->
+                                                        <li>
+                                                            <div class="item-service">
+                                                                <div class="item-img">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+                                                                        <path d="M38.3534 8.85254C38.1515 8.06972 37.1727 7.80289 36.6016 8.3743L32.4129 12.563C22.7984 9.53311 12.7179 16.705 12.7179 27.039C12.719 29.829 13.4956 32.5498 14.9638 34.9075C15.2689 35.3977 15.9138 35.5476 16.4039 35.2424C16.8941 34.9372 17.044 34.2923 16.7387 33.8021C14.6204 30.4004 14.8072 27.0192 14.8087 27.0296C14.8107 18.5593 22.7266 12.4738 30.7094 14.2665L27.3082 17.6677C26.7365 18.2394 27.0042 19.2177 27.7865 19.4194L40.3085 22.6483C41.0794 22.8473 41.7803 22.144 41.5822 21.3747L38.3534 8.85254ZM30.0816 17.8516L36.7855 11.1476L39.1147 20.1808L30.0816 17.8516Z" fill="#333333"/>
+                                                                        <path d="M27.5 0.749023C12.7625 0.749023 0.837891 12.6759 0.837891 27.4111C0.837891 42.1485 12.7647 54.0732 27.5 54.0732C42.2375 54.0732 54.1621 42.1464 54.1621 27.4111C54.1621 12.6738 42.2353 0.749023 27.5 0.749023ZM27.5 51.9821C13.9516 51.9821 2.92904 40.9597 2.92904 27.4111C2.92904 13.8626 13.9516 2.84017 27.5 2.84017C41.0484 2.84017 52.071 13.8626 52.071 27.4111C52.071 40.9597 41.0484 51.9821 27.5 51.9821Z" fill="#333333"/>
+                                                                        <path d="M34.2964 31.0706H29.1491L31.085 26.2311C31.3595 25.5445 30.8526 24.7972 30.1141 24.7972H24.8862C24.4587 24.7972 24.0741 25.0574 23.9154 25.4544L19.7331 35.9101C19.4586 36.5967 19.9654 37.344 20.7039 37.344H24.5926L22.8262 44.4095C22.7079 44.8825 22.9325 45.3746 23.3672 45.5954C23.8014 45.8157 24.331 45.7078 24.6439 45.3324L35.0996 32.7856C35.6665 32.1051 35.1804 31.0706 34.2964 31.0706Z" fill="#333333"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="item-body">
+                                                                    <div class="item-title">01. Предпроектное обследование</div>
+                                                                    <div class="item-text">
+                                                                        <p>Мы проводим детальный анализ объекта и его особенностей, что
+                                                                            включает в себя:</p>
+                                                                        <ul>
+                                                                            <li>Оценку текущего состояния систем электроснабжения;</li>
+                                                                            <li>Определение потребностей и требований клиента;</li>
+                                                                            <li>Сбор и анализ исходных данных для последующего
+                                                                                проектирования.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item-link">
+                                                                    <a href="#" class="link-more">
+                                                                        <svg class="svg-icon icon-bordered-arrow-down">
+                                                                            <use xlink:href="css/sprite.svg#icon-bordered-arrow-down">
+                                                                            </use>
+                                                                        </svg>
+                                                                        Подробнее
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <!-- item -->
+                                                        <li>
+                                                            <div class="item-service">
+                                                                <div class="item-img">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+                                                                        <path d="M38.3534 8.85254C38.1515 8.06972 37.1727 7.80289 36.6016 8.3743L32.4129 12.563C22.7984 9.53311 12.7179 16.705 12.7179 27.039C12.719 29.829 13.4956 32.5498 14.9638 34.9075C15.2689 35.3977 15.9138 35.5476 16.4039 35.2424C16.8941 34.9372 17.044 34.2923 16.7387 33.8021C14.6204 30.4004 14.8072 27.0192 14.8087 27.0296C14.8107 18.5593 22.7266 12.4738 30.7094 14.2665L27.3082 17.6677C26.7365 18.2394 27.0042 19.2177 27.7865 19.4194L40.3085 22.6483C41.0794 22.8473 41.7803 22.144 41.5822 21.3747L38.3534 8.85254ZM30.0816 17.8516L36.7855 11.1476L39.1147 20.1808L30.0816 17.8516Z" fill="#333333"/>
+                                                                        <path d="M27.5 0.749023C12.7625 0.749023 0.837891 12.6759 0.837891 27.4111C0.837891 42.1485 12.7647 54.0732 27.5 54.0732C42.2375 54.0732 54.1621 42.1464 54.1621 27.4111C54.1621 12.6738 42.2353 0.749023 27.5 0.749023ZM27.5 51.9821C13.9516 51.9821 2.92904 40.9597 2.92904 27.4111C2.92904 13.8626 13.9516 2.84017 27.5 2.84017C41.0484 2.84017 52.071 13.8626 52.071 27.4111C52.071 40.9597 41.0484 51.9821 27.5 51.9821Z" fill="#333333"/>
+                                                                        <path d="M34.2964 31.0706H29.1491L31.085 26.2311C31.3595 25.5445 30.8526 24.7972 30.1141 24.7972H24.8862C24.4587 24.7972 24.0741 25.0574 23.9154 25.4544L19.7331 35.9101C19.4586 36.5967 19.9654 37.344 20.7039 37.344H24.5926L22.8262 44.4095C22.7079 44.8825 22.9325 45.3746 23.3672 45.5954C23.8014 45.8157 24.331 45.7078 24.6439 45.3324L35.0996 32.7856C35.6665 32.1051 35.1804 31.0706 34.2964 31.0706Z" fill="#333333"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="item-body">
+                                                                    <div class="item-title">02. Разработка общих проектных решений (ОПР)
+                                                                    </div>
+                                                                    <div class="item-text">
+                                                                        <p>На этом этапе разрабатываются основные концепции и подходы к
+                                                                            реализации проекта:</p>
+                                                                        <ul>
+                                                                            <li>Определение общей структуры системы;</li>
+                                                                            <li>Разработка схем и планов расположения оборудования;</li>
+                                                                            <li>Предварительная оценка стоимости и сроков реализации.
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item-link">
+                                                                    <a href="#" class="link-more">
+                                                                        <svg class="svg-icon icon-bordered-arrow-down">
+                                                                            <use xlink:href="css/sprite.svg#icon-bordered-arrow-down">
+                                                                            </use>
+                                                                        </svg>
+                                                                        Подробнее
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <!-- item -->
+                                                        <li>
+                                                            <div class="item-service">
+                                                                <div class="item-img">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+                                                                        <path d="M38.3534 8.85254C38.1515 8.06972 37.1727 7.80289 36.6016 8.3743L32.4129 12.563C22.7984 9.53311 12.7179 16.705 12.7179 27.039C12.719 29.829 13.4956 32.5498 14.9638 34.9075C15.2689 35.3977 15.9138 35.5476 16.4039 35.2424C16.8941 34.9372 17.044 34.2923 16.7387 33.8021C14.6204 30.4004 14.8072 27.0192 14.8087 27.0296C14.8107 18.5593 22.7266 12.4738 30.7094 14.2665L27.3082 17.6677C26.7365 18.2394 27.0042 19.2177 27.7865 19.4194L40.3085 22.6483C41.0794 22.8473 41.7803 22.144 41.5822 21.3747L38.3534 8.85254ZM30.0816 17.8516L36.7855 11.1476L39.1147 20.1808L30.0816 17.8516Z" fill="#333333"/>
+                                                                        <path d="M27.5 0.749023C12.7625 0.749023 0.837891 12.6759 0.837891 27.4111C0.837891 42.1485 12.7647 54.0732 27.5 54.0732C42.2375 54.0732 54.1621 42.1464 54.1621 27.4111C54.1621 12.6738 42.2353 0.749023 27.5 0.749023ZM27.5 51.9821C13.9516 51.9821 2.92904 40.9597 2.92904 27.4111C2.92904 13.8626 13.9516 2.84017 27.5 2.84017C41.0484 2.84017 52.071 13.8626 52.071 27.4111C52.071 40.9597 41.0484 51.9821 27.5 51.9821Z" fill="#333333"/>
+                                                                        <path d="M34.2964 31.0706H29.1491L31.085 26.2311C31.3595 25.5445 30.8526 24.7972 30.1141 24.7972H24.8862C24.4587 24.7972 24.0741 25.0574 23.9154 25.4544L19.7331 35.9101C19.4586 36.5967 19.9654 37.344 20.7039 37.344H24.5926L22.8262 44.4095C22.7079 44.8825 22.9325 45.3746 23.3672 45.5954C23.8014 45.8157 24.331 45.7078 24.6439 45.3324L35.0996 32.7856C35.6665 32.1051 35.1804 31.0706 34.2964 31.0706Z" fill="#333333"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="item-body">
+                                                                    <div class="item-title">03. Разработка общих проектных решений (ОПР)
+                                                                    </div>
+                                                                    <div class="item-text">
+                                                                        <p>На этом этапе разрабатываются основные концепции и подходы к
+                                                                            реализации проекта:</p>
+                                                                        <ul>
+                                                                            <li>Определение общей структуры системы;</li>
+                                                                            <li>Предварительная оценка стоимости и сроков реализации.
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item-link">
+                                                                    <a href="#" class="link-more">
+                                                                        <svg class="svg-icon icon-bordered-arrow-down">
+                                                                            <use xlink:href="css/sprite.svg#icon-bordered-arrow-down">
+                                                                            </use>
+                                                                        </svg>
+                                                                        Подробнее
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <!-- item -->
+                                                        <li>
+                                                            <div class="item-service">
+                                                                <div class="item-img">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+                                                                        <path d="M38.3534 8.85254C38.1515 8.06972 37.1727 7.80289 36.6016 8.3743L32.4129 12.563C22.7984 9.53311 12.7179 16.705 12.7179 27.039C12.719 29.829 13.4956 32.5498 14.9638 34.9075C15.2689 35.3977 15.9138 35.5476 16.4039 35.2424C16.8941 34.9372 17.044 34.2923 16.7387 33.8021C14.6204 30.4004 14.8072 27.0192 14.8087 27.0296C14.8107 18.5593 22.7266 12.4738 30.7094 14.2665L27.3082 17.6677C26.7365 18.2394 27.0042 19.2177 27.7865 19.4194L40.3085 22.6483C41.0794 22.8473 41.7803 22.144 41.5822 21.3747L38.3534 8.85254ZM30.0816 17.8516L36.7855 11.1476L39.1147 20.1808L30.0816 17.8516Z" fill="#333333"/>
+                                                                        <path d="M27.5 0.749023C12.7625 0.749023 0.837891 12.6759 0.837891 27.4111C0.837891 42.1485 12.7647 54.0732 27.5 54.0732C42.2375 54.0732 54.1621 42.1464 54.1621 27.4111C54.1621 12.6738 42.2353 0.749023 27.5 0.749023ZM27.5 51.9821C13.9516 51.9821 2.92904 40.9597 2.92904 27.4111C2.92904 13.8626 13.9516 2.84017 27.5 2.84017C41.0484 2.84017 52.071 13.8626 52.071 27.4111C52.071 40.9597 41.0484 51.9821 27.5 51.9821Z" fill="#333333"/>
+                                                                        <path d="M34.2964 31.0706H29.1491L31.085 26.2311C31.3595 25.5445 30.8526 24.7972 30.1141 24.7972H24.8862C24.4587 24.7972 24.0741 25.0574 23.9154 25.4544L19.7331 35.9101C19.4586 36.5967 19.9654 37.344 20.7039 37.344H24.5926L22.8262 44.4095C22.7079 44.8825 22.9325 45.3746 23.3672 45.5954C23.8014 45.8157 24.331 45.7078 24.6439 45.3324L35.0996 32.7856C35.6665 32.1051 35.1804 31.0706 34.2964 31.0706Z" fill="#333333"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="item-body">
+                                                                    <div class="item-title">04. Разработка общих проектных решений (ОПР)
+                                                                    </div>
+                                                                    <div class="item-text">
+                                                                        <p>На этом этапе разрабатываются основные концепции и подходы к
+                                                                            реализации проекта:</p>
+                                                                        <ul>
+                                                                            <li>Определение общей структуры системы;</li>
+                                                                            <li>Разработка схем и планов расположения оборудования;</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item-link">
+                                                                    <a href="#" class="link-more">
+                                                                        <svg class="svg-icon icon-bordered-arrow-down">
+                                                                            <use xlink:href="css/sprite.svg#icon-bordered-arrow-down">
+                                                                            </use>
+                                                                        </svg>
+                                                                        Подробнее
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <!-- item -->
+                                                        <li>
+                                                            <div class="item-service">
+                                                                <div class="item-img">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+                                                                        <path d="M38.3534 8.85254C38.1515 8.06972 37.1727 7.80289 36.6016 8.3743L32.4129 12.563C22.7984 9.53311 12.7179 16.705 12.7179 27.039C12.719 29.829 13.4956 32.5498 14.9638 34.9075C15.2689 35.3977 15.9138 35.5476 16.4039 35.2424C16.8941 34.9372 17.044 34.2923 16.7387 33.8021C14.6204 30.4004 14.8072 27.0192 14.8087 27.0296C14.8107 18.5593 22.7266 12.4738 30.7094 14.2665L27.3082 17.6677C26.7365 18.2394 27.0042 19.2177 27.7865 19.4194L40.3085 22.6483C41.0794 22.8473 41.7803 22.144 41.5822 21.3747L38.3534 8.85254ZM30.0816 17.8516L36.7855 11.1476L39.1147 20.1808L30.0816 17.8516Z" fill="#333333"/>
+                                                                        <path d="M27.5 0.749023C12.7625 0.749023 0.837891 12.6759 0.837891 27.4111C0.837891 42.1485 12.7647 54.0732 27.5 54.0732C42.2375 54.0732 54.1621 42.1464 54.1621 27.4111C54.1621 12.6738 42.2353 0.749023 27.5 0.749023ZM27.5 51.9821C13.9516 51.9821 2.92904 40.9597 2.92904 27.4111C2.92904 13.8626 13.9516 2.84017 27.5 2.84017C41.0484 2.84017 52.071 13.8626 52.071 27.4111C52.071 40.9597 41.0484 51.9821 27.5 51.9821Z" fill="#333333"/>
+                                                                        <path d="M34.2964 31.0706H29.1491L31.085 26.2311C31.3595 25.5445 30.8526 24.7972 30.1141 24.7972H24.8862C24.4587 24.7972 24.0741 25.0574 23.9154 25.4544L19.7331 35.9101C19.4586 36.5967 19.9654 37.344 20.7039 37.344H24.5926L22.8262 44.4095C22.7079 44.8825 22.9325 45.3746 23.3672 45.5954C23.8014 45.8157 24.331 45.7078 24.6439 45.3324L35.0996 32.7856C35.6665 32.1051 35.1804 31.0706 34.2964 31.0706Z" fill="#333333"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="item-body">
+                                                                    <div class="item-title">05. Разработка общих проектных решений (ОПР)
+                                                                    </div>
+                                                                    <div class="item-text">
+                                                                        <p>На этом этапе разрабатываются основные концепции и подходы к
+                                                                            реализации проекта:</p>
+                                                                        <ul>
+                                                                            <li>Определение общей структуры системы;</li>
+                                                                            <li>Разработка схем и планов расположения оборудования;</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item-link">
+                                                                    <a href="#" class="link-more">
+                                                                        <svg class="svg-icon icon-bordered-arrow-down">
+                                                                            <use xlink:href="css/sprite.svg#icon-bordered-arrow-down">
+                                                                            </use>
+                                                                        </svg>
+                                                                        Подробнее
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-bottom">
+                                    <div class="maxwidth-theme">
+                                        <div class="flex-row">
+                                            <div class="col-md-6 background-banner" style="background-image: url('img/about-bg-02.jpg');"></div>
+                                            <div class="col-md-6" style="background-color: #FDF2E6;">
+                                                <div class="section-text">
+                                                    <p class="section-text__title">Комплексные решения для производства и поставки
+                                                        мощных систем электропитания любой сложности</p>
+                                                    <p>Детальное изучение и учет индивидуальной специфики и особенностей каждого объекта позволяет нам реализовать самые трудные и нетиповые задачи, выполняя проекты под потребности каждого клиента.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end div main -->
+
+    </div>
+    <!-- end div body -->
+
+    <footer id="footer">
+        <div id="bxdynamic_footer-subscribe_start" style="display:none"></div>
+        <div id="bxdynamic_footer-subscribe_end" style="display:none"></div>
+        <div class="footer-main">
+            <div class="maxwidth-theme">
+                <div class="flex-row">
+                    <!-- logo -->
+                    <div class="col-md-2 col-sm-6 col-xs-5">
+                        <div class="footer-logo">
+                            <a href="#" title="Neuhaus">
+                                <img src="img/logo.png" class="img-responsive" alt="" />
+                            </a>
+                        </div>
+                        <div class="address">
+                            107045 Москва,<br> Даев переулок дом 20
+                        </div>
+                    </div>
+                    <!-- contacts -->
+                    <div class="col-md-3 col-sm-6 col-xs-7 order-md-last">
+                        <div class="info">
+                            <div class="phone">
+                                <a href="tel:+74959560111" rel="nofollow"><span>+7 (495)</span> 956-01-11</a>
+                            </div>
+                            <div class="email">
+                                <a href="mailto:info@nhs.ru">info@nhs.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- menu -->
+                    <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="footer-navs-wrapper">
+                            <div class="flex-row">
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <div class="footer-widget">
+                                        <ul class="footer-nav uppercase-nav">
+                                            <li><a href="#">О NeuHaus</a></li>
+                                            <li><a href="#">Новости</a></li>
+                                            <li><a href="#">Статьи</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <div class="footer-widget">
+                                        <a href="#" class="widget-title">Каталог</a>
+                                        <ul class="footer-nav">
+                                            <li><a href="#">Дизельные электростанции (ДГУ, ДЭС)</a></li>
+                                            <li><a href="#">Источники бесперебойного питания (ИБП)</a></li>
+                                            <li><a href="#">Газопоршневые установки (ГПУ)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <div class="footer-widget">
+                                        <a href="#" class="widget-title">Услуги</a>
+                                        <ul class="footer-nav">
+                                            <li><a href="#">Предпроектное обследование</a></li>
+                                            <li><a href="#">Разработка общих проектных решений (ОПР)</a></li>
+                                            <li><a href="#">О NeuHaus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="maxwidth-theme">
+                <div class="flex-row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="terms">
+                            <a href="#">Политика конфиденциальности</a>
+                            <a href="#">Пользовательское соглашение</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="copy">2024 &copy; NeuHaus.ru | Все права защищены</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bx_areas"></div>
+
+    <!-- Стандартные скрипты темы Аспро -->
+    <script src="js/core.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="template-scripts.js"></script>
+    <script type="text/javascript">
+        var arBasketItems = {};
+        var arScorpOptions = ({
+            'SITE_DIR': '/',
+            'SITE_ID': 's1',
+            'SITE_TEMPLATE_PATH': '/local/templates/aspro-scorp',
+            'THEME': ({
+                'THEME_SWITCHER': 'N',
+                'BASE_COLOR': '10',
+                'BASE_COLOR_CUSTOM': 'e65100',
+                'TOP_MENU': 'COLOR',
+                'TOP_MENU_FIXED': 'Y',
+                'COLORED_LOGO': 'N',
+                'SIDE_MENU': 'LEFT',
+                'SCROLLTOTOP_TYPE': 'RECT_COLOR',
+                'SCROLLTOTOP_POSITION': 'PADDING',
+                'ADD_SITE_NAME_IN_TITLE': 'N',
+                'USE_CAPTCHA_FORM': 'RECAPTCHA',
+                'DISPLAY_PROCESSING_NOTE': 'Y',
+                'PROCESSING_NOTE_CHECKED': 'N',
+                'PHONE_MASK': '+9 (999) 999-99-99',
+                'VALIDATE_PHONE_MASK': '^[+][0-9] [(][0-9]{3}[)] [0-9]{3}[-][0-9]{2}[-][0-9]{2}$',
+                'DATE_MASK': 'd.m.y',
+                'DATE_PLACEHOLDER': 'дд.мм.гггг',
+                'VALIDATE_DATE_MASK': '^[0-9]{1,2}\.[0-9]{1,2}\.[0-9]{4}$',
+                'DATETIME_MASK': 'd.m.y h:s',
+                'DATETIME_PLACEHOLDER': 'дд.мм.гггг чч:мм',
+                'VALIDATE_DATETIME_MASK': '^[0-9]{1,2}\.[0-9]{1,2}\.[0-9]{4} [0-9]{1,2}\:[0-9]{1,2}$',
+                'VALIDATE_FILE_EXT': 'png|jpg|jpeg|gif|doc|docx|xls|xlsx|txt|pdf|odt|rtf',
+                'SOCIAL_VK': '',
+                'SOCIAL_FACEBOOK': '',
+                'SOCIAL_TWITTER': '',
+                'SOCIAL_YOUTUBE': '',
+                'SOCIAL_ODNOKLASSNIKI': '',
+                'SOCIAL_GOOGLEPLUS': '',
+                'BANNER_WIDTH': 'AUTO',
+                'TEASERS_INDEX': 'ICONS',
+                'CATALOG_INDEX': 'Y',
+                'CATALOG_FAVORITES_INDEX': 'N',
+                'BIGBANNER_ANIMATIONTYPE': 'SLIDE_HORIZONTAL',
+                'BIGBANNER_SLIDESSHOWSPEED': '7000',
+                'BIGBANNER_ANIMATIONSPEED': '600',
+                'PARTNERSBANNER_SLIDESSHOWSPEED': '5000',
+                'PARTNERSBANNER_ANIMATIONSPEED': '600',
+                'ORDER_VIEW': 'N',
+                'ORDER_BASKET_VIEW': 'HEADER',
+                'URL_BASKET_SECTION': '/cart/',
+                'URL_ORDER_SECTION': '/cart/order/',
+                'USE_YA_COUNTER': 'N',
+                'YA_COUNTER_ID': '',
+                'USE_FORMS_GOALS': 'COMMON',
+                'USE_SALE_GOALS': 'Y',
+                'USE_DEBUG_GOALS': 'N',
+            })
+        });
+
+        $(document).ready(function () {
+            if ($.trim(arScorpOptions['THEME']['ORDER_VIEW']) === 'Y' && ($.trim(window.location.pathname) != $.trim(arScorpOptions['THEME']['URL_BASKET_SECTION'])) && ($.trim(window.location.pathname) != $.trim(arScorpOptions['THEME']['URL_ORDER_SECTION']))) {
+                if (arScorpOptions['THEME']['ORDER_BASKET_VIEW'] === 'FLY') {
+                    $.ajax({
+                        url: arScorpOptions['SITE_DIR'] + 'ajax/basket_items.php',
+                        type: 'POST',
+                        success: function (html) {
+                            $('body').prepend('<div class="ajax_basket">' + html + '</div>');
+                            setTimeout(function () {
+                                $('.ajax_basket').addClass('ready');
+                                $('.basket.fly>.wrap').addClass(arScorpOptions['THEME']['TOP_MENU']);
+                                $('.basket_top.basketFlyTrue').removeClass('hidden').find('.count').text($('.basket .count').text());
+                            }, 50);
+                        }
+                    });
+
+                    /*if($('header .top-callback').length){
+                        var htmlMedia = '<div class="basket_top basketFlyTrue pull-right hidden-lg hidden-md hidden-sm">'
+                                            +'<div class="b_wrap">'
+                                                +'<a href="'+$.trim(arScorpOptions['THEME']['URL_BASKET_SECTION'])+'" class="icon"><span class="count"></span></a>'
+                                            +'</div>'
+                                        +'</div>';
+                        $('header .top-callback').prepend(htmlMedia);
+                    }*/
+                }
+                else if (arScorpOptions['THEME']['ORDER_BASKET_VIEW'] === 'HEADER') {
+                    $.ajax({
+                        url: arScorpOptions['SITE_DIR'] + 'ajax/basket_items.php ',
+                        type: 'POST',
+                        success: function (html) {
+                            $('.mega-menu .table-menu.basketTrue table td.search-item>.wrap').append('<div class="ajax_basket">' + html + '</div>');
+                            $('header .logo-row .top-callback').prepend('<div class="ajax_basket">' + html + '</div>');
+                            setTimeout(function () {
+                                $('.ajax_basket').addClass('ready');
+                            }, 50);
+                        }
+                    });
+                }
+            }
+
+        });
+    </script>
+
+    <!-- Мой код добавить в соответствующий custom.js темы Аспро! -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
