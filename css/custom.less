@@ -55,6 +55,7 @@ body {
     font-family: "Berlin Type Office", sans-serif;
     font-weight: 400;
     line-height: 1.25;
+    letter-spacing: 0.01em;
 }
 
 .filter {
@@ -810,12 +811,20 @@ body.modal-open {
     justify-content: flex-end !important;
 }
 
-.gap-5 {
-    gap: 3rem !important;
+.flex-shrink-0 {
+    flex-shrink: 0 !important;
 }
 
-.mb-4 {
-    margin-bottom: 1.5rem !important;
+.gap-24 {
+    gap: 24px !important;
+}
+
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
 }
 
 .flex-row {
@@ -897,6 +906,18 @@ body.modal-open {
     }
     .order-md-first {order:-1 !important;}
     .order-md-last {order:999 !important;}
+    .fs-md-24 {
+        font-size: 24px;
+    }
+    .fs-md-36 {
+        font-size: 36px;
+    }
+    .ms-md-auto {
+        margin-left: auto !important;
+    }
+    .gap-md-60 {
+        gap: 60px !important;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -947,7 +968,8 @@ a {
 	padding-right: 15px;
 }
 
-.frontpage-row {
+.frontpage-row,
+.page-row {
     padding: 24px 0;
     @media (min-width: 768px) {
         padding: 30px 0;
@@ -1004,6 +1026,10 @@ a {
             }
         }
     }
+}
+
+.first-row {
+    padding-top: 0 !important;
 }
 
 .item-text {
@@ -2519,5 +2545,36 @@ footer {
         height:          100%;
         object-fit:      cover;
         object-position: center;
+    }
+}
+
+.item-service-plug {
+    display: flex;
+    gap:     15px;
+    .item-title {
+        color:          #000;
+        font-weight:    700;
+        line-height:    1.39;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+    }
+}
+
+.collapsing-text {
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content:    "";
+        position:   absolute;
+        bottom:     0;
+        left:       0;
+        right:      0;
+        height:     20px;
+        background: #fff;
+    }
+    .collapsing-link {
+        position: absolute;
+        left:     0;
+        bottom:   0;
     }
 }

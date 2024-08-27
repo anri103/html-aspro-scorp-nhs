@@ -40,6 +40,7 @@ h6 {
   font-family: "Berlin Type Office", sans-serif;
   font-weight: 400;
   line-height: 1.25;
+  letter-spacing: 0.01em;
 }
 .filter {
   background-color: #f6f6f6;
@@ -716,11 +717,17 @@ body.modal-open {
 .justify-content-end {
   justify-content: flex-end !important;
 }
-.gap-5 {
-  gap: 3rem !important;
+.flex-shrink-0 {
+  flex-shrink: 0 !important;
 }
-.mb-4 {
-  margin-bottom: 1.5rem !important;
+.gap-24 {
+  gap: 24px !important;
+}
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
 }
 .flex-row {
   --bs-gutter-x: 3rem;
@@ -926,6 +933,18 @@ body.modal-open {
   .order-md-last {
     order: 999 !important;
   }
+  .fs-md-24 {
+    font-size: 24px;
+  }
+  .fs-md-36 {
+    font-size: 36px;
+  }
+  .ms-md-auto {
+    margin-left: auto !important;
+  }
+  .gap-md-60 {
+    gap: 60px !important;
+  }
 }
 @media (min-width: 1200px) {
   .flex-row .col-lg {
@@ -1011,22 +1030,27 @@ a .svg-icon.icon-arrow-right {
   padding-left: 15px;
   padding-right: 15px;
 }
-.frontpage-row {
+.frontpage-row,
+.page-row {
   padding: 24px 0;
 }
 @media (min-width: 768px) {
-  .frontpage-row {
+  .frontpage-row,
+  .page-row {
     padding: 30px 0;
   }
 }
-.frontpage-row .section-heading {
+.frontpage-row .section-heading,
+.page-row .section-heading {
   text-align: center;
   margin-bottom: 30px;
 }
-.frontpage-row .section-heading .section-title {
+.frontpage-row .section-heading .section-title,
+.page-row .section-heading .section-title {
   margin-bottom: 8px;
 }
-.frontpage-row .section-heading .section-title .heading-title-name {
+.frontpage-row .section-heading .section-title .heading-title-name,
+.page-row .section-heading .section-title .heading-title-name {
   color: #333;
   font-size: 20px;
   font-weight: 400;
@@ -1036,15 +1060,18 @@ a .svg-icon.icon-arrow-right {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  .frontpage-row .section-heading .section-title .heading-title-name {
+  .frontpage-row .section-heading .section-title .heading-title-name,
+  .page-row .section-heading .section-title .heading-title-name {
     font-size: 36px;
   }
 }
-.frontpage-row .section-heading .section-title:has(.heading-title-link) .heading-title-name {
+.frontpage-row .section-heading .section-title:has(.heading-title-link) .heading-title-name,
+.page-row .section-heading .section-title:has(.heading-title-link) .heading-title-name {
   display: inline;
   margin-right: 8px;
 }
-.frontpage-row .section-heading .section-title .heading-title-link {
+.frontpage-row .section-heading .section-title .heading-title-link,
+.page-row .section-heading .section-title .heading-title-link {
   display: inline-block;
   text-transform: lowercase;
   font-size: 18px;
@@ -1052,26 +1079,34 @@ a .svg-icon.icon-arrow-right {
   line-height: 1.5;
   letter-spacing: 0.01em;
 }
-.frontpage-row .section-heading .section-title .heading-title-link .svg-icon.icon-arrow-right {
+.frontpage-row .section-heading .section-title .heading-title-link .svg-icon.icon-arrow-right,
+.page-row .section-heading .section-title .heading-title-link .svg-icon.icon-arrow-right {
   width: 5px;
   height: 10px;
 }
-.frontpage-row .section-heading .section-subtitle {
+.frontpage-row .section-heading .section-subtitle,
+.page-row .section-heading .section-subtitle {
   color: #555;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
 }
-.frontpage-row .section-heading .section-subtitle > p {
+.frontpage-row .section-heading .section-subtitle > p,
+.page-row .section-heading .section-subtitle > p {
   margin-bottom: 12px;
 }
-.frontpage-row .section-heading .section-subtitle > p:last-child {
+.frontpage-row .section-heading .section-subtitle > p:last-child,
+.page-row .section-heading .section-subtitle > p:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  .frontpage-row .section-heading .section-subtitle {
+  .frontpage-row .section-heading .section-subtitle,
+  .page-row .section-heading .section-subtitle {
     font-size: 24px;
   }
+}
+.first-row {
+  padding-top: 0 !important;
 }
 .item-text > p {
   margin-bottom: 12px;
@@ -2574,4 +2609,33 @@ footer .footer-bottom .copy {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+.item-service-plug {
+  display: flex;
+  gap: 15px;
+}
+.item-service-plug .item-title {
+  color: #000;
+  font-weight: 700;
+  line-height: 1.39;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+.collapsing-text {
+  position: relative;
+  overflow: hidden;
+}
+.collapsing-text::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: #fff;
+}
+.collapsing-text .collapsing-link {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
