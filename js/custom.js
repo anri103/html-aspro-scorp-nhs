@@ -10,7 +10,7 @@ $('.item-cat-dgu').each(function () {
     if ($items.length > 2) {
         $btnDown.show();
 
-        $btnDown.on('click', function () {
+        $btnDown.click(function () {
             var isExpanded = $items.slice(2).hasClass('visible');
 
             if (isExpanded) {
@@ -26,31 +26,45 @@ $('.item-cat-dgu').each(function () {
     }
 });
 
-$('.frontpage-seo-row .show-text-link').on('click', function (e) {
+// frontpage collapsing seo text
+$('.frontpage-seo-row .show-text-link').click(function (e) {
     e.preventDefault();
     $('.frontpage-seo-row .section-text').toggleClass('expanded');
     $('.frontpage-seo-row .show-text-link').toggleClass('rotated');
 });
 
-$('#tabs-frontpage a').click(function (e) {
+// collapsing area
+$('.collapsing-link').on('click', function(e) {
     e.preventDefault();
-    $(this).tab('show');
+    
+    const $collapsingArea = $(this).closest('.collapsing-area');
+    const $collapsingLink = $(this);
+    const maxHeight = $collapsingArea.data('max-height');
+
+    if ($collapsingArea.hasClass('js-expanded')) {
+        // Убираем класс js-expanded для плавного закрытия
+        $collapsingArea.removeClass('js-expanded').css('max-height', maxHeight);
+
+        // Убираем класс js-rotate у кнопки
+        $collapsingLink.removeClass('js-rotate');
+
+        // Плавная прокрутка к началу блока, выше на 150px
+        $('html, body').animate({
+            scrollTop: $collapsingArea.offset().top - 150
+        }, 500);
+    } else {
+        // Установка max-height в 'none' перед добавлением класса js-expanded
+        $collapsingArea.css('max-height', $collapsingArea.prop('scrollHeight') + 'px');
+
+        // Добавляем класс js-expanded для плавного раскрытия
+        $collapsingArea.addClass('js-expanded');
+
+        // Добавляем класс js-rotate к кнопке
+        $collapsingLink.addClass('js-rotate');
+
+        // Плавная прокрутка к началу блока
+        $('html, body').animate({
+            scrollTop: $collapsingArea.offset().top
+        }, 500);
+    }
 });
-
-
-// $('.flexsliderService').flexslider({
-//     directionNav: false,
-//     controlNav: true,
-//     animationLoop: true,
-//     slideshow: true,
-//     slideshowSpeed: 5000,
-//     animationSpeed: 600,
-// });
-
-// $('.flexsliderService-prev').click(function() {
-//     $('.flexsliderService').flexslider('prev');
-// });
-
-// $('.flexsliderService-next').click(function() {
-//     $('.flexsliderService').flexslider('next');
-// });
