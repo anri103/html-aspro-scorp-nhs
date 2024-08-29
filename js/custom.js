@@ -34,6 +34,10 @@ $('.frontpage-seo-row .show-text-link').click(function (e) {
 });
 
 // collapsing area
+$('.collapsing-area').each(function() {
+    const areaHeight = $(this).data('max-height');
+    $(this).css('max-height', areaHeight);
+});
 $('.collapsing-link').on('click', function(e) {
     e.preventDefault();
     
@@ -49,9 +53,9 @@ $('.collapsing-link').on('click', function(e) {
         $collapsingLink.removeClass('js-rotate');
 
         // Плавная прокрутка к началу блока, выше на 150px
-        $('html, body').animate({
-            scrollTop: $collapsingArea.offset().top - 150
-        }, 500);
+        // $('html, body').animate({
+        //     scrollTop: $collapsingArea.offset().top - 150
+        // }, 500);
     } else {
         // Установка max-height в 'none' перед добавлением класса js-expanded
         $collapsingArea.css('max-height', $collapsingArea.prop('scrollHeight') + 'px');
@@ -61,10 +65,5 @@ $('.collapsing-link').on('click', function(e) {
 
         // Добавляем класс js-rotate к кнопке
         $collapsingLink.addClass('js-rotate');
-
-        // Плавная прокрутка к началу блока
-        $('html, body').animate({
-            scrollTop: $collapsingArea.offset().top
-        }, 500);
     }
 });
