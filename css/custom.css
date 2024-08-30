@@ -22,8 +22,10 @@
   --global-line-height: 1.25;
 }
 body {
-  font: 16px/22px "Berlin Type Office", Arial, sans-serif;
+  font-family: "Berlin Type Office", sans-serif;
+  font-size: 16px;
   line-height: 1.5;
+  color: #333;
 }
 .h1,
 .h2,
@@ -741,12 +743,27 @@ body.modal-open {
 .va-bottom {
   vertical-align: bottom !important;
 }
+.fs-inherit {
+  font-size: inherit !important;
+}
+.fw-400 {
+  font-weight: 400 !important;
+}
+.fw-700 {
+  font-weight: 700 !important;
+}
+.fs-18 {
+  font-size: 18px !important;
+}
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
 .text-uppercase {
   text-transform: uppercase !important;
+}
+.text-lowercase {
+  text-transform: lowercase !important;
 }
 .text-center {
   text-align: center !important;
@@ -764,6 +781,9 @@ body.modal-open {
 }
 .card-img {
   width: 100%;
+}
+.card-text:last-child {
+  margin-bottom: 0 !important;
 }
 .flex-row {
   --bs-gutter-x: 3rem;
@@ -1069,6 +1089,53 @@ a .svg-icon.icon-arrow-right {
   max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
+}
+li {
+  line-height: inherit !important;
+}
+.flex-control-nav li {
+  margin: 0;
+}
+.flex-control-nav li a {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  box-shadow: none;
+  border: medium none;
+  margin: 0 5px;
+  background: #0fa8ae;
+}
+.flex-control-nav li a.flex-active,
+.flex-control-nav li a:hover {
+  width: 12px;
+  height: 12px;
+  margin: 0 2px;
+  border: 2px solid #0fa8ae;
+  background: transparent !important;
+}
+.flex-direction-nav a {
+  color: rgba(15, 168, 174, 0.8);
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  text-align: center !important;
+  line-height: 43px;
+  border-radius: 50%;
+  background-color: #EAF0F2;
+}
+.flex-direction-nav a::before {
+  color: currentColor !important;
+  font-size: 20px;
+  text-shadow: none !important;
+  border-color: currentColor !important;
+}
+.flex-direction-nav a:hover {
+  color: #fff;
+  border-color: #0D969B;
+  background-color: #0D969B;
+}
+.flex-direction-nav a.flex-next::before {
+  margin-left: 3px;
 }
 .frontpage-row,
 .page-row {
@@ -1379,23 +1446,67 @@ header.fixed .logo-row .top-callback .phone .phone-number {
 }
 .banners-big .flex-control-nav {
   display: none !important;
-  bottom: -30px;
+  bottom: -30px !important;
 }
 @media (max-width: 991px) {
   .banners-big .flex-control-nav {
     display: block !important;
   }
 }
-.banners-big .flex-control-nav a {
+.banners-big .flex-control-nav li a {
   width: 6px;
   height: 6px;
   background: #0fa8ae;
 }
-.banners-big .flex-control-nav a.flex-active,
-.banners-big .flex-control-nav a:hover {
+.banners-big .flex-control-nav li a:hover,
+.banners-big .flex-control-nav li a.flex-active {
   width: 12px;
   height: 12px;
-  border: 2px solid #0fa8ae;
+  border: 2px solid #0fa8ae !important;
+}
+.banners-big .flex-direction-nav {
+  position: static;
+  margin: 0;
+}
+.banners-big .flex-direction-nav li {
+  position: static;
+}
+.banners-big .flex-direction-nav li a {
+  position: absolute;
+  top: 50% !important;
+  transform: translateY(-50%);
+  color: rgba(15, 168, 174, 0.8);
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  text-align: center !important;
+  line-height: 40px !important;
+  border: none !important;
+  border-radius: 50%;
+  background-color: #EAF0F2;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -moz-transition: all 0.3s ease-in-out !important;
+  -ms-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.banners-big .flex-direction-nav li a::before {
+  position: static !important;
+  color: currentColor !important;
+  font-size: 30px !important;
+  line-height: inherit !important;
+  text-shadow: none !important;
+  border-color: currentColor !important;
+}
+.banners-big .flex-direction-nav li a:hover {
+  color: #fff !important;
+  background-color: #0D969B !important;
+}
+.banners-big .flex-direction-nav .flex-prev {
+  left: -50px;
+}
+.banners-big .flex-direction-nav .flex-next {
+  right: -50px;
 }
 .banners-big .slides {
   height: auto !important;
@@ -1940,33 +2051,10 @@ header.fixed .logo-row .top-callback .phone .phone-number {
   height: auto;
   border-right: 2px solid #eaeaea;
 }
-.flexsliderService .flex-control-nav {
-  bottom: -30px;
-}
 @media (min-width: 768px) {
   .flexsliderService .flex-control-nav {
     display: none !important;
   }
-}
-.flexsliderService .flex-control-nav li {
-  margin: 0;
-}
-.flexsliderService .flex-control-nav li a {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  box-shadow: none;
-  border: medium none;
-  margin: 0 5px;
-  background: #0fa8ae;
-}
-.flexsliderService .flex-control-nav li a.flex-active,
-.flexsliderService .flex-control-nav li a:hover {
-  width: 12px;
-  height: 12px;
-  margin: 0 2px;
-  border: 2px solid #0fa8ae;
-  background: transparent !important;
 }
 .flexsliderService .flex-direction-nav {
   position: absolute;
@@ -1983,35 +2071,11 @@ header.fixed .logo-row .top-callback .phone .phone-number {
 }
 .flexsliderService .flex-direction-nav a {
   position: static;
-  opacity: 1;
-  margin: 0;
-  font-size: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  border-radius: 50%;
-  color: #0FA8AE;
-  background: #ccc;
+  opacity: 1 !important;
+  background-color: #fff;
 }
 .flexsliderService .flex-direction-nav a:hover {
-  background: #0FA8AE;
-}
-.flexsliderService .flex-direction-nav a::before {
-  content: "";
-  display: block;
-  width: 11px;
-  height: 21px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='21' viewBox='0 0 11 21' fill='none'%3E%3Cpath d='M9 19L2.75329 12.0025C2.01557 11.1761 2.01557 9.82387 2.75329 8.99749L9 2' stroke='%230FA8AE' stroke-width='3' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  font-size: inherit;
-}
-.flexsliderService .flex-direction-nav a:hover::before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='21' viewBox='0 0 11 21' fill='none'%3E%3Cpath d='M9 19L2.75329 12.0025C2.01557 11.1761 2.01557 9.82387 2.75329 8.99749L9 2' stroke='%23FFFFFF' stroke-width='3' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-}
-.flexsliderService .flex-direction-nav a.flex-next::before {
-  transform: rotate(180deg);
+  background-color: #0D969B;
 }
 .item-service {
   position: relative;
@@ -2279,32 +2343,11 @@ header.fixed .logo-row .top-callback .phone .phone-number {
 }
 .frontpage-partners-row .partners .flexslider .flex-control-nav {
   display: none !important;
-  bottom: -30px;
 }
 @media (max-width: 991px) {
   .frontpage-partners-row .partners .flexslider .flex-control-nav {
     display: block !important;
   }
-}
-.frontpage-partners-row .partners .flexslider .flex-control-nav li {
-  margin: 0;
-}
-.frontpage-partners-row .partners .flexslider .flex-control-nav li a {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  box-shadow: none;
-  border: medium none;
-  margin: 0 5px;
-  background: #0fa8ae;
-}
-.frontpage-partners-row .partners .flexslider .flex-control-nav li a.flex-active,
-.frontpage-partners-row .partners .flexslider .flex-control-nav li a:hover {
-  width: 12px;
-  height: 12px;
-  margin: 0 2px;
-  border: 2px solid #0fa8ae;
-  background: transparent !important;
 }
 .frontpage-news-row .section-heading {
   text-align: left;
@@ -2720,7 +2763,7 @@ footer .footer-bottom .copy {
   background-image: linear-gradient(180deg, transparent 0%, #EAF0F2 60%);
 }
 .card-industry .card-title-wrapper {
-  max-width: 170px;
+  max-width: 217px;
   margin-top: -50px;
   padding: 22px 12px;
   background-color: #FDF2E6;
@@ -2729,4 +2772,34 @@ footer .footer-bottom .copy {
   font-weight: 700;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+}
+.card-project .card-img-wrapper {
+  height: 295px;
+}
+.card-project .card-img-wrapper .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card-project .card-body {
+  padding: 20px 30px 20px 10px;
+  background-color: #FDF2E6;
+}
+.card-project .card-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.card-project .card-text {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.flexsliderCardsProjects {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.flexsliderCardsProjects .slides li {
+  float: none !important;
+  height: auto;
+  margin-right: 24px;
 }
