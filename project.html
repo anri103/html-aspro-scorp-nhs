@@ -16,7 +16,7 @@
 
 <body>
 
-    <div class="body">
+    <div class="body wbasket">
 
         <div class="body_media"></div>
 
@@ -321,20 +321,30 @@
                         <div class="col-md-12">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h1 id="pagetitle">Выполненные проекты</h1>
+                                    <h1 id="pagetitle">«IQ квартал» на территории Москвы-Сити</h1>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <ul class="breadcrumb" id="navigation">
                                         <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-                                            <a href="#" title="Главная" itemprop="url">
+                                            <a href="index.html" title="Главная" itemprop="url">
                                                 <span itemprop="title">Главная</span>
                                             </a>
                                         </li>
+                                        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                            <a href="projects.html" title="Проекты" itemprop="url">
+                                                <span itemprop="title">Проекты</span>
+                                            </a>
+                                        </li>
+                                        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                            <a href="projects.html" title="Промышленные объекты" itemprop="url">
+                                                <span itemprop="title">Промышленные объекты</span>
+                                            </a>
+                                        </li>
                                         <li class="active" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-                                            <a href="/projects/" title="Проекты" itemprop="url" style="display:none;"></a>
-                                            <span itemprop="title">Проекты</span>
+                                            <a href="project.html" title="«IQ квартал» на территории Москвы-Сити" itemprop="url" style="display:none;"></a>
+                                            <span itemprop="title">«IQ квартал» на территории Москвы-Сити</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -351,270 +361,108 @@
                     <!-- ====== ПРОГРАММИСТУ !!! ======= -->
                     <!-- =============================== -->
                     <!-- Есть какой-либо способ для этой страницы указать стили для двух контейнеров ниже? -->
-                     <!-- Или есть возможность добавлять свои блоки вне этих контейнеров? -->
+                    <!-- Или есть возможность добавлять свои блоки вне этих контейнеров? -->
                     <div class="maxwidth-theme" style="max-width: 100%;">
                         <div class="col-md-12 col-sm-12 col-xs-12 content-md" style="padding: 0;">
 
                             <!-- =============================== -->
                             <!-- ВЕСЬ КОД СЕКЦИЙ БРАТЬ ОТСЮДА!!! -->
                             <!-- =============================== -->
-
-                            <!-- Секция: Выполненные проекты -->
-                            <div class="page-projects-row page-row first-row">
+                            
+                            <!-- Секция: Слайдер и текст -->
+                            <div class="page-row">
                                 <div class="maxwidth-theme">
-                                    <div class="section-heading">
-                                        <div class="section-title">
-                                            <h2 class="heading-title-name">Выполненные проекты</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="section-body">
-                                    <div class="scrollable-container categories-list mb-15">
-                                        <div class="scrollable-wrapper">
-                                            <div class="scrollable-item">
-                                                <a class="categories-link active" href="#">Все проекты</a>
-                                            </div>
-                                            <div class="scrollable-item">
-                                                <a class="categories-link" href="#">Отрасли</a>
-                                            </div>
-                                            <div class="scrollable-item">
-                                                <a class="categories-link" href="#">Дизельные электростанции, ДГУ, ДЭС</a>
-                                            </div>
-                                            <div class="scrollable-item">
-                                                <a class="categories-link" href="#">Дизельные электростанции, ДГУ, ДЭС</a>
-                                            </div>
-                                            <div class="scrollable-item">
-                                                <a class="categories-link" href="#">Источники бесперебойного питания (ИБП)</a>
-                                            </div>
-                                            <div class="scrollable-item">
-                                                <a class="categories-link" href="#">Источники бесперебойного питания (ИБП)</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="projects-wrapper">
-                                        <div class="flex-row">
-                                            <!-- item -->
-                                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                                <div class="item-project">
-                                                    <div class="item-img">
-                                                        <a href="project.html">
-                                                            <img src="img/project-item-01.jpg" class="img-responsive"
-                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="item-body">
-                                                        <div class="item-title">
-                                                            АО «Пивоварня Москва-ЭФЕС»
+                                    <div class="section-body">
+                                        <div class="flex-row" style="--bs-gutter-y: 24px;">
+                                            <!-- Колонка с слайдером -->
+                                            <div class="col-md-6">
+                                                <div class="detail projects">
+                                                    <!-- =============================== -->
+                                                    <!-- galery и все что внутри перенес с боевого сайта БЕЗ изменений -->
+                                                     <!-- =============================== -->
+                                                    <div class="row galery">
+                                                        <div class="inner">
+                                                            <!-- Слайдер -->
+                                                            <div class="flexslider unstyled row" id="slider" data-plugin-options='{
+                                                                "animation": "slide",
+                                                                "directionNav": true,
+                                                                "controlNav": false,
+                                                                "animationLoop": true,
+                                                                "sync": ".detail .galery #carousel",
+                                                                "slideshow": false,
+                                                                "counts": [1, 1, 1]
+                                                            }'>
+                                                                <ul class="slides items">
+                                                                    <li class="col-md-1 col-sm-1 item">
+                                                                        <a href="img/c40d23d68d53a882f82df76c3f3bb949.jpg" class="fancybox" data-fancybox-group="gallery" target="_blank" title="Современый дом площадью 249кв.м.">
+                                                                            <img src="img/c40d23d68d53a882f82df76c3f3bb949.jpg" class="img-responsive inline" title="Современый дом площадью 249кв.м." alt="Современый дом площадью 249кв.м." draggable="false">
+                                                                            <span class="zoom">
+                                                                                <i class="fa fa-16 fa-white-shadowed fa-search-plus"></i>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="col-md-1 col-sm-1 item">
+                                                                        <a href="img/58fac6ad72cead4dee73e0505fc42f3e.jpg" class="fancybox" data-fancybox-group="gallery" target="_blank" title="Современый дом площадью 249кв.м.">
+                                                                            <img src="img/58fac6ad72cead4dee73e0505fc42f3e.jpg" class="img-responsive inline" title="Современый дом площадью 249кв.м." alt="Современый дом площадью 249кв.м." draggable="false">
+                                                                            <span class="zoom">
+                                                                                <i class="fa fa-16 fa-white-shadowed fa-search-plus"></i>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- Тумбы -->
+                                                            <div class="thmb flexslider unstyled" id="carousel">
+                                                                <ul class="slides">
+                                                                    <li class="blink">
+                                                                        <img class="img-responsive inline" src="img/c40d23d68d53a882f82df76c3f3bb949(1).jpg" title="Современый дом площадью 249кв.м." alt="Современый дом площадью 249кв.м." draggable="false" style="opacity: 1;">
+                                                                    </li>
+                                                                    <li class="blink">
+                                                                        <img class="img-responsive inline" src="img/58fac6ad72cead4dee73e0505fc42f3e(1).png" title="Современый дом площадью 249кв.м." alt="Современый дом площадью 249кв.м." draggable="false" style="opacity: 1;">
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <style type="text/css">
+                                                                .projects.detail .galery #carousel.flexslider{max-width:268px;}
+                                                                @media (max-width: 991px){
+                                                                    .projects.detail .galery #carousel.flexslider{max-width:268px;}
+                                                                }
+                                                            </style>
                                                         </div>
-                                                        <div class="item-text">
-                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
-                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
-                                                                восстановили.</p>
-                                                        </div>
-                                                        <div class="item-button">
-                                                            <a href="project.html" class="btn btn-text">Подробнее
-                                                                <svg class="svg-icon icon-arrow-right">
-                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
-                                                                </svg>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- item -->
-                                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                                <div class="item-project">
-                                                    <div class="item-img">
-                                                        <a href="project.html">
-                                                            <img src="img/project-item-02.jpg" class="img-responsive"
-                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="item-body">
-                                                        <div class="item-title">
-                                                            АО «Пивоварня Москва-ЭФЕС»
-                                                        </div>
-                                                        <div class="item-text">
-                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
-                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
-                                                                восстановили.</p>
-                                                        </div>
-                                                        <div class="item-button">
-                                                            <a href="project.html" class="btn btn-text">Подробнее
-                                                                <svg class="svg-icon icon-arrow-right">
-                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
-                                                                </svg>
-                                                            </a>
-                                                        </div>
+                                                        <!-- =============================== -->
+                                                        <!-- ====== ПРОГРАММИСТУ !!! ======= -->
+                                                        <!-- =============================== -->
+                                                        <!-- На боевом сайте этот код работает в этом месте, но в верстке в этом месте он не работает -->
+                                                        <!-- Я перенес его вниз к body, причем на демо оригинального шаблона он именно внизу -->
+                                                        <!-- <script type="text/javascript">
+                                                            $(document).ready(function(){
+                                                                InitFlexSlider(); // for ajax mode
+                                                                $('.detail .galery .item').sliceHeight({slice: 2, lineheight: -3});
+                                                                $('.detail .galery #carousel').flexslider({
+                                                                    animation: 'slide',
+                                                                    controlNav: false,
+                                                                    animationLoop: true,
+                                                                    slideshow: false,
+                                                                    itemWidth: 100,
+                                                                    itemMargin: 7.5,
+                                                                    minItems: 2,
+                                                                    maxItems: 4,
+                                                                    asNavFor: '.detail .galery #slider'
+                                                                });
+                                                            });
+                                                        </script> -->
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- item -->
-                                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                                <div class="item-project">
-                                                    <div class="item-img">
-                                                        <a href="project.html">
-                                                            <img src="img/project-item-03.jpg" class="img-responsive"
-                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="item-body">
-                                                        <div class="item-title">
-                                                            АО «Пивоварня Москва-ЭФЕС»
-                                                        </div>
-                                                        <div class="item-text">
-                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
-                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
-                                                                восстановили.</p>
-                                                        </div>
-                                                        <div class="item-button">
-                                                            <a href="project.html" class="btn btn-text">Подробнее
-                                                                <svg class="svg-icon icon-arrow-right">
-                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
-                                                                </svg>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- item -->
-                                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                                <div class="item-project">
-                                                    <div class="item-img">
-                                                        <a href="project.html">
-                                                            <img src="img/project-item-04.jpg" class="img-responsive"
-                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="item-body">
-                                                        <div class="item-title">
-                                                            АО «Пивоварня Москва-ЭФЕС»
-                                                        </div>
-                                                        <div class="item-text">
-                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
-                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
-                                                                восстановили.</p>
-                                                        </div>
-                                                        <div class="item-button">
-                                                            <a href="project.html" class="btn btn-text">Подробнее
-                                                                <svg class="svg-icon icon-arrow-right">
-                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
-                                                                </svg>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- item -->
-                                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                                <div class="item-project">
-                                                    <div class="item-img">
-                                                        <a href="project.html">
-                                                            <img src="img/project-item-05.jpg" class="img-responsive"
-                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="item-body">
-                                                        <div class="item-title">
-                                                            АО «Пивоварня Москва-ЭФЕС»
-                                                        </div>
-                                                        <div class="item-text">
-                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
-                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
-                                                                восстановили.</p>
-                                                        </div>
-                                                        <div class="item-button">
-                                                            <a href="project.html" class="btn btn-text">Подробнее
-                                                                <svg class="svg-icon icon-arrow-right">
-                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
-                                                                </svg>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- item -->
-                                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                                <div class="item-project">
-                                                    <div class="item-img">
-                                                        <a href="project.html">
-                                                            <img src="img/project-item-06.jpg" class="img-responsive"
-                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="item-body">
-                                                        <div class="item-title">
-                                                            АО «Пивоварня Москва-ЭФЕС»
-                                                        </div>
-                                                        <div class="item-text">
-                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
-                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
-                                                                восстановили.</p>
-                                                        </div>
-                                                        <div class="item-button">
-                                                            <a href="project.html" class="btn btn-text">Подробнее
-                                                                <svg class="svg-icon icon-arrow-right">
-                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
-                                                                </svg>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- item -->
-                                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                                <div class="item-project">
-                                                    <div class="item-img">
-                                                        <a href="project.html">
-                                                            <img src="img/project-item-07.jpg" class="img-responsive"
-                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="item-body">
-                                                        <div class="item-title">
-                                                            АО «Пивоварня Москва-ЭФЕС»
-                                                        </div>
-                                                        <div class="item-text">
-                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
-                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
-                                                                восстановили.</p>
-                                                        </div>
-                                                        <div class="item-button">
-                                                            <a href="project.html" class="btn btn-text">Подробнее
-                                                                <svg class="svg-icon icon-arrow-right">
-                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
-                                                                </svg>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- item -->
-                                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                                <div class="item-project">
-                                                    <div class="item-img">
-                                                        <a href="project.html">
-                                                            <img src="img/project-item-08.jpg" class="img-responsive"
-                                                                alt="Проект АО «Пивоварня Москва-ЭФЕС»" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="item-body">
-                                                        <div class="item-title">
-                                                            АО «Пивоварня Москва-ЭФЕС»
-                                                        </div>
-                                                        <div class="item-text">
-                                                            <p>Оперативно было принято решение разобрать стену цеха рядом с помещением
-                                                                ИБП и выполнить такелажные работы через отверстие. Затем стену цеха
-                                                                восстановили.</p>
-                                                        </div>
-                                                        <div class="item-button">
-                                                            <a href="project.html" class="btn btn-text">Подробнее
-                                                                <svg class="svg-icon icon-arrow-right">
-                                                                    <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
-                                                                </svg>
-                                                            </a>
-                                                        </div>
-                                                    </div>
+                                            <!-- Колонка с текстом -->
+                                            <div class="col-md-6">
+                                                <p class="h1">«IQ квартал» на территории Москвы-Сити</p>
+                                                <p class="h3">Оборудование: <a href="#">ДНУ-2000/21-Н - 1 агрегат</a></p>
+                                                <div class="text-content">
+                                                    <p><b>Объект</b> - пивоваренный завод Efes в Ульяновске.</p>
+                                                    <p><b>Задача</b> - Обеспечение бесперебойного электроснабжения линии розлива пива.</p>
+                                                    <p><b>Проблема</b> - На объекте из-за некачественного энергоснабжения и перепадов напряжения автоматика линии розлива пива перезагружалась достаточно часто. Время перезагрузки- десятки минут. Из-за нарушений в логистике (несвоевременная загрузка автотранспорта) завод нёс дополнительные расходы. Сложность реализации была обусловлена ещё и невозможностью проведения такелажных работ до помещения ИБП.</p>
+                                                    <p><b>Решение</b> - Оперативно было принято решение разобрать стену цеха рядом с помещением ИБП и выполнить такелажные работы через отверстие. Затем стену цеха восстановили.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -622,102 +470,116 @@
                                 </div>
                             </div>
 
-                            <!-- Секция: Наши партнеры -->
-                            <div class="frontpage-partners-row page-row">
+                            <!-- Секция: Реализованные проекты -->
+                            <div class="page-row">
                                 <div class="maxwidth-theme">
                                     <div class="section-heading">
                                         <div class="section-title">
-                                            <h2 class="heading-title-name">Наши заказчики</h2>
+                                            <h2 class="heading-title-name">Реализованные проекты</h2>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="partners front">
-                                    <div class="flexslider unstyled row" data-plugin-options='{
-                                            "directionNav": false,
-                                            "controlNav" :true,
+                                    <div class="section-body">
+                                        <div class="flexslider flexsliderCardsProjects" data-plugin-options='{
+                                            "directionNav": true,
+                                            "controlNav": true,
                                             "animationLoop": true,
                                             "slideshow": true,
                                             "slideshowSpeed": 5000,
                                             "animationSpeed": 600,
-                                            "counts": [6, 4, 2]
+                                            "itemWidth": 320,
+                                            "itemMargin": 24
                                         }'>
-                                        <ul class="slides items">
-                                            <li>
-                                                <div class="item" id="bx_3485106786_712">
-                                                    <img src="img/partner-01.jpg" class="img-responsive" alt="Lenta" />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item" id="bx_3485106786_713">
-                                                    <img src="img/partner-02.jpg" class="img-responsive" alt="GazpromNeft" />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item" id="bx_3485106786_715">
-                                                    <img src="img/partner-03.jpg" class="img-responsive" alt="sberb" />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item" id="bx_3485106786_716">
-                                                    <img src="img/partner-04.jpg" class="img-responsive" alt="Lerua" />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item" id="bx_3485106786_717">
-                                                    <img src="img/partner-05.jpg" class="img-responsive" alt="райфайзен" />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item" id="bx_3485106786_718">
-                                                    <img src="img/partner-06.jpg" class="img-responsive" alt="alrosa" />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item" id="bx_3485106786_719">
-                                                    <img src="img/partner-07.jpg" class="img-responsive" alt="rosneft" />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item" id="bx_3485106786_720">
-                                                    <img src="img/partner-08.jpg" class="img-responsive" alt="mtsbank" />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item" id="bx_3485106786_721">
-                                                    <img src="img/partner-09.jpg" class="img-responsive" alt="renisans" />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item" id="bx_3485106786_722">
-                                                    <img src="img/partner-01.jpg" class="img-responsive" alt="tinikof" />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item" id="bx_3485106786_723">
-                                                    <img src="img/partner-01.jpg" class="img-responsive" alt="Lenta" />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item" id="bx_3485106786_724">
-                                                    <img src="img/partner-02.jpg" class="img-responsive" alt="GazpromNeft" />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item" id="bx_3485106786_725">
-                                                    <img src="img/partner-03.jpg" class="img-responsive" alt="sberb" />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item" id="bx_3485106786_726">
-                                                    <img src="img/partner-04.jpg" class="img-responsive" alt="Lerua" />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item" id="bx_3485106786_727">
-                                                    <img src="img/partner-05.jpg" class="img-responsive" alt="райфайзен" />
-                                                </div>
-                                            </li>
-                                        </ul>
+                                            <ul class="slides d-flex">
+                                                <!-- item -->
+                                                 <li>
+                                                     <div class="card card-project">
+                                                         <div class="card-img-wrapper">
+                                                             <a href="#">
+                                                                 <img class="card-img" src="img/project-item-01.jpg" alt="АО Пивоварня Москва-ЭФЕС">
+                                                             </a>
+                                                         </div>
+                                                         <div class="card-body">
+                                                             <div class="h4 card-title">АО «Пивоварня Москва-ЭФЕС»</div>
+                                                             <p class="card-text">Оперативно было принято решение разобрать стену цеха рядом с помещением ИБП и выполнить такелажные работы через отверстие. Затем стену цеха восстановили.</p>
+                                                             <p class="card-text">
+                                                                 <a href="#" class="btn btn-text fs-18 fw-400 text-lowercase m-0">
+                                                                     <span>Подробнее</span>
+                                                                     <svg class="svg-icon icon-arrow-right">
+                                                                         <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                                                     </svg>
+                                                                 </a>
+                                                             </p>
+                                                         </div>
+                                                     </div>
+                                                 </li>
+                                                 <!-- item -->
+                                                 <li>
+                                                    <div class="card card-project">
+                                                        <div class="card-img-wrapper">
+                                                            <a href="#">
+                                                                <img class="card-img" src="img/project-item-01.jpg" alt="АО Пивоварня Москва-ЭФЕС">
+                                                            </a>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="h4 card-title">АО «Пивоварня Москва-ЭФЕС»</div>
+                                                            <p class="card-text">Оперативно было принято решение разобрать стену цеха рядом с помещением ИБП и выполнить такелажные работы через отверстие. Затем стену цеха восстановили.</p>
+                                                            <p class="card-text">
+                                                                <a href="#" class="btn btn-text fs-18 fw-400 text-lowercase m-0">
+                                                                    <span>Подробнее</span>
+                                                                    <svg class="svg-icon icon-arrow-right">
+                                                                        <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- item -->
+                                                <li>
+                                                    <div class="card card-project">
+                                                        <div class="card-img-wrapper">
+                                                            <a href="#">
+                                                                <img class="card-img" src="img/project-item-01.jpg" alt="АО Пивоварня Москва-ЭФЕС">
+                                                            </a>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="h4 card-title">АО «Пивоварня Москва-ЭФЕС»</div>
+                                                            <p class="card-text">Оперативно было принято решение разобрать стену цеха рядом с помещением ИБП и выполнить такелажные работы через отверстие. Затем стену цеха восстановили.</p>
+                                                            <p class="card-text">
+                                                                <a href="#" class="btn btn-text fs-18 fw-400 text-lowercase m-0">
+                                                                    <span>Подробнее</span>
+                                                                    <svg class="svg-icon icon-arrow-right">
+                                                                        <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- item -->
+                                                <li>
+                                                    <div class="card card-project">
+                                                        <div class="card-img-wrapper">
+                                                            <a href="#">
+                                                                <img class="card-img" src="img/project-item-01.jpg" alt="АО Пивоварня Москва-ЭФЕС">
+                                                            </a>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="h4 card-title">АО «Пивоварня Москва-ЭФЕС»</div>
+                                                            <p class="card-text">Оперативно было принято решение разобрать стену цеха рядом с помещением ИБП и выполнить такелажные работы через отверстие. Затем стену цеха восстановили.</p>
+                                                            <p class="card-text">
+                                                                <a href="#" class="btn btn-text fs-18 fw-400 text-lowercase m-0">
+                                                                    <span>Подробнее</span>
+                                                                    <svg class="svg-icon icon-arrow-right">
+                                                                        <use xlink:href="css/sprite.svg#icon-arrow-right"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -927,6 +789,24 @@
     <!-- Мой код добавить в соответствующий custom.js темы Аспро! -->
     <script src="js/custom.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function(){
+            InitFlexSlider(); // for ajax mode
+            $('.detail .galery .item').sliceHeight({slice: 2, lineheight: -3});
+            $('.detail .galery #carousel').flexslider({
+                animation: 'slide',
+                controlNav: false,
+                animationLoop: true,
+                slideshow: false,
+                itemWidth: 100,
+                itemMargin: 7.5,
+                minItems: 2,
+                maxItems: 4,
+                asNavFor: '.detail .galery #slider'
+            });
+        });
+    </script>
+    
 </body>
 
 </html>
