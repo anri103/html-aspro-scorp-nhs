@@ -219,46 +219,6 @@ label[for="processing_approval"] {
 .catalog .wrap_pagination {
   text-align: right;
 }
-.catalog.detail .flexslider {
-  box-shadow: none;
-}
-.catalog.detail .flexslider .slides > li .item {
-  opacity: 1 !important;
-  -webkit-filter: none !important;
-  -moz-filter: none !important;
-  filter: none !important;
-  text-align: center;
-  padding: 0 15px;
-}
-.catalog.detail .flexslider .slides > li img {
-  width: auto;
-  display: inline-block;
-  vertical-align: middle;
-}
-.catalog.detail .flexslider .flex-viewport {
-  margin: 0 40px;
-}
-.catalog.detail .flexslider .h4 {
-  margin-top: 15px;
-}
-.catalog.detail .flex-direction-nav a:before {
-  line-height: 1;
-}
-.catalog.detail i.h2 {
-  font-weight: 700;
-}
-.catalog.detail div.h2 {
-  margin-bottom: 10px;
-}
-.catalog.detail .info h4 {
-  font-weight: 400;
-}
-.catalog.detail .order .btn {
-  min-width: 150px;
-  font-family: "Berlin Type Office", sans-serif;
-  font-size: 20px;
-  text-transform: none;
-}
 .catalog .dgu-options {
   margin: 10px 0 20px;
 }
@@ -2842,53 +2802,58 @@ footer .footer-bottom .copy {
   height: auto;
   margin-right: 24px;
 }
-.detail .galery {
+.projects.detail .galery {
   margin-right: 0;
   margin-left: 0;
 }
-.detail .galery .inner {
+.projects.detail .galery .inner {
   border: none !important;
   padding: 0 !important;
   max-height: initial !important;
 }
 @media (max-width: 767px) {
-  .detail .galery #slider .flex-direction-nav {
+  .projects.detail .galery #slider .flex-direction-nav {
     display: block;
   }
 }
-.detail .galery #slider .flex-direction-nav a {
+.projects.detail .galery #slider .flex-direction-nav a {
   color: rgba(15, 168, 174, 0.8);
   width: 40px;
   height: 40px;
   margin-top: -20px;
   background: #EAF0F2;
 }
-.detail .galery #slider .flex-direction-nav a:hover {
+.projects.detail .galery #slider .flex-direction-nav a:hover {
   color: #fff;
   border-color: #0D969B;
   background-color: #0D969B;
 }
 @media (max-width: 767px) {
-  .detail .galery #slider .flex-direction-nav a {
+  .projects.detail .galery #slider .flex-direction-nav a {
     opacity: 1;
   }
 }
-.detail .galery #slider span.zoom {
+.projects.detail .galery #slider span.zoom {
   display: none;
 }
 @media (max-width: 767px) {
-  .detail .galery #carousel {
+  .projects.detail .galery #carousel {
     display: block;
   }
 }
-.detail .galery #carousel .flex-direction-nav a {
+.projects.detail .galery #carousel.flexslider {
+  margin: 0 auto !important;
+  margin-top: 26px !important;
+  margin-bottom: 0 !important;
+}
+.projects.detail .galery #carousel .flex-direction-nav a {
   color: #778285;
   height: 40px;
   margin-top: -20px;
   border-radius: 0;
   background-color: transparent;
 }
-.detail .galery #carousel .flex-direction-nav a:hover {
+.projects.detail .galery #carousel .flex-direction-nav a:hover {
   color: rgba(15, 168, 174, 0.8);
 }
 .leave-request-row .section-body {
@@ -2958,6 +2923,73 @@ footer .footer-bottom .copy {
 }
 .leave-request-row .section-img-wrapper img {
   border-radius: 12px;
+}
+.catalog.detail .galery {
+  margin-right: 0;
+  margin-left: 0;
+}
+.catalog.detail .galery .inner {
+  border: none !important;
+  padding: 0 !important;
+  max-height: initial !important;
+}
+@media (max-width: 767px) {
+  .catalog.detail .galery #slider .flex-direction-nav {
+    display: block;
+  }
+}
+.catalog.detail .galery #slider .flex-direction-nav a {
+  color: rgba(15, 168, 174, 0.8);
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  background: #EAF0F2;
+}
+.catalog.detail .galery #slider .flex-direction-nav a:hover {
+  color: #fff;
+  border-color: #0D969B;
+  background-color: #0D969B;
+}
+@media (max-width: 767px) {
+  .catalog.detail .galery #slider .flex-direction-nav a {
+    opacity: 1;
+  }
+}
+.catalog.detail .galery #slider span.zoom {
+  display: none;
+}
+@media (max-width: 767px) {
+  .catalog.detail .galery #carousel {
+    display: block;
+  }
+}
+.catalog.detail .galery #carousel.flexslider {
+  margin: 0 auto !important;
+  margin-top: 26px !important;
+  margin-bottom: 0 !important;
+}
+.catalog.detail .galery #carousel .slides li {
+  width: 100px !important;
+}
+.catalog.detail .galery #carousel .flex-direction-nav a {
+  color: #778285;
+  height: 40px;
+  margin-top: -20px;
+  border-radius: 0;
+  background-color: transparent;
+}
+.catalog.detail .galery #carousel .flex-direction-nav a:hover {
+  color: rgba(15, 168, 174, 0.8);
+}
+.catalog.detail .head.wti .info {
+  padding: 0;
+}
+.catalog.detail .order .btn {
+  width: 100%;
+  max-width: 170px;
+  font-size: 14px;
+  padding: 12px 20px;
+  margin: 0;
 }
 .product-tabs-row .nav:after,
 .product-tabs-row .nav:before {

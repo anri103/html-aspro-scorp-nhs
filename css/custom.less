@@ -255,53 +255,6 @@ label[for="processing_approval"] {
     .wrap_pagination {
         text-align: right;
     }
-    &.detail {
-        .flexslider {
-            box-shadow: none;
-            .slides > li {
-                .item {
-                    opacity:        1 !important;
-                    -webkit-filter: none !important;
-                    -moz-filter:    none !important;
-                    filter:         none !important;
-                    filter:         none !important;
-                    text-align:     center;
-                    padding:        0 15px;
-                }
-                img {
-                    width:          auto;
-                    display:        inline-block;
-                    vertical-align: middle;
-                }
-            }
-            .flex-viewport {
-                margin: 0 40px;
-            }
-            .h4 {
-                margin-top: 15px;
-            }
-        }
-        .flex-direction-nav a:before {
-            line-height: 1;
-        }
-        i.h2 {
-            font-weight: 700;
-        }
-        div.h2 {
-            margin-bottom: 10px;
-        }
-        .info {
-            h4 {
-                font-weight: 400;
-            }
-        }
-        .order .btn {
-            min-width:      150px;
-            font-family:    "Berlin Type Office", sans-serif;
-            font-size:      20px;
-            text-transform: none;
-        }
-    }
     .dgu-options {
         margin: 10px 0 20px;
         .h4 {
@@ -2826,7 +2779,7 @@ footer {
 
 // project page ==========
 
-.detail {
+.projects.detail {
     .galery {
         margin-right: 0;
         margin-left: 0;
@@ -2861,6 +2814,11 @@ footer {
         #carousel {
             @media (max-width: 767px) {
                 display: block;
+            }
+            &.flexslider {
+                margin: 0 auto !important;
+                margin-top: 26px !important;
+                margin-bottom: 0 !important;
             }
             .flex-direction-nav {
                 a {
@@ -2951,7 +2909,75 @@ footer {
 
 // product page ==========
 
-.catalog.detail {}
+.catalog.detail {
+    .galery {
+        margin-right: 0;
+        margin-left: 0;
+        .inner {
+            border: none !important;
+            padding: 0 !important;
+            max-height: initial !important;
+        }
+        #slider .flex-direction-nav {
+            @media (max-width: 767px) {
+                display: block;
+            }
+        }
+        #slider .flex-direction-nav a {
+            color: rgba(15, 168, 174, 0.8);
+            width: 40px;
+            height: 40px;
+            margin-top: -20px;
+            background: #EAF0F2;
+            &:hover {
+                color: #fff;
+                border-color: #0D969B;
+                background-color: #0D969B;
+            }
+            @media (max-width: 767px) {
+                opacity: 1;
+            }
+        }
+        #slider span.zoom {
+            display: none;
+        }
+        #carousel {
+            @media (max-width: 767px) {
+                display: block;
+            }
+            &.flexslider {
+                margin: 0 auto !important;
+                margin-top: 26px !important;
+                margin-bottom: 0 !important;
+            }
+            .slides li {
+                width: 100px !important;
+            }
+            .flex-direction-nav {
+                a {
+                    color: rgba(119, 130, 133, 1);
+                    height: 40px;
+                    margin-top: -20px;
+                    border-radius: 0;
+                    background-color: transparent;
+                    &:hover {
+                        color: rgba(15, 168, 174, 0.8);
+                    }
+                }
+            }
+        }
+    }
+    .head.wti .info {
+        padding: 0;
+    }
+    .order .btn {
+        width: 100%;
+        max-width: 170px;
+        font-size: 14px;
+        padding: 12px 20px;
+        margin: 0;
+    }
+}
 
 .product-tabs-row {
     .nav:after,
