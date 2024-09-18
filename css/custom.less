@@ -825,6 +825,10 @@ body.modal-open {
     margin: 0 !important;
 }
 
+.mt-15 {
+    margin-top: 15px !important;
+}
+
 .mt-30 {
     margin-top: 30px !important;
 }
@@ -953,6 +957,10 @@ body.modal-open {
 }
 .order-first {order:-1 !important;}
 .order-last {order:999 !important;}
+
+.gy-15 {
+    --bs-gutter-y: 15px;
+}
 
 @media (min-width: 768px) {
     .flex-row {
@@ -2865,8 +2873,6 @@ footer {
                         color: rgba(15, 168, 174, 0.8);
                     }
                 }
-                a.flex-prev {}
-                a.flex-next {}
             }
         }
     }
@@ -2945,6 +2951,8 @@ footer {
 
 // product page ==========
 
+.catalog.detail {}
+
 .product-tabs-row {
     .nav:after,
     .nav:before {
@@ -2955,7 +2963,8 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 5px 30px;
+        gap: 10px 15px;
+        margin-bottom: 30px;
         &>li {
             float: none;
         }
@@ -2987,7 +2996,9 @@ footer {
     .tab-content {
         .tab-pane {
             .tab-body {
-                padding: 30px 0;
+                .h2 {
+                    margin-bottom: 25px;
+                }
                 .table {
                     tr td {
                         width: 50%;
@@ -2996,6 +3007,115 @@ footer {
                         text-align: right;
                     }
                 }
+            }
+        }
+    }
+}
+
+.table-similarly {
+    margin-bottom: 20px;
+    .table-heading {
+        color: #333333;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        padding: 16px;
+        background-color: #CFEEEF;
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    .table-body {
+        @media (min-width: 768px) {
+            padding: 16px;
+        }
+        .table-row {
+            padding: 20px 0;
+            border-bottom: 1px solid #d5d5d5;
+            @media (min-width: 768px) {
+                border-bottom: none;
+            }
+            &.table-row:last-child {
+                margin-bottom: 0;
+            }
+            .flex-row {
+                --bs-gutter-y: 16px;
+            }
+            [class*="col-"]:not(.col-btn) {
+                @media (min-width: 768px) {
+                    border-bottom: 1px solid #d5d5d5;
+                }
+            }
+            .col-btn .btn {
+                max-width: 160px;
+                width: 100%;
+                margin: 0;
+                white-space: normal;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 0.01em;
+                text-transform: uppercase;
+                &.btn-outline {
+                    color: #0FA8AE;
+                    border-color: #0FA8AE;
+                    background-color: transparent;
+                    &:hover,
+                    &:focus {
+                        color: #fff;
+                        border-color: #0FA8AE;
+                        background-color: #0FA8AE;
+                    }
+                }
+                &.btn-outline.btn-warning {
+                    color: #E29242;
+                    border-color: #E29242;
+                    background-color: transparent;
+                    &:hover,
+                    &:focus {
+                        color: #fff;
+                        border-color: #E29242;
+                        background-color: #E29242;
+                    }
+                }
+                @media (min-width: 768px) {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.card-helper-system {
+    .card-body {
+        overflow: 0 20px;
+    }
+    .card-title {
+        min-height: 43px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        a {
+            color: inherit;
+            &:hover,
+            &:focus {
+                color: #0fa8ae;
+            }
+        }
+    }
+    .card-img-wrapper {
+        height: 258px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: 0.3s ease;
+        }
+        &:hover {
+            img {
+                transform: scale(1.1);
             }
         }
     }

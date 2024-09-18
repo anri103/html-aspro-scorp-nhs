@@ -371,7 +371,7 @@
                                     <div class="catalog detail" itemscope="" itemtype="http://schema.org/Product">
                                         <!-- Динамический data-id -->
                                         <div class="item" data-id="219">
-                                            <div class="head wti">
+                                            <div class="head">
                                                 <div class="section-body">
                                                     <div class="flex-row" style="--bs-gutter-y: 24px;">
                 
@@ -379,7 +379,8 @@
                                                             <div class="row galery">
                                                                 <div class="inner">
                                                                     <!-- Слайдер -->
-                                                                    <div class="flexslider unstyled row" id="slider" data-plugin-options='{
+                                                                    <div class="flexslider unstyled row" id="slider"
+                                                                    data-plugin-options='{
                                                                         "animation": "slide",
                                                                         "directionNav": true,
                                                                         "controlNav": false,
@@ -462,11 +463,11 @@
                                                                             </li>
                                                                         </ul>
                                                                     </div>
-                                                                    <!-- Этот style видимо динамический, если элементов 2 и меньше, то max-width:268px, а если 4, то max-width:483px -->
-                                                                    <style type="text/css">
-                                                                        .projects.detail .galery #carousel.flexslider{max-width:483px;}
+                                                                    <!-- Этот style видимо динамический -->
+                                                                    <style>
+                                                                        .catalog.detail .galery #carousel.flexslider{max-width:306px;}
                                                                         @media (max-width: 991px){
-                                                                            .projects.detail .galery #carousel.flexslider{max-width:268px;}
+                                                                            .catalog.detail .galery #carousel.flexslider{max-width:222px;}
                                                                         }
                                                                     </style>
                                                                 </div>
@@ -496,37 +497,38 @@
                                                         </div>
                 
                                                         <div class="col-md-6">
-                                                            <p class="h1">Дизельная электростанция ДГУ Aksa APD 110 C</p>
-                                                            <p class="h3">Цена от 73 200 ₽</p>
-                                                            <p class="h3">Двигатель: <a href="product.html">CUMMINS QSL9-G5</a></p>
-                                                            <p class="h3">Бренд: <a href="product.html">Aksa</a></p>
-                                                            <p class="h3">Номинальная мощность: <a href="product.html">240 кВт / 300 кВт</a></p>
-                                                            <p class="h3">
-                                                                <svg class="va-middle me-2" xmlns="http://www.w3.org/2000/svg" width="37" height="33" viewBox="0 0 37 33" fill="none">
-                                                                    <path d="M15.8883 15.8889H12.2217V18.3334V24.4445H13.4439V20.7778H15.8883C17.2328 20.7778 18.3328 19.6778 18.3328 18.3334C18.3328 16.9889 17.2328 15.8889 15.8883 15.8889ZM15.8883 19.5556H13.4439V17.1112H15.8883C16.6217 17.1112 17.1106 17.6001 17.1106 18.3334C17.1106 19.0668 16.6217 19.5556 15.8883 19.5556Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
-                                                                    <path d="M23.2223 15.8889H19.5557V24.4445H23.2223C24.5667 24.4445 25.6668 23.3444 25.6668 22V18.3334C25.6668 16.9889 24.5667 15.8889 23.2223 15.8889ZM24.4446 22.0001C24.4446 22.7334 23.9557 23.2223 23.2223 23.2223H20.7779V17.1112H23.2223C23.9557 17.1112 24.4446 17.6001 24.4446 18.3334V22.0001Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
-                                                                    <path d="M33 12.2222H23.2222V8.55556L15.8889 0H2.44444C1.09997 0 0 1.09997 0 2.44444V30.5556C0 31.9 1.09997 33 2.44444 33H20.7778C22.1222 33 23.2222 31.9 23.2222 30.5556V28.1111H33C35.0778 28.1111 36.6667 26.5223 36.6667 24.4444V15.8888C36.6667 13.8111 35.0778 12.2222 33 12.2222ZM15.8889 1.8333L21.6334 8.55556H17.1111C16.5 8.55556 15.8889 7.94448 15.8889 7.33333V1.8333ZM22 30.5555C22 31.1666 21.5111 31.7777 20.7778 31.7777H2.44444C1.83337 31.7777 1.22222 31.2888 1.22222 30.5555V2.44444C1.22222 1.83337 1.71111 1.22222 2.44444 1.22222H14.6667V7.33333C14.6667 8.67781 15.7666 9.77778 17.1111 9.77778H22V12.2222H12.2222C10.1444 12.2222 8.55556 13.8111 8.55556 15.8889V24.4444C8.55556 26.5223 10.1444 28.1111 12.2222 28.1111H22V30.5555ZM35.4444 24.4444C35.4444 25.7889 34.3444 26.8889 33 26.8889H12.2222C10.8777 26.8889 9.77778 25.7889 9.77778 24.4444V15.8888C9.77778 14.5443 10.8777 13.4444 12.2222 13.4444H33C34.3444 13.4444 35.4444 14.5443 35.4444 15.8888V24.4444Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
-                                                                    <path d="M26.8887 24.4445H28.1109V20.7778H31.7776V19.5556H28.1109V17.1112H32.9998V15.8889H26.8887V24.4445Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
-                                                                </svg>
-                                                                <a href="#" class="text-reset link-underline">Техническая спецификация</a>
-                                                            </p>
-                                                            <p class="h3">
-                                                                <svg class="va-middle me-2" xmlns="http://www.w3.org/2000/svg" width="37" height="33" viewBox="0 0 37 33" fill="none">
-                                                                    <path d="M15.8883 15.8889H12.2217V18.3334V24.4445H13.4439V20.7778H15.8883C17.2328 20.7778 18.3328 19.6778 18.3328 18.3334C18.3328 16.9889 17.2328 15.8889 15.8883 15.8889ZM15.8883 19.5556H13.4439V17.1112H15.8883C16.6217 17.1112 17.1106 17.6001 17.1106 18.3334C17.1106 19.0668 16.6217 19.5556 15.8883 19.5556Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
-                                                                    <path d="M23.2223 15.8889H19.5557V24.4445H23.2223C24.5667 24.4445 25.6668 23.3444 25.6668 22V18.3334C25.6668 16.9889 24.5667 15.8889 23.2223 15.8889ZM24.4446 22.0001C24.4446 22.7334 23.9557 23.2223 23.2223 23.2223H20.7779V17.1112H23.2223C23.9557 17.1112 24.4446 17.6001 24.4446 18.3334V22.0001Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
-                                                                    <path d="M33 12.2222H23.2222V8.55556L15.8889 0H2.44444C1.09997 0 0 1.09997 0 2.44444V30.5556C0 31.9 1.09997 33 2.44444 33H20.7778C22.1222 33 23.2222 31.9 23.2222 30.5556V28.1111H33C35.0778 28.1111 36.6667 26.5223 36.6667 24.4444V15.8888C36.6667 13.8111 35.0778 12.2222 33 12.2222ZM15.8889 1.8333L21.6334 8.55556H17.1111C16.5 8.55556 15.8889 7.94448 15.8889 7.33333V1.8333ZM22 30.5555C22 31.1666 21.5111 31.7777 20.7778 31.7777H2.44444C1.83337 31.7777 1.22222 31.2888 1.22222 30.5555V2.44444C1.22222 1.83337 1.71111 1.22222 2.44444 1.22222H14.6667V7.33333C14.6667 8.67781 15.7666 9.77778 17.1111 9.77778H22V12.2222H12.2222C10.1444 12.2222 8.55556 13.8111 8.55556 15.8889V24.4444C8.55556 26.5223 10.1444 28.1111 12.2222 28.1111H22V30.5555ZM35.4444 24.4444C35.4444 25.7889 34.3444 26.8889 33 26.8889H12.2222C10.8777 26.8889 9.77778 25.7889 9.77778 24.4444V15.8888C9.77778 14.5443 10.8777 13.4444 12.2222 13.4444H33C34.3444 13.4444 35.4444 14.5443 35.4444 15.8888V24.4444Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
-                                                                    <path d="M26.8887 24.4445H28.1109V20.7778H31.7776V19.5556H28.1109V17.1112H32.9998V15.8889H26.8887V24.4445Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
-                                                                </svg>
-                                                                <a href="#" class="text-reset link-underline">Руководство по эксплуатации</a>
-                                                            </p>
-                                                            <div class="text-content">
-                                                                <p>Генератор изготовлен на базе двигателя <b>Cummins</b>.</p>
-                                                                <p>Используется в качестве постоянного или временного источника электрической энергии. Оборудование устанавливают на стройплощадках, стадионах, на территории вахтовых поселков и других автономных объектов.</p>
-                                                                <p>Для него характерны разумных расход топлива, эффективная работа системы охлаждения, высокий уровень надежности.</p>
+                                                            <div class="info" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                                                <p class="h3">Цена от 73 200 ₽</p>
+                                                                <p class="h3">Двигатель: <a href="product.html">CUMMINS QSL9-G5</a></p>
+                                                                <p class="h3">Бренд: <a href="product.html">Aksa</a></p>
+                                                                <p class="h3">Номинальная мощность: <a href="product.html">240 кВт / 300 кВт</a></p>
+                                                                <p class="h3">
+                                                                    <svg class="va-middle me-2" xmlns="http://www.w3.org/2000/svg" width="37" height="33" viewBox="0 0 37 33" fill="none">
+                                                                        <path d="M15.8883 15.8889H12.2217V18.3334V24.4445H13.4439V20.7778H15.8883C17.2328 20.7778 18.3328 19.6778 18.3328 18.3334C18.3328 16.9889 17.2328 15.8889 15.8883 15.8889ZM15.8883 19.5556H13.4439V17.1112H15.8883C16.6217 17.1112 17.1106 17.6001 17.1106 18.3334C17.1106 19.0668 16.6217 19.5556 15.8883 19.5556Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
+                                                                        <path d="M23.2223 15.8889H19.5557V24.4445H23.2223C24.5667 24.4445 25.6668 23.3444 25.6668 22V18.3334C25.6668 16.9889 24.5667 15.8889 23.2223 15.8889ZM24.4446 22.0001C24.4446 22.7334 23.9557 23.2223 23.2223 23.2223H20.7779V17.1112H23.2223C23.9557 17.1112 24.4446 17.6001 24.4446 18.3334V22.0001Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
+                                                                        <path d="M33 12.2222H23.2222V8.55556L15.8889 0H2.44444C1.09997 0 0 1.09997 0 2.44444V30.5556C0 31.9 1.09997 33 2.44444 33H20.7778C22.1222 33 23.2222 31.9 23.2222 30.5556V28.1111H33C35.0778 28.1111 36.6667 26.5223 36.6667 24.4444V15.8888C36.6667 13.8111 35.0778 12.2222 33 12.2222ZM15.8889 1.8333L21.6334 8.55556H17.1111C16.5 8.55556 15.8889 7.94448 15.8889 7.33333V1.8333ZM22 30.5555C22 31.1666 21.5111 31.7777 20.7778 31.7777H2.44444C1.83337 31.7777 1.22222 31.2888 1.22222 30.5555V2.44444C1.22222 1.83337 1.71111 1.22222 2.44444 1.22222H14.6667V7.33333C14.6667 8.67781 15.7666 9.77778 17.1111 9.77778H22V12.2222H12.2222C10.1444 12.2222 8.55556 13.8111 8.55556 15.8889V24.4444C8.55556 26.5223 10.1444 28.1111 12.2222 28.1111H22V30.5555ZM35.4444 24.4444C35.4444 25.7889 34.3444 26.8889 33 26.8889H12.2222C10.8777 26.8889 9.77778 25.7889 9.77778 24.4444V15.8888C9.77778 14.5443 10.8777 13.4444 12.2222 13.4444H33C34.3444 13.4444 35.4444 14.5443 35.4444 15.8888V24.4444Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
+                                                                        <path d="M26.8887 24.4445H28.1109V20.7778H31.7776V19.5556H28.1109V17.1112H32.9998V15.8889H26.8887V24.4445Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
+                                                                    </svg>
+                                                                    <a href="#" class="text-reset link-underline" target="_blank">Техническая спецификация</a>
+                                                                </p>
+                                                                <p class="h3">
+                                                                    <svg class="va-middle me-2" xmlns="http://www.w3.org/2000/svg" width="37" height="33" viewBox="0 0 37 33" fill="none">
+                                                                        <path d="M15.8883 15.8889H12.2217V18.3334V24.4445H13.4439V20.7778H15.8883C17.2328 20.7778 18.3328 19.6778 18.3328 18.3334C18.3328 16.9889 17.2328 15.8889 15.8883 15.8889ZM15.8883 19.5556H13.4439V17.1112H15.8883C16.6217 17.1112 17.1106 17.6001 17.1106 18.3334C17.1106 19.0668 16.6217 19.5556 15.8883 19.5556Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
+                                                                        <path d="M23.2223 15.8889H19.5557V24.4445H23.2223C24.5667 24.4445 25.6668 23.3444 25.6668 22V18.3334C25.6668 16.9889 24.5667 15.8889 23.2223 15.8889ZM24.4446 22.0001C24.4446 22.7334 23.9557 23.2223 23.2223 23.2223H20.7779V17.1112H23.2223C23.9557 17.1112 24.4446 17.6001 24.4446 18.3334V22.0001Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
+                                                                        <path d="M33 12.2222H23.2222V8.55556L15.8889 0H2.44444C1.09997 0 0 1.09997 0 2.44444V30.5556C0 31.9 1.09997 33 2.44444 33H20.7778C22.1222 33 23.2222 31.9 23.2222 30.5556V28.1111H33C35.0778 28.1111 36.6667 26.5223 36.6667 24.4444V15.8888C36.6667 13.8111 35.0778 12.2222 33 12.2222ZM15.8889 1.8333L21.6334 8.55556H17.1111C16.5 8.55556 15.8889 7.94448 15.8889 7.33333V1.8333ZM22 30.5555C22 31.1666 21.5111 31.7777 20.7778 31.7777H2.44444C1.83337 31.7777 1.22222 31.2888 1.22222 30.5555V2.44444C1.22222 1.83337 1.71111 1.22222 2.44444 1.22222H14.6667V7.33333C14.6667 8.67781 15.7666 9.77778 17.1111 9.77778H22V12.2222H12.2222C10.1444 12.2222 8.55556 13.8111 8.55556 15.8889V24.4444C8.55556 26.5223 10.1444 28.1111 12.2222 28.1111H22V30.5555ZM35.4444 24.4444C35.4444 25.7889 34.3444 26.8889 33 26.8889H12.2222C10.8777 26.8889 9.77778 25.7889 9.77778 24.4444V15.8888C9.77778 14.5443 10.8777 13.4444 12.2222 13.4444H33C34.3444 13.4444 35.4444 14.5443 35.4444 15.8888V24.4444Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
+                                                                        <path d="M26.8887 24.4445H28.1109V20.7778H31.7776V19.5556H28.1109V17.1112H32.9998V15.8889H26.8887V24.4445Z" fill="#0FA8AE" style="fill:#0FA8AE;fill:color(display-p3 0.0588 0.6588 0.6824);fill-opacity:1;"/>
+                                                                    </svg>
+                                                                    <a href="#" class="text-reset link-underline" target="_blank">Руководство по эксплуатации</a>
+                                                                </p>
+                                                                <div class="text-content">
+                                                                    <p>Генератор изготовлен на базе двигателя <b>Cummins</b>.</p>
+                                                                    <p>Используется в качестве постоянного или временного источника электрической энергии. Оборудование устанавливают на стройплощадках, стадионах, на территории вахтовых поселков и других автономных объектов.</p>
+                                                                    <p>Для него характерны разумных расход топлива, эффективная работа системы охлаждения, высокий уровень надежности.</p>
+                                                                </div>
+                                                                <div class="order">
+                                                                    <span title="Заказать" class="btn btn-default" data-event="jqm" data-param-id="26" data-name="order_product" data-product="APD 110 C">Заказать</span>
+                                                                </div>
                                                             </div>
-                                                            <p>
-                                                                <span title="Заказать" class="btn btn-default" data-event="jqm" data-param-id="26" data-name="order_product" data-product="APD 110 C">Заказать</span>
-                                                            </p>
                                                         </div>
                 
                                                     </div>
@@ -542,21 +544,21 @@
                                 <div class="maxwidth-theme">
                                     <ul class="nav nav-pills">
                                         <li class="active"><a href="#tab-characteristics" data-toggle="tab">Характеристики</a></li>
-                                        <li><a href="#tab-another-options" data-toggle="tab">Варианты исполнения</a></li>
                                         <li><a href="#tab-helper-systems" data-toggle="tab">Вспомогательные системы (опции)</a></li>
                                         <li><a href="#tab-similarly" data-toggle="tab">Аналоги</a></li>
                                     </ul>
                                     <div class="tab-content">
+                                        <!-- Характеристики -->
                                         <div class="tab-pane fade in active" role="tabpanel" id="tab-characteristics">
                                             <div class="tab-body">
-                                                <div class="flex-row" style="--bs-gutter-y: 24px;">
+                                                <div class="flex-row" style="--bs-gutter-y: 30px;">
                                                     <div class="col-md-6">
                                                         <p class="text-uppercase">Основные характеристики</p>
-                                                        <table class="table table-bordered table-striped table-hover">
+                                                        <table class="table table-bordered">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>Бренд</td>
-                                                                    <td><a href="#">Aksa</a></td>
+                                                                    <td>Aksa</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Модель</td>
@@ -596,14 +598,14 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Исполнение</td>
-                                                                    <td><a href="#">Открытое</a><br><a href="#">Кожух</a><br><a href="#">Контейнер</a></td>
+                                                                    <td>Открытое<br>Кожух<br>Контейнер</td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <p class="text-uppercase">Двигатель</p>
-                                                        <table class="table table-bordered table-striped table-hover">
+                                                        <table class="table table-bordered">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>Модель двигателя</td>
@@ -626,7 +628,7 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <p class="text-uppercase">Топливная система</p>
-                                                        <table class="table table-bordered table-striped table-hover">
+                                                        <table class="table table-bordered">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>Топливо</td>
@@ -645,7 +647,7 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <p class="text-uppercase">Генератор</p>
-                                                        <table class="table table-bordered table-striped table-hover">
+                                                        <table class="table table-bordered">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>Число фаз</td>
@@ -668,7 +670,7 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <p class="text-uppercase">Дополнительные Характеристики</p>
-                                                        <table class="table table-bordered table-striped table-hover">
+                                                        <table class="table table-bordered">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>Функция сварки</td>
@@ -683,7 +685,7 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <p class="text-uppercase">Производитель</p>
-                                                        <table class="table table-bordered table-striped table-hover">
+                                                        <table class="table table-bordered">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>Страна происхождения</td>
@@ -699,19 +701,280 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" role="tabpanel" id="tab-another-options">
-                                            <div class="tab-body">
-                                                ...
-                                            </div>
-                                        </div>
+                                        <!-- Вспомогательные системы (опции) -->
                                         <div class="tab-pane fade" role="tabpanel" id="tab-helper-systems">
                                             <div class="tab-body">
-                                                ...
+                                                <div class="flex-row" style="--bs-gutter-y: 30px;">
+                                                    <div class="col-md-4">
+                                                        <div class="card-helper-system">
+                                                            <div class="card-body">
+                                                                <div class="card-title">
+                                                                    <a href="#">Варианты передвижного исполнения</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-img-wrapper">
+                                                                <a href="#">
+                                                                    <img src="img/helper-system-01.jpg" alt="Варианты передвижного исполнения">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="card-helper-system">
+                                                            <div class="card-body">
+                                                                <div class="card-title">
+                                                                    <a href="#">Система мониторинга</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-img-wrapper">
+                                                                <a href="#">
+                                                                    <img src="img/helper-system-02.jpg" alt="Система мониторинга">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="card-helper-system">
+                                                            <div class="card-body">
+                                                                <div class="card-title">
+                                                                    <a href="#">Распредустройства (щитовое оборудование)</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-img-wrapper">
+                                                                <a href="#">
+                                                                    <img src="img/helper-system-03.jpg" alt="Распредустройства (щитовое оборудование)">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="card-helper-system">
+                                                            <div class="card-body">
+                                                                <div class="card-title">
+                                                                    <a href="#">Нагрузочные модули</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-img-wrapper">
+                                                                <a href="#">
+                                                                    <img src="img/helper-system-04.jpg" alt="Нагрузочные модули">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="card-helper-system">
+                                                            <div class="card-body">
+                                                                <div class="card-title">
+                                                                    <a href="#">Выносной радиатор</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-img-wrapper">
+                                                                <a href="#">
+                                                                    <img src="img/helper-system-05.jpg" alt="Выносной радиатор">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="card-helper-system">
+                                                            <div class="card-body">
+                                                                <div class="card-title">
+                                                                    <a href="#">Развязывающий теплообменник</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-img-wrapper">
+                                                                <a href="#">
+                                                                    <img src="img/helper-system-06.jpg" alt="Развязывающий теплообменник">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="card-helper-system">
+                                                            <div class="card-body">
+                                                                <div class="card-title">
+                                                                    <a href="#">Выхлопная система</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-img-wrapper">
+                                                                <a href="#">
+                                                                    <img src="img/helper-system-07.jpg" alt="Выхлопная система">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="card-helper-system">
+                                                            <div class="card-body">
+                                                                <div class="card-title">
+                                                                    <a href="#">Нейтрализаторы выхопных газов</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-img-wrapper">
+                                                                <a href="#">
+                                                                    <img src="img/helper-system-08.jpg" alt="Нейтрализаторы выхопных газов">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <!-- Аналоги -->
                                         <div class="tab-pane fade" role="tabpanel" id="tab-similarly">
                                             <div class="tab-body">
-                                                ...
+
+                                                <div class="h2">Дизельные электростанции (ДГУ) с аналогичной мощностью:</div>
+
+                                                <div class="table-similarly">
+                                                    <div class="table-heading">
+                                                        <div class="flex-row">
+                                                            <div class="col-model-1 col-sm-2">Модель</div>
+                                                            <div class="col-model-2 col-sm-3"></div>
+                                                            <div class="col-engine col-sm-3">Двигатель</div>
+                                                            <div class="col-price col-sm-2">Цена</div>
+                                                            <div class="col-btn col-sm-2"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-body">
+                                                        <!-- table-row -->
+                                                        <div class="table-row">
+                                                            <div class="flex-row">
+                                                                <div class="col-model-1 col-sm-2">
+                                                                    <a href="#"><strong>Aksa <span>AC 55</span></strong></a>
+                                                                </div>
+                                                                <div class="col-model-2 col-sm-3">
+                                                                    <strong><i>40 кВт / 50 кВа</i></strong>
+                                                                </div>
+                                                                <div class="col-engine col-sm-3">
+                                                                    <span class="visible-xs">Двигатель</span>CUMMINS S3.8-G6
+                                                                </div>
+                                                                <div class="col-price col-sm-2">
+                                                                    <strong>20 138 р.</strong>
+                                                                </div>
+                                                                <div class="col-btn col-sm-2">
+                                                                    <span title="Получить скидку" class="btn btn-outline" data-event="jqm" data-param-id="26" data-name="order_product" data-product="Aksa AC 55">Купить</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- table-row -->
+                                                        <div class="table-row">
+                                                            <div class="flex-row">
+                                                                <div class="col-model-1 col-sm-2">
+                                                                    <a href="#"><strong>Aksa <span>AC 55</span></strong></a>
+                                                                </div>
+                                                                <div class="col-model-2 col-sm-3">
+                                                                    <strong><i>40 кВт / 50 кВа</i></strong>
+                                                                </div>
+                                                                <div class="col-engine col-sm-3">
+                                                                    <span class="visible-xs">Двигатель</span>CUMMINS S3.8-G6
+                                                                </div>
+                                                                <div class="col-price col-sm-2">
+                                                                </div>
+                                                                <div class="col-btn col-sm-2">
+                                                                    <span title="Запросить цену" class="btn btn-outline btn-warning" data-event="jqm" data-param-id="20" data-name="order_product" data-product="NeuHaus NH138S">Запросить цену</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- table-row -->
+                                                        <div class="table-row">
+                                                            <div class="flex-row">
+                                                                <div class="col-model-1 col-sm-2">
+                                                                    <a href="#"><strong>NeuHaus <span>НХ150-ЯС</span></strong></a>
+                                                                </div>
+                                                                <div class="col-model-2 col-sm-3">
+                                                                    <strong><i>165 кВт / 150 кВа</i></strong>
+                                                                </div>
+                                                                <div class="col-engine col-sm-3">
+                                                                    <span class="visible-xs">Двигатель</span>ЯМЗ-238ДИ
+                                                                </div>
+                                                                <div class="col-price col-sm-2">
+                                                                    <strong>1 186 093 р.</strong>
+                                                                </div>
+                                                                <div class="col-btn col-sm-2">
+                                                                    <span title="Получить скидку" class="btn btn-outline" data-event="jqm" data-param-id="26" data-name="order_product" data-product="Aksa AC 55">Купить</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="h2">Дизельные электростанции (ДГУ) <span>Aksa </span></div>
+
+                                                <div class="table-similarly">
+                                                    <div class="table-heading">
+                                                        <div class="flex-row">
+                                                            <div class="col-model-1 col-sm-2">Модель</div>
+                                                            <div class="col-model-2 col-sm-3"></div>
+                                                            <div class="col-engine col-sm-3">Двигатель</div>
+                                                            <div class="col-price col-sm-2">Цена</div>
+                                                            <div class="col-btn col-sm-2"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-body">
+                                                        <!-- table-row -->
+                                                        <div class="table-row">
+                                                            <div class="flex-row">
+                                                                <div class="col-model-1 col-sm-2">
+                                                                    <a href="#"><strong>Aksa <span>AC 55</span></strong></a>
+                                                                </div>
+                                                                <div class="col-model-2 col-sm-3">
+                                                                    <strong><i>40 кВт / 50 кВа</i></strong>
+                                                                </div>
+                                                                <div class="col-engine col-sm-3">
+                                                                    <span class="visible-xs">Двигатель</span>CUMMINS S3.8-G6
+                                                                </div>
+                                                                <div class="col-price col-sm-2">
+                                                                    <strong>20 138 р.</strong>
+                                                                </div>
+                                                                <div class="col-btn col-sm-2">
+                                                                    <span title="Получить скидку" class="btn btn-outline" data-event="jqm" data-param-id="26" data-name="order_product" data-product="Aksa AC 55">Купить</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- table-row -->
+                                                        <div class="table-row">
+                                                            <div class="flex-row">
+                                                                <div class="col-model-1 col-sm-2">
+                                                                    <a href="#"><strong>Aksa <span>AC 55</span></strong></a>
+                                                                </div>
+                                                                <div class="col-model-2 col-sm-3">
+                                                                    <strong><i>40 кВт / 50 кВа</i></strong>
+                                                                </div>
+                                                                <div class="col-engine col-sm-3">
+                                                                    <span class="visible-xs">Двигатель</span>CUMMINS S3.8-G6
+                                                                </div>
+                                                                <div class="col-price col-sm-2">
+                                                                    <strong>20 138 р.</strong>
+                                                                </div>
+                                                                <div class="col-btn col-sm-2">
+                                                                    <span title="Получить скидку" class="btn btn-outline" data-event="jqm" data-param-id="26" data-name="order_product" data-product="Aksa AC 55">Купить</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- table-row -->
+                                                        <div class="table-row">
+                                                            <div class="flex-row">
+                                                                <div class="col-model-1 col-sm-2">
+                                                                    <a href="#"><strong>Aksa <span>AC 55</span></strong></a>
+                                                                </div>
+                                                                <div class="col-model-2 col-sm-3">
+                                                                    <strong><i>40 кВт / 50 кВа</i></strong>
+                                                                </div>
+                                                                <div class="col-engine col-sm-3">
+                                                                    <span class="visible-xs">Двигатель</span>CUMMINS S3.8-G6
+                                                                </div>
+                                                                <div class="col-price col-sm-2">
+                                                                    <strong>20 138 р.</strong>
+                                                                </div>
+                                                                <div class="col-btn col-sm-2">
+                                                                    <span title="Получить скидку" class="btn btn-outline" data-event="jqm" data-param-id="26" data-name="order_product" data-product="Aksa AC 55">Купить</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -1138,6 +1401,24 @@
 
     <!-- Мой код добавить в соответствующий custom.js темы Аспро! -->
     <script src="js/custom.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            InitFlexSlider(); // for ajax mode
+            $('.detail .galery .item').sliceHeight({slice: 2, lineheight: -3});
+            $('.detail .galery #carousel').flexslider({
+                animation: 'slide',
+                controlNav: false,
+                animationLoop: true,
+                slideshow: false,
+                itemWidth: 100,
+                itemMargin: 7.5,
+                minItems: 2,
+                maxItems: 4,
+                asNavFor: '.detail .galery #slider'
+            });
+        });
+    </script>
     
 </body>
 
